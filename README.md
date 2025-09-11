@@ -90,7 +90,7 @@ The United States dominates both movies and shows. India and the United Kingdom 
 
 ### 8. Age-Rating and Genre Correlation
 
-<img src="./Tableau/Age-rating category correlations.png" width="800"/>
+<img src="./Tableau/Age rating category correlations.png" width="800"/>
 
 Strongest correlations:
 - **TV-MA** & International Movies: 1,457 titles

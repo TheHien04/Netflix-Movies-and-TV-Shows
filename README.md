@@ -3,7 +3,7 @@
 This project delivers a professional **data analysis and visualization of Netflix Movies & TV Shows** using Tableau.  
 As streaming platforms compete fiercely worldwide, this analysis provides actionable insights into **content growth, genre shifts, audience targeting, and market competition**.  
 By combining Tableau with **Design Thinking**, we highlight both descriptive analytics (what has happened) and strategic implications (what Netflix should do).
-
+---
 ## 🌍 Background: Netflix and the Streaming War
 
 Founded in 1997 as a DVD rental service, Netflix has grown into the **world’s largest streaming platform** with 240M+ subscribers in 190+ countries. Its success is fueled by:  

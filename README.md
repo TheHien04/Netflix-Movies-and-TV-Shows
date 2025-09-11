@@ -1,138 +1,158 @@
 # 🎬 Netflix Movies and TV Shows – Data Visualization with Tableau
-
-This project aims to analyze and visualize the Netflix Movies and TV Shows dataset using Tableau. By cleaning, transforming, and exploring the dataset, we provide key insights into global streaming content trends, genre distribution, rating patterns, and regional production activities. The analysis concludes with a comprehensive Tableau dashboard.
-
----
-
-## 📁 Repository Structure
-
-The project is organized as follows:
-
-- `/Report`: Contains the final report in PDF format.
-- `/Tableau`: Includes the Tableau workbook (`.twbx`) and all exported visualization images.
-- `netflix_titles.csv`: Original raw dataset from Kaggle.
-- `netflix_titles_cleaned.csv`: Cleaned and normalized dataset used in visualization.
-- `netflix_titles_genres_split.csv`: Genre-split version for detailed analysis.
-- `README.md`: Documentation of the project.
+![Netflix Background](Netflix.jpg)  
+This project delivers a professional **data analysis and visualization of Netflix Movies & TV Shows** using Tableau.  
+As streaming platforms compete fiercely worldwide, this analysis provides actionable insights into **content growth, genre shifts, audience targeting, and market competition**.  
+By combining Tableau with **Design Thinking**, we highlight both descriptive analytics (what has happened) and strategic implications (what Netflix should do).
 
 ---
 
-## 📦 Dataset Overview
+## 🌍 Background: Netflix and the Streaming War
 
-- **Source**: [Kaggle - Netflix Movies and TV Shows](https://www.kaggle.com/shivamb/netflix-shows)
-- **Size**: ~8,800 entries
-- **Fields**: Title, Type (Movie/TV), Country, Genre, Date Added, Rating, Release Year, Director, Cast, etc.
-- **Cleaning Steps**: 
-  - Removed nulls in essential fields.
-  - Standardized genre list.
-  - Split multiple genres into separate rows.
-  - Normalized country and rating values for grouping.
+Founded in 1997 as a DVD rental service, Netflix is now the **largest global streaming platform** with over 240M subscribers across 190+ countries. Its strategy focuses on:
+
+- **Worldwide Reach** 🌐 – Rapid expansion post-2015 with localized content.  
+- **Original Productions** 🎥 – Heavy investment in Netflix Originals since 2013.  
+- **Competition** ⚔️ – Disney+, Amazon Prime, and Hulu are rising challengers.  
+- **User Segmentation** 👥 – Diverse audiences by age, geography, and genre affinity.  
+
+![Netflix Worldwide](Netflix-worldwide.jpg)  
+![Netflix vs Competitors](Netflix%20and%20other%20web.jpg)
 
 ---
 
-## 📊 Task-by-Task Visualization Summary
+## 📊 Domain Insights and Visualizations
 
 ### 1. Content Growth Over Time
 
 <img src="./Tableau/Content by years.png" width="800"/>
 
-The number of content releases grew exponentially after 2015. Netflix's expansion strategy is clearly visible, with a peak around 2018–2020.
+- Netflix’s catalog **expanded sharply post-2015**, peaking in 2018–2020.  
+- This aligns with Netflix’s international push into Asia and Europe.  
+- Content growth **stabilized post-2021**, signaling a shift from volume ➝ quality.  
 
 ---
 
-### 2. Trend in Publishing Genres Over Years
+### 2. Publishing Trends by Genre
 
 <img src="./Tableau/Trend in publishing over years.png" width="800"/>
 
-Dramas, International Movies, and Comedies emerged as dominant genres. A rapid spike is observed between 2016–2019, aligning with Netflix's international expansion.
+- **Drama, Comedy, and International Movies** dominate Netflix’s portfolio.  
+- Genres like **Anime and Docuseries** surged post-2017, meeting niche demands.  
+- Reflects Netflix’s strategy: **“something for everyone”**.  
 
 ---
 
-### 3. Distribution of Content by Country
+### 3. Distribution by Country
 
-<img src="./Tableau/Distribution of content followed by countries.png" width="800"/>
+<img src="./Tableau/Distribution of content followed by countries.png" width="800"/>  
 
-The United States leads content production by a wide margin, followed by India, the United Kingdom, and Canada. Emerging contributions from France, South Korea, and Japan are also observed.
+- The **US leads** content supply, but **India and the UK** are fast followers.  
+- **South Korea and Japan** grew significantly with K-dramas and Anime.  
+- Localized production = key to winning regional markets.  
 
----
-
-### 4. Number of Content by Rating
-
-<img src="./Tableau/Number of Content followed by rating.png" width="500"/>
-
-Ratings like **TV-MA** and **TV-14** dominate, indicating a significant focus on content for mature and teen audiences. Ratings such as **G**, **NC-17**, and **UR** are rare.
+![Top 10 Producing Countries](Top%2010%20producing%20countries.png)
 
 ---
 
-### 5. Rating Distribution by Release Year
+### 4. Ratings and Audience Targeting
 
+<img src="./Tableau/Number of Content followed by rating.png" width="500"/>  
 <img src="./Tableau/Number of rating's content years.png" width="800"/>
 
-Most ratings only gained volume post-2010. TV-MA and TV-14 content show a dramatic rise, particularly between 2015 and 2020. This reinforces Netflix's investment in edgy, mature-themed content.
+- **TV-MA and TV-14 dominate** ➝ Netflix focuses on **mature + teen audiences**.  
+- **Family-friendly content** (G, PG) is minimal ➝ a gap where Disney+ excels.  
+- Rating growth post-2015 shows Netflix betting on **edgy, bold storytelling**.  
 
 ---
 
-### 6. Cast Distribution by Genre
+### 5. Cast & Production Depth
 
 <img src="./Tableau/Distribution cast with different listed in.png" width="800"/>
 
-Genres like Dramas, International Movies, and Comedies have the highest number of actors involved, showing strong investment in character-driven narratives and international appeal.
+- Cast networks are strongest in **Dramas, International Movies, and Comedies**.  
+- Indicates investment in **character-driven, story-heavy productions**.  
+- Expanding collaborations with international stars broaden Netflix’s reach.  
 
 ---
 
-### 7. Top 10 Content Producing Countries
-
-<img src="./Tableau/Top 10 producing countries.png" width="800"/>
-
-The United States dominates both movies and shows. India and the United Kingdom have a higher ratio of TV Shows compared to Movies. This reflects regional media consumption trends.
-
----
-
-### 8. Age-Rating and Genre Correlation
+### 6. Age-Rating and Genre Correlation
 
 <img src="./Tableau/Age rating category correlations.png" width="800"/>
 
-Strongest correlations:
-- **TV-MA** & International Movies: 1,457 titles
-- **R** & Dramas: 595 titles
-- **TV-14** & International TV Shows: 1,195 titles
+- **TV-MA x International Movies**: 1,457 titles ➝ mature global content.  
+- **R x Dramas**: 595 titles ➝ traditional movie markets.  
+- **TV-14 x International Shows**: 1,195 titles ➝ teen-focused series boom.  
 
-This confirms that Netflix prioritizes mature global content across diverse categories.
+**Insight:** Netflix balances **youth appeal + mature niche dominance**.  
 
 ---
 
-### 9. Final Integrated Dashboard
+### 7. User Segmentation
+
+![User Segmentation](User%20Netflix.jpg)
+
+- **Teens (13–24)** prefer Anime, Action, Sci-Fi.  
+- **Adults (25–44)** watch Drama, Documentaries.  
+- **Families (45+)** lean on International Movies and Comedies.  
+- **Key insight:** Personalized recommendations must vary **by age & culture**.  
+
+---
+
+## 🔄 Netflix Strategic Flow & Design Thinking
+
+### Flow of Analysis
+![Netflix Flowchart](Netflix%20Flowchart.png)
+
+- Start: **Content supply (countries, genres)**  
+- Process: **Ratings & user segmentation**  
+- End: **Strategic insights for competition & engagement**  
+
+### Applying Design Thinking
+![Design Thinking](Design%20Thinking.png)
+
+1. **Empathize** – Identify user needs (local content, genre preference).  
+2. **Define** – Spot challenges (e.g., limited family content vs Disney+).  
+3. **Ideate** – Propose ideas (regional co-productions, niche genres).  
+4. **Prototype** – Create dashboards & simulate content strategies.  
+5. **Test** – Measure success with engagement & retention metrics.  
+
+---
+
+## 🛠 Tools & Workflow
+- **Tableau Desktop** – Main dashboard design.  
+- **Python (Pandas)** – Data cleaning & preprocessing.  
+- **SQL** – Structured queries for segmentation.  
+- **Visualization Assets** – Charts, flowcharts, and storytelling graphics.  
+
+---
+
+## 📈 Executive Insights
+
+- Netflix dominates **mature-rated global content** but risks losing **family market**.  
+- **India, South Korea, Japan** are growth engines ➝ invest in local originals.  
+- Competitors like Disney+ win families ➝ Netflix must close that gap.  
+- **User segmentation** shows personalization is critical to retention.  
+- Applying **Design Thinking** transforms data into actionable strategy.  
+
+---
+
+## 📊 Final Integrated Dashboard
 
 <img src="./Tableau/Dashboard.png" width="900"/>
 
-A unified Tableau dashboard presents:
-- Rating breakdown
-- Year-wise genre trends
-- Country-based distribution
-- Genre-rating heatmap
-- Cast participation by genre
-All filters and views are interactive for exploratory data analysis.
+- Interactive filters for ratings, genres, and regions.  
+- Unified storytelling: Content growth ➝ Ratings ➝ Countries ➝ Segmentation.  
+- Built for both **analytical exploration** and **executive reporting**.  
 
 ---
 
-## 💡 Conclusion
+## 👨‍💻 Author
 
-Through this project, we successfully explored Netflix’s strategic direction in content creation. Key takeaways include:
-- Emphasis on mature-rated content (TV-MA, R)
-- Genre shifts post-2015 aligned with globalization
-- US remains dominant but India and UK rise in production
-- Data-driven insights aid in understanding viewer targeting and market expansion
-
----
-
-## 👨‍💻 Author & Credit
-
-- **Author**: [TheHien04](https://github.com/TheHien04)
-- **Tool**: Tableau Desktop
-- **Data Source**: Kaggle Netflix Titles Dataset
-- **Language**: English
-- **License**: For academic and educational purposes
+- **Author**: [TheHien04](https://github.com/TheHien04)  
+- **Role**: Data Analyst | Tableau Developer  
+- **Dataset**: [Kaggle Netflix Titles](https://www.kaggle.com/shivamb/netflix-shows)  
+- **License**: Academic & educational purposes  
 
 ---
 
-⭐ Star this repository if you found the project useful, and feel free to fork or contribute!
+⭐ Star this repo if you find it useful, or fork to extend with predictive modeling!  

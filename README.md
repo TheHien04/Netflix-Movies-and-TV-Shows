@@ -54,7 +54,7 @@ python -m netflix_catalog    # processed tables + quality report + figures/
    - [2.4 Prototype](#24-prototype--the-tableau-workbook-as-decision-object)
    - [2.5 Test](#25-test--prototype-as-if-youre-right-test-as-if-youre-wrong)
 3. [Data, provenance, and wrangling](#3-data-provenance-and-wrangling)
-4. [Evidence: publication figures](#4-evidence-publication-figures)
+4. [Evidence: Tableau library + publication figures](#4-evidence-tableau-library--publication-figures)
 5. [Synthesis](#5-synthesis)
 6. [What this study does *not* claim](#6-what-this-study-does-not-claim)
 7. [Threats to validity](#7-threats-to-validity)
@@ -322,11 +322,11 @@ Filling `director` / `cast` / `country` with a display string is acceptable **fo
 
 ---
 
-## 4. Evidence: publication figures
+## 4. Evidence: Tableau library + publication figures
 
-Figures in [`figures/`](./figures/) are the **corrected readout**. They follow the grammar in [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md): sentence titles, labeled grain, missingness as a KPI, source line on every chart. Tableau PNGs in `Tableau/` remain the course prototype (some still rank `Không xác định` as a country).
+Every chart exported from the course workbook is below. The left (or first) image is the **Tableau prototype**. The second is the **Python publication figure**: same question, corrected grain, sentence title, missingness handled, source line.
 
-Each view is written in three voices, which research-grade viz work should not collapse:
+Grammar: [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md). Voices on every view:
 
 1. **Observation** — what the chart shows at the stated grain  
 2. **Inference** — what that implies *about the catalog*  
@@ -336,21 +336,44 @@ Each view is written in three voices, which research-grade viz work should not c
   <img src="./figures/08_briefing_board.png" alt="Four-panel catalog supply briefing board" width="920"/>
 </p>
 
-<p align="center"><sub>Briefing board: additions, maturity mix, structured missingness, production credits. No viewing data in this file.</sub></p>
+<p align="center"><sub>Publication briefing board (Python). Tableau’s integrated dashboard is next to it so the two prototypes can be compared.</sub></p>
+
+<p align="center">
+  <img src="./Tableau/Dashboard.png" alt="Tableau integrated dashboard prototype" width="920"/>
+</p>
+
+<p align="center"><sub>Tableau prototype · full dashboard. Some sheets still rank “Không xác định” as a country — that is why the Python ranking exists.</sub></p>
 
 ---
 
-### 4.1 Catalog growth is an add-policy, not a film-history
+### 4.1 Catalog growth: add-policy vs library age
+
+Tableau exported **Content by years** on `release_year`. The policy clock is `date_added`. Both belong in the argument.
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Content%20by%20years.png" alt="Tableau: content by original release year"/><br/>
+<sub>Tableau · Content by years (release_year)</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/09_library_by_release_year.png" alt="Publication: library by release year, Movie vs TV Show"/><br/>
+<sub>Publication · same question, Movie / TV Show stack</sub>
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="./figures/01_catalog_additions.png" alt="Titles added by year of date_added, 2021 right-censored" width="860"/>
+  <img src="./figures/01_catalog_additions.png" alt="Titles added by year of date_added, 2021 right-censored" width="900"/>
 </p>
 
-**Observation.** `date_added` is the policy clock. Additions scale from 2016, peak in **2019** (2,016 titles), then 2020 (1,879). 2021 (1,498) stops on 25 September and is plotted in a lighter fill so it cannot be read as a full-year crash.
+<p align="center"><sub>Publication · date_added (the commissioning clock Tableau did not isolate as a sentence title).</sub></p>
 
-**Inference.** Do not read `release_year` (Tableau “content by years”) as “cinema peaked in 2018.” That chart is **what Netflix chose to carry**. The add-year series is the commissioning/licensing tempo.
+**Observation.** `date_added` peaks in **2019** (2,016 titles). 2021 (1,498) stops on 25 September. `release_year` is contemporary-heavy with a long left tail of licensed older films.
 
-**Non-claim.** This is not global production volume, and 2021 cannot be compared to 2019 without an annualization the file does not support.
+**Inference.** Do not read “content by years” as cinema output. It is **what Netflix chose to carry**. Add-year is the expansion tempo.
+
+**Non-claim.** Not global production volume. 2021 cannot be compared to 2019 without an annualization this file does not support.
 
 | Year of `date_added` | Titles added |
 |---|---|
@@ -361,103 +384,163 @@ Each view is written in three voices, which research-grade viz work should not c
 | 2020 | 1,879 |
 | 2021 (through 25 Sep) | 1,498 |
 
-**Key insight (HMW-1).** The catalog’s growth story is a **2016–2019 acceleration** coinciding with global expansion and original-production scale-up, then a **high plateau**.
-
 ---
 
 ### 4.2 Missingness is structured — keep NULL
 
 <p align="center">
-  <img src="./figures/02_missingness_by_type.png" alt="Percent missing director, country, and cast by Movie vs TV Show" width="860"/>
+  <img src="./figures/02_missingness_by_type.png" alt="Percent missing director, country, and cast by Movie vs TV Show" width="900"/>
 </p>
 
 **Observation.** Director is missing for **91.4% of TV Shows** vs **3.1% of Movies**. Country and cast missingness is higher on series but still in the low teens.
 
-**Inference.** TV-show director is a **schema/practice difference**, not a hole to mean-impute or fill with “Unknown” if you will ever model directors.
+**Inference.** TV-show director is a **schema/practice difference**, not a hole to fill.
 
 **Non-claim.** Completeness of metadata is not a quality score for the title.
 
 ---
 
-### 4.3 Production geography is concentrated — Unknown is not a country
+### 4.3 Production geography
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Top%2010%20producing%20countries.png" alt="Tableau: top 10 producing countries"/><br/>
+<sub>Tableau · Top 10 producing countries</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/04_producing_countries.png" alt="Publication: production credits, Unknown excluded"/><br/>
+<sub>Publication · Unknown excluded (831 titles / 9.4%)</sub>
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="./figures/04_producing_countries.png" alt="Top production-country credits, Movie vs TV Show, Unknown excluded" width="860"/>
+  <img src="./Tableau/Distribution%20of%20content%20followed%20by%20countries.png" alt="Tableau choropleth of production credits" width="900"/>
 </p>
 
-**Observation (exploded credits, missing country excluded).** United States 3,690 · India 1,046 · United Kingdom 806 · Canada 445 · France 393 · Japan 318 · Spain 232 · South Korea 231 · Germany 226. **831 titles (9.4%)** have no production country and are excluded from the ranking. Japan and South Korea are series-heavy; India is movie-heavy.
+<p align="center"><sub>Tableau · Distribution of content by countries (choropleth). The map is the right form for geography; the ranking above is the honest Top 10.</sub></p>
 
-**Inference (HMW-2).** The “local-for-global” story is a **long tail of national credits**, not a dethroning of the U.S.
+**Observation.** United States 3,690 · India 1,046 · United Kingdom 806. Japan and South Korea are series-heavy; India is movie-heavy. 831 titles have no country credit.
 
-**Non-claim.** Credit ≠ cultural origin ≠ filming location ≠ the market that watched it. A U.S.–India co-credit is two rows after explode.
+**Inference.** Local-for-global is a **long tail of credits**, not a dethroning of the U.S.
 
-<p align="center">
-  <img src="./Tableau/Distribution%20of%20content%20followed%20by%20countries.png" alt="Choropleth of production credits from the Tableau prototype" width="800"/>
-</p>
-
-<p align="center"><sub>Tableau choropleth (course prototype). Use the Python ranking above for any external readout — the workbook extract historically ranked Vietnamese “Không xác định” as a country.</sub></p>
+**Non-claim.** Credit ≠ filming location ≠ the market that watched it.
 
 ---
 
-### 4.4 Genre is a tag cloud, not a partition
+### 4.4 Genre tags over time
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Trend%20in%20publishing%20over%20years.png" alt="Tableau: trend in publishing genres over years"/><br/>
+<sub>Tableau · Trend in publishing genres (spaghetti)</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/10_genre_trends.png" alt="Publication: top five genre tags highlighted, long tail muted"/><br/>
+<sub>Publication · top five in color, long tail muted</sub>
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="./figures/05_genre_incidence.png" alt="Top 15 genre tag incidences" width="860"/>
+  <img src="./figures/05_genre_incidence.png" alt="Top 15 genre tag incidences" width="900"/>
 </p>
 
-**Observation.** At exploded grain, the most frequent tags are International Movies (2,752), Dramas (2,427), Comedies (1,674), International TV Shows (1,351), Documentaries (869). Mean tags per title = **2.19**.
+**Observation.** International Movies 2,752 · Dramas 2,427 · Comedies 1,674. Mean tags per title = **2.19**. A few tags carry the 2016–2019 expansion; the rest are a long tail.
 
-**Inference (HMW-4).** “International” is a **platform taxonomy**, not a genre in the film-studies sense. Drama + comedy are the mass spine; anime, docuseries, and reality are **smaller tag volumes** — consistent with a long-tail *inventory* strategy.
+**Inference.** “International” is a **platform taxonomy**. Drama + comedy are the mass spine.
 
-**Non-claim.** Tag growth ≠ audience growth. A line going up means **more titles carrying that tag were added**, possibly because tagging policy changed.
+**Non-claim.** Tag growth ≠ audience growth.
 
 ---
 
-### 4.5 Maturity mix is the strategy
+### 4.5 Maturity mix
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Number%20of%20Content%20followed%20by%20rating.png" alt="Tableau: number of content by rating"/><br/>
+<sub>Tableau · Number of content by rating</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/03_maturity_mix.png" alt="Publication: maturity mix with band colors"/><br/>
+<sub>Publication · recoded ratings, maturity bands</sub>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Number%20of%20rating%27s%20content%20years.png" alt="Tableau: ratings over release years"/><br/>
+<sub>Tableau · Ratings over release years</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/11_rating_over_release_year.png" alt="Publication: maturity band stack over release year"/><br/>
+<sub>Publication · maturity bands, 2000–2021</sub>
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="./figures/03_maturity_mix.png" alt="Title counts by maturity rating, colored by maturity band" width="860"/>
+  <img src="./figures/07_maturity_over_add_year.png" alt="Stacked maturity bands by year added" width="900"/>
 </p>
 
-**Observation.** TV-MA 3,207 (36.4%) · TV-14 2,160 (24.5%) · TV-PG 863 · R 799 · PG-13 490. Family-adjacent set = **23.4%**. Unknown = 7 titles after recoding the duration-swap rows.
+<p align="center"><sub>Publication · the same mix on the add-year clock (2015–2021).</sub></p>
 
-**Inference (HMW-3, RQ3, RQ5).** Netflix’s 2021 catalog is **positioned as a teen/adult destination**. That is a catalog fact. The family-first competitor story (Disney+) is a **positioning contrast**, not a measurement of Disney’s library in this file.
+**Observation.** TV-MA 3,207 · TV-14 2,160. Family-adjacent = **23.4%**. Mature bands dominate every expansion add-year.
 
-**Non-claim.** “Netflix users are mostly adults” does not follow. A library can be mature-heavy while kids still generate outsized session time on a small title set (classic power-law). We cannot see that here.
+**Inference.** The 2021 catalog is positioned as a teen/adult destination. Disney+ family contrast is a **positioning** claim, not a measurement of Disney’s library here.
 
-<p align="center">
-  <img src="./figures/07_maturity_over_add_year.png" alt="Stacked maturity bands by year added, 2015-2021" width="860"/>
-</p>
-
-**Observation.** Mature bands dominate every add-year of the expansion era. 2021 is truncated.
+**Non-claim.** “Users are mostly adults” does not follow from inventory mix.
 
 ---
 
-### 4.6 Rating × genre is association, not “correlation”
+### 4.6 Rating × genre
 
-<p align="center">
-  <img src="./figures/06_rating_genre_crosstab.png" alt="Heatmap of rating by genre tag incidences" width="900"/>
-</p>
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Age%20rating%20category%20correlations.png" alt="Tableau: age-rating category correlations"/><br/>
+<sub>Tableau · Age-rating category “correlations”</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/06_rating_genre_crosstab.png" alt="Publication: rating by genre crosstab"/><br/>
+<sub>Publication · named as a cross-tab, not a correlation</sub>
+</td>
+</tr>
+</table>
 
-**Observation.** Heat is concentrated in cells such as TV-MA × International Movies (1,130) and TV-14 × International Movies (1,065). That is a **cross-tab of tag incidence**, not a Pearson/Spearman matrix.
+**Observation.** TV-MA × International Movies = 1,130 tag incidences; TV-14 × International Movies = 1,065.
 
-**Inference.** Mature international drama is the **modal inventory cell**. Recommendation *rules* that boost TV-MA international titles are aligning the product with **what the catalog is made of**.
+**Inference.** Mature international drama is the **modal inventory cell**.
 
-**Non-claim.** Cell size is not a taste affinity. It is tagging × rating policy.
+**Non-claim.** Cell size is tagging policy, not taste affinity. The Tableau filename says “correlations”; no coefficient is computed.
 
 ---
 
-### 4.7 Cast lists are a production-style signal, weakly
+### 4.7 Cast × listed_in
 
-<p align="center">
-  <img src="./Tableau/Distribution%20cast%20with%20different%20listed%20in.png" alt="Cast-credit volume by genre tag from the Tableau prototype" width="800"/>
-</p>
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="./Tableau/Distribution%20cast%20with%20different%20listed%20in.png" alt="Tableau: cast distribution by listed in"/><br/>
+<sub>Tableau · Cast × listed in</sub>
+</td>
+<td align="center" width="50%">
+<img src="./figures/12_cast_by_genre.png" alt="Publication: cast name-tokens by genre"/><br/>
+<sub>Publication · name-tokens, missing cast excluded</sub>
+</td>
+</tr>
+</table>
 
-**Observation.** Ensemble-heavy tags (comedies, action & adventure, dramas) accumulate more cast-string tokens.
+**Observation.** Dramas and International Movies accumulate the most parsed cast names.
 
-**Inference.** This is closer to **format** (ensemble comedy, serialized drama) than to “star power.” Token counts also inherit missing-cast bias (825 titles).
+**Inference.** That is **format** (ensemble drama) more than star power. 825 titles have no cast list.
 
-**Non-claim.** Not a talent graph, not a bankability ranking, not a co-production network until you parse names and resolve entities.
+**Non-claim.** Not a talent graph or bankability ranking until names are resolved.
 
 ---
 
@@ -535,7 +618,7 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 ├── data/dictionaries/                       # field + maturity codebooks
 ├── netflix_catalog/                        # clean → quality → viz
 ├── tests/test_clean.py                     # 10 wrangling invariants
-├── figures/                                # publication PNGs
+├── figures/                                # 12 publication PNGs (dark editorial)
 ├── docs/                                   # dictionary, quality, viz specs
 ├── Tableau/Netflix & TV Show.twbx          # interactive prototype
 └── Report/Report Project.pdf                # course report (HCMUS)

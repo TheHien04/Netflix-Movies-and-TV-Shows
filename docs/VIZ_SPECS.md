@@ -1,31 +1,41 @@
 # Visualization specs
 
-Publication figures in `figures/` follow the same grammar a senior analytics team would enforce in review. Tableau remains the **interactive prototype**; these PNGs are the **corrected, reviewable layer**.
+Publication figures in `figures/` are dark editorial cards designed to sit on a white GitHub README. Tableau remains the **interactive prototype**; Python is the **corrected readout**.
 
 ## Design tokens
 
 | Token | Value | Use |
 |---|---|---|
-| Netflix red | `#E50914` | Primary measure, movies |
-| Tol blue | `#1C69A7` | TV Shows (not a second red) |
-| Ink | `#221F1F` | Titles |
-| Muted | `#564D4D` | Axes, source lines |
-| Kids / Teens / Adults | `#4C9F38` / `#EEBB33` / `#E50914` | Maturity bands |
+| Canvas | `#0E0E0E` | Figure background |
+| Panel | `#161616` | Plot area |
+| Netflix red | `#E50914` | Highlight, movies, kicker |
+| Dim red | `#7A1218` | Context bars (not the peak) |
+| TV blue | `#5BA3D9` | TV Shows |
+| Kids / Teens / Adults | `#3DDC84` / `#F5C518` / `#E50914` | Maturity bands |
+| Ink / muted | `#F4F1EA` / `#A39E96` | Title vs axis |
+| Typeface | Inter | Titles semibold, labels regular |
 
-Palette is colorblind-aware (Tol + Netflix red). Do not use rainbow categorical scales.
+## Grammar
 
-## Grammar (what “senior vis” means here)
+1. **Title is a sentence.** Finding first, chart type never.
+2. **Kicker** names the study or the Tableau sheet being rewritten.
+3. **Highlight encoding.** Peak / top-N in bright red or the band color; everything else recedes (`#7A1218` or gray).
+4. **Spaghetti is muted.** Genre trends: top five in color, remaining tags in gray.
+5. **Missingness is a KPI.** Unknown is never a country.
+6. **Grain and source** on every figure, including 2021-09-25 right-censor.
+7. **Heatmap is a cross-tab.** Do not say correlation unless a coefficient is computed.
+8. **No dual axis, no 3D, no rainbow categorical.**
 
-1. **Title is a sentence** that states the finding, not the chart type. (“Catalog additions peaked in 2019 — 2021 is an incomplete year”, not “Bar chart of date added”.)
-2. **Subtitle states grain, N, and the trap.** Every chart says whether a bar is a title, a genre-credit, or a country-credit.
-3. **Missingness is a KPI**, never a fake country named Unknown / `Không xác định`.
-4. **Direct labels** on bars. Legends only when encoding is not already in the title.
-5. **Source line on every figure**, including the 2021-09-25 right-censor.
-6. **No dual axis**, no 3D, no pie for mix > two slices when a bar communicates rank.
-7. **Heatmap is a cross-tab.** File names and titles must not say “correlation” unless a coefficient is computed.
+## Tableau ↔ Python
 
-## Tableau prototype
-
-`Tableau/Netflix & TV Show.twbx` is the course dashboard. Refresh it from `data/processed/netflix_titles_tableau.csv` (English `Unknown`, recoded Louis C.K. rows). Calculated fields should alias Unknown as “No production country” and keep it **out** of a Top 10 country ranking.
-
-Chart titles inside the workbook still carry studio wording (“Number of rating's content years”). Prefer the Python figures for any external read-out until the workbook titles are rewritten to sentence form.
+| Tableau export | Publication figure |
+|---|---|
+| Dashboard.png | `08_briefing_board.png` |
+| Content by years.png | `09_library_by_release_year.png` + `01_catalog_additions.png` |
+| Top 10 producing countries.png | `04_producing_countries.png` |
+| Distribution of content followed by countries.png | choropleth kept; ranking in `04` |
+| Trend in publishing over years.png | `10_genre_trends.png` + `05_genre_incidence.png` |
+| Number of Content followed by rating.png | `03_maturity_mix.png` |
+| Number of rating's content years.png | `11_rating_over_release_year.png` + `07_maturity_over_add_year.png` |
+| Age rating category correlations.png | `06_rating_genre_crosstab.png` |
+| Distribution cast with different listed in.png | `12_cast_by_genre.png` |

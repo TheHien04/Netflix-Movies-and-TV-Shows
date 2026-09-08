@@ -1,30 +1,33 @@
 # Visualization specs
 
-Publication figures in `figures/` are dark editorial cards designed to sit on a white GitHub README. Tableau remains the **interactive prototype**; Python is the **corrected readout**.
+Publication figures in `figures/` share the **Tableau workbook’s cream canvas and Tableau 10 hues**, so they sit next to the prototype without a theme clash. Tableau remains the interactive prototype; Python is the corrected readout.
 
-## Design tokens
+## Design tokens (from the workbook)
 
-| Token | Value | Use |
+| Token | Value | Matches Tableau |
 |---|---|---|
-| Canvas | `#0E0E0E` | Figure background |
-| Panel | `#161616` | Plot area |
-| Netflix red | `#E50914` | Highlight, movies, kicker |
-| Dim red | `#7A1218` | Context bars (not the peak) |
-| TV blue | `#5BA3D9` | TV Shows |
-| Kids / Teens / Adults | `#3DDC84` / `#F5C518` / `#E50914` | Maturity bands |
-| Ink / muted | `#F4F1EA` / `#A39E96` | Title vs axis |
-| Typeface | Inter | Titles semibold, labels regular |
+| Canvas | `#F4F1EC` | Worksheet cream |
+| Panel | `#F8F6F2` | Plot area |
+| Movie | `#E15759` | Salmon in Content by years / Top 10 |
+| Movie (context) | `#E8A090` | Soft fill from the same sheet |
+| TV Show | `#F28E2B` | Orange in Content by years / Top 10 |
+| Adults / TV-MA | `#4E79A7` | Blue on Ratings over years |
+| Teens | `#EDC948` | Tableau gold |
+| Kids | `#59A14F` | Tableau green |
+| Unrated / Unknown | `#9C755F` / `#BAB0AC` | Tableau brown / gray |
+| Genre extras | `#B07AA1` purple, `#76B7B2` teal | Tableau 10 |
+| Typeface | Inter | Publication layer (Tableau sheets stay serif) |
 
 ## Grammar
 
 1. **Title is a sentence.** Finding first, chart type never.
 2. **Kicker** names the study or the Tableau sheet being rewritten.
-3. **Highlight encoding.** Peak / top-N in bright red or the band color; everything else recedes (`#7A1218` or gray).
-4. **Spaghetti is muted.** Genre trends: top five in color, remaining tags in gray.
+3. **Highlight encoding.** Peak in Tableau red; other years in salmon; 2021 in gray.
+4. **Spaghetti is muted.** Genre trends: top five in Tableau 10; remaining tags in `#D5D0C8`.
 5. **Missingness is a KPI.** Unknown is never a country.
 6. **Grain and source** on every figure, including 2021-09-25 right-censor.
-7. **Heatmap is a cross-tab.** Do not say correlation unless a coefficient is computed.
-8. **No dual axis, no 3D, no rainbow categorical.**
+7. **Heatmap is a cross-tab** on a cream–coral sequential, not a rainbow.
+8. **No dual axis, no 3D.**
 
 ## Tableau ↔ Python
 

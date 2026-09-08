@@ -1,0 +1,13 @@
+{
+  "n_titles": 8807,
+  "n_movies": 6131,
+  "n_shows": 2676,
+  "n_genre_rows": 19323,
+  "n_country_credits": 10012,
+  "country_unknown": 831,
+  "rating_was_duration": 3,
+  "date_added_max": "2021-09-25",
+  "year_added_peak": 2019,
+  "family_adjacent_share": 0.2337,
+  "tv_ma_tv14_share": 0.6094
+}

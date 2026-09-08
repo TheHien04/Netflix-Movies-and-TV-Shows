@@ -3,7 +3,7 @@
 # Netflix Movies and TV Shows
 
 ### A catalog-supply inquiry through Stanford Design Thinking  
-**Working paper · Tableau decision prototype · Kaggle Netflix titles (N = 8,807)**
+**Working paper · reproducible catalog pipeline · Tableau prototype · Kaggle titles (N = 8,807)**
 
 ---
 
@@ -25,6 +25,25 @@ We apply the Stanford d.school’s five modes as a **research protocol**, not as
 
 ---
 
+## Quick start
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q          # 10 wrangling invariants
+python -m netflix_catalog    # processed tables + quality report + figures/
+```
+
+| Layer | Path |
+|---|---|
+| Analytic titles (NULLs preserved) | [`data/processed/netflix_titles.csv`](./data/processed/netflix_titles.csv) |
+| Genre / country credits | `data/processed/netflix_title_genres.csv`, `netflix_title_countries.csv` |
+| Tableau extract (English `Unknown` only) | [`data/processed/netflix_titles_tableau.csv`](./data/processed/netflix_titles_tableau.csv) |
+| Publication figures | [`figures/`](./figures/) |
+| Quality report | [`docs/DATA_QUALITY.md`](./docs/DATA_QUALITY.md) |
+| Dictionary / viz specs | [`docs/DATA_DICTIONARY.md`](./docs/DATA_DICTIONARY.md) · [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md) |
+
+---
+
 ## Contents
 
 1. [Design challenge](#1-design-challenge)
@@ -35,7 +54,7 @@ We apply the Stanford d.school’s five modes as a **research protocol**, not as
    - [2.4 Prototype](#24-prototype--the-tableau-workbook-as-decision-object)
    - [2.5 Test](#25-test--prototype-as-if-youre-right-test-as-if-youre-wrong)
 3. [Data, provenance, and wrangling](#3-data-provenance-and-wrangling)
-4. [Evidence: eight catalog views](#4-evidence-eight-catalog-views)
+4. [Evidence: publication figures](#4-evidence-publication-figures)
 5. [Synthesis](#5-synthesis)
 6. [What this study does *not* claim](#6-what-this-study-does-not-claim)
 7. [Threats to validity](#7-threats-to-validity)
@@ -195,8 +214,10 @@ d.school: *a prototype is anything that takes a form people can react to.* The p
 
 | Layer | Grain | File |
 |---|---|---|
-| Title catalog | one row = one `show_id` | `netflix_titles.csv` (raw), `netflix_titles_cleaned.csv` (filled) |
-| Genre / age band | one row = one (`show_id`, `listed_in` tag) | `netflix_titles_genres_split.csv` (19,323 rows from 8,807 titles) |
+| Title catalog (analytic) | one row = one `show_id` | `data/processed/netflix_titles.csv` (NULLs preserved) |
+| Title catalog (BI) | one row = one `show_id` | `data/processed/netflix_titles_tableau.csv` (English `Unknown`) |
+| Genre credit | one row = one (`show_id`, genre tag) | `data/processed/netflix_title_genres.csv` |
+| Country credit | one row = one (`show_id`, country) | `data/processed/netflix_title_countries.csv` |
 
 **Interaction design (what “prototype” means in BI)**
 
@@ -215,15 +236,15 @@ d.school: *a prototype is anything that takes a form people can react to.* The p
 
 **Test** puts the prototype in a decision context and asks what *breaks*.
 
-| Test | Result | Consequence for the POV |
+| Test | Course prototype | After this pipeline |
 |---|---|---|
-| Can we claim “peak in 2021”? | **Fail.** Last `date_added` is 2021-09-25; 2021 is truncated. Peak **add-year** in-file is **2019** (2,016 titles), then 2020 (1,879), then incomplete 2021 (1,498). | Drop “2021 peak”; say “2018–2020 high plateau, 2021 right-censored.” |
-| Can we rank countries without an Unknown bucket? | **Fail if honest.** 831 titles (9.4%) have missing `country`. The cleaned file labels these `Không xác định`, which then appears **inside** a “Top 10 countries” chart as if it were a nation. | Unknown must be a labeled missingness class, not a competing country. |
-| Can we treat `rating` as quality? | **Fail.** Three Louis C.K. specials have **duration in the `rating` field** (`74 min`, `84 min`, `66 min`) and null `duration` — a known Kaggle defect. | Recode those three before any rating distribution; do not let them become an “Other” age band. |
-| Does Age Group recover “family”? | **Partial fail.** Mapping puts `TV-G` and `TV-Y7-FV` in **Other**, `TV-PG` in **Teens**, `NR` in **Adults**. Family scarcity is real at the *raw rating* level (~23% family-adjacent) but **inflated or distorted** if you only read the derived Age Group. | Always publish the mapping (codebook below). |
-| Can we speak about “user segmentation by age”? | **Fail.** No viewer ages exist. Age Group is a **title maturity band** derived from `rating`. | Rename the field in future extracts: `maturity_band`, not `Age Group`. |
+| Can we claim “peak in 2021”? | Over-claims a truncated year | **Closed.** Add-year figure marks 2021 as right-censored; peak is 2019. |
+| Can we rank countries without an Unknown bucket? | `Không xác định` sat in Top 10 | **Closed** in Python ranking (831 titles excluded). Tableau PNGs still show the old extract. |
+| Can we treat `rating` as quality? | Three Louis C.K. runtimes sat in `rating` | **Closed.** Recoded; `rating_was_duration` flag; tests lock it. |
+| Does a derived band recover “family”? | `TV-G` dumped into Other | **Closed.** Published `maturity_band` codebook; `family_adjacent` = 23.4%. |
+| Can we speak about “user segmentation by age”? | **Still fail — correctly.** No viewer ages exist. | Keep calling it `maturity_band`. |
 
-Those failed tests are the research contribution of Design Thinking applied properly: **they changed the claims**, which is the point of Test looping back to Define.
+Test looping back to Define is the point: the first prototype was wrong in specific, nameable ways; the publication layer is the second prototype.
 
 ---
 
@@ -254,10 +275,10 @@ This is **observational catalog metadata**. It is not a probability sample of gl
 | `title` | Display name | Not a key |
 | `director` | Person credit, comma-separated | **29.9% missing overall; 91.4% missing for TV Shows** — do not “clean” this into a fake complete field if you will model directors |
 | `cast` | Person credits, comma-separated | 9.4% missing; exploding creates a person–title edge list |
-| `country` | Production credits, comma-separated | 9.4% missing; 1,320 multi-country titles; **not** “filmed in” |
+| `country` | Production credits, comma-separated | 9.4% missing; 1,315 multi-country titles; **not** “filmed in” |
 | `date_added` | Netflix availability date | Strings with leading spaces; parse with `strip`. Measures **when it joined the catalog**, not cinematic release |
 | `release_year` | Original release year | Integer; can predate Netflix by decades (library licensing) |
-| `rating` | Maturity label | MPAA / TV Parental Guidelines-style. **Not** a crowd score. Three rows are corrupted (duration leaked into this column) |
+| `rating` | Maturity label | MPAA / TV Parental Guidelines-style. **Not** a crowd score. Three Louis C.K. rows recoded in the pipeline |
 | `duration` | Heterogeneous | Movies: `N min`. Shows: `N Season(s)`. Never average them |
 | `listed_in` | Genre tags, comma-separated | 42 distinct tags after split; 1–3 tags per title |
 | `description` | Short synopsis | Useful for NLP; unused as a KPI here |
@@ -274,60 +295,62 @@ This is **observational catalog metadata**. It is not a probability sample of gl
 | `duration` | 3 | 0.03 | The same three Louis C.K. rows |
 
 **Professional stance on missingness.**  
-Filling `director` / `cast` / `country` with a display string is acceptable **for a dashboard that must not show blanks**. It is unacceptable as **statistical imputation**. The cleaned file replaces blanks with Vietnamese placeholders (`Không có thông tin`, `Không xác định`) so the dashboard never plots nulls. That is a **presentation choice**. It becomes a **data error** when “Không xác định” is ranked as a producing country.
+Filling `director` / `cast` / `country` with a display string is acceptable **for a dashboard that must not show blanks**. It is unacceptable as **statistical imputation**. Analytic tables keep `NULL`. The Tableau extract uses English `Unknown` only at the viz layer. Unknown is **never ranked as a producing country**.
 
-### 3.4 Derived genre file and Age Group codebook
+### 3.4 Derived grains and maturity codebook
 
-`netflix_titles_genres_split.csv` explodes `listed_in` (19,323 rows). Counts of genres are **tag incidences**, not title counts. International Movies (2,752) being “#1” means *most frequently tagged*, not “the most watched.”
+`data/processed/netflix_title_genres.csv` explodes `listed_in` (19,323 rows). Counts of genres are **tag incidences**, not title counts. International Movies (2,752) being “#1” means *most frequently tagged*, not “the most watched.”
 
-**Age Group mapping actually implemented in the extract**
+| `maturity_band` | Ratings |
+|---|---|
+| Kids | `TV-Y`, `TV-Y7`, `TV-Y7-FV`, `G`, `TV-G` |
+| Teens | `PG`, `TV-PG`, `TV-14` |
+| Adults | `PG-13`, `R`, `NC-17`, `TV-MA` |
+| Unrated | `NR`, `UR` |
+| Unknown | null, including three recoded duration-swap rows |
 
-| `rating` | Mapped `Age Group` | Critique |
-|---|---|---|
-| `TV-MA`, `R`, `PG-13`, `NR` | Adults | `NR` as Adults is an assumption |
-| `TV-14`, `TV-PG`, `PG` | Teens | `TV-PG` is often family-adjacent; this inflates “Teens” |
-| `TV-Y`, `TV-Y7`, `G` | Kids | Reasonable core kids set |
-| `TV-G`, `TV-Y7-FV`, `NC-17`, `UR`, null, leaked durations | Other | `TV-G` / `TV-Y7-FV` should not sit with `NC-17` |
+`family_adjacent` = Kids plus `PG` / `TV-PG` (excludes `TV-14`). Full field list: [`docs/DATA_DICTIONARY.md`](./docs/DATA_DICTIONARY.md).
 
-If you re-use this file, **rename `Age Group` → `maturity_band`** and republish the mapping in the same commit as the extract.
+### 3.5 Cleaning protocol (implemented in `python -m netflix_catalog`)
 
-### 3.5 Cleaning protocol (what was done vs. what should be done)
-
-**Done (this repo).** Nulls in object fields filled with Vietnamese display values; genres exploded; a four-level age band attached.
-
-**Should be done for a production-grade extract**
-
-1. Recode the three duration-in-`rating` rows (Louis C.K. 2017 / Hilarious / Live at the Comedy Store).
-2. Parse `duration` into `duration_value` + `duration_unit` (`minutes` | `seasons`).
-3. Keep a `country_unknown` flag; explode countries **without** promoting Unknown into a nation ranking.
-4. Store missingness as `NULL`, not as a localized sentence, and apply labels only in the viz layer (Tableau aliases / calculated fields).
-5. Document `date_added` right-censoring in every time-series title.
+1. Recode the three duration-in-`rating` rows (Louis C.K. specials) → `duration` restored, `rating` null, `rating_was_duration` flag.
+2. Parse `duration` into `duration_value` + `duration_unit` (`minutes` \| `seasons`).
+3. Parse `date_added` (strip) → `year_added`; treat 2021 as right-censored.
+4. Explode countries **without** promoting missingness into a nation ranking (`country_unknown` flag).
+5. Keep NULL in analytic tables; English `Unknown` only in `netflix_titles_tableau.csv`.
+6. Tests in `tests/test_clean.py` lock these invariants (10 passing).
 
 ---
 
-## 4. Evidence: eight catalog views
+## 4. Evidence: publication figures
 
-Each view below is written in three voices, which research-grade viz work should not collapse:
+Figures in [`figures/`](./figures/) are the **corrected readout**. They follow the grammar in [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md): sentence titles, labeled grain, missingness as a KPI, source line on every chart. Tableau PNGs in `Tableau/` remain the course prototype (some still rank `Không xác định` as a country).
+
+Each view is written in three voices, which research-grade viz work should not collapse:
 
 1. **Observation** — what the chart shows at the stated grain  
 2. **Inference** — what that implies *about the catalog*  
 3. **Non-claim** — what a reader is not allowed to conclude  
+
+<p align="center">
+  <img src="./figures/08_briefing_board.png" alt="Four-panel catalog supply briefing board" width="920"/>
+</p>
+
+<p align="center"><sub>Briefing board: additions, maturity mix, structured missingness, production credits. No viewing data in this file.</sub></p>
 
 ---
 
 ### 4.1 Catalog growth is an add-policy, not a film-history
 
 <p align="center">
-  <img src="./Tableau/Content%20by%20years.png" alt="Titles by release year" width="800"/>
+  <img src="./figures/01_catalog_additions.png" alt="Titles added by year of date_added, 2021 right-censored" width="860"/>
 </p>
 
-**Observation.** `release_year` mass concentrates in the 2010s. That is expected: Netflix’s library is contemporary-heavy, with a long left tail of licensed older films (back to 1925).
+**Observation.** `date_added` is the policy clock. Additions scale from 2016, peak in **2019** (2,016 titles), then 2020 (1,879). 2021 (1,498) stops on 25 September and is plotted in a lighter fill so it cannot be read as a full-year crash.
 
-**Inference.** Do not read this as “cinema peaked in 2018.” It is **what Netflix chose to carry**, including originals whose release year ≈ add year, plus licensed libraries.
+**Inference.** Do not read `release_year` (Tableau “content by years”) as “cinema peaked in 2018.” That chart is **what Netflix chose to carry**. The add-year series is the commissioning/licensing tempo.
 
-**Non-claim.** This is not global production volume.
-
-`date_added` (not pictured as a separate PNG in every export, but used in the trend view) is the better **policy clock**:
+**Non-claim.** This is not global production volume, and 2021 cannot be compared to 2019 without an annualization the file does not support.
 
 | Year of `date_added` | Titles added |
 |---|---|
@@ -338,82 +361,96 @@ Each view below is written in three voices, which research-grade viz work should
 | 2020 | 1,879 |
 | 2021 (through 25 Sep) | 1,498 |
 
-**Key insight (HMW-1).** The catalog’s growth story is a **2016–2019 acceleration** coinciding with global expansion and original-production scale-up, then a **high plateau**. Any “post-2020 volume freeze” must be caveated: 2021 is incomplete, and this file cannot separate “fewer titles” from “longer, more expensive titles.”
+**Key insight (HMW-1).** The catalog’s growth story is a **2016–2019 acceleration** coinciding with global expansion and original-production scale-up, then a **high plateau**.
 
 ---
 
-### 4.2 Production geography is concentrated — and missingness is a country
+### 4.2 Missingness is structured — keep NULL
 
 <p align="center">
-  <img src="./Tableau/Top%2010%20producing%20countries.png" alt="Top production-country credits, Movie vs TV Show" width="720"/>
+  <img src="./figures/02_missingness_by_type.png" alt="Percent missing director, country, and cast by Movie vs TV Show" width="860"/>
 </p>
 
-**Observation (exploded credits, raw, non-missing).** United States 3,690 · India 1,046 · United Kingdom 806 · Canada 445 · France 393 · Japan 318 · Spain 232 · South Korea 231 · Germany 226. 123 distinct country strings after split. 1,320 titles are multi-credited.
+**Observation.** Director is missing for **91.4% of TV Shows** vs **3.1% of Movies**. Country and cast missingness is higher on series but still in the low teens.
 
-**Inference (HMW-2).** The “local-for-global” story is visible as a **long tail of national credits**, not as a dethroning of the U.S. India is the second production pole and is movie-heavy relative to Korea/Japan’s series-heavy mix (inspect the stacked bars).
+**Inference.** TV-show director is a **schema/practice difference**, not a hole to mean-impute or fill with “Unknown” if you will ever model directors.
 
-**Non-claim.** Credit ≠ cultural origin ≠ filming location ≠ the market that watched it. A U.S.–India co-credit is two rows after explode; that is correct for a **credit network**, misleading for a **mutually exclusive market share**.
-
-<p align="center">
-  <img src="./Tableau/Distribution%20of%20content%20followed%20by%20countries.png" alt="Choropleth of production credits" width="800"/>
-</p>
-
-**Test note.** If the dashboard’s Top 10 includes `Không xác định`, that bar is **missing `country`**, not a rising industry. Treat it as a missingness KPI (831 titles, 9.4%).
+**Non-claim.** Completeness of metadata is not a quality score for the title.
 
 ---
 
-### 4.3 Genre is a tag cloud, not a partition
+### 4.3 Production geography is concentrated — Unknown is not a country
 
 <p align="center">
-  <img src="./Tableau/Trend%20in%20publishing%20over%20years.png" alt="Genre tag incidence over year added" width="800"/>
+  <img src="./figures/04_producing_countries.png" alt="Top production-country credits, Movie vs TV Show, Unknown excluded" width="860"/>
+</p>
+
+**Observation (exploded credits, missing country excluded).** United States 3,690 · India 1,046 · United Kingdom 806 · Canada 445 · France 393 · Japan 318 · Spain 232 · South Korea 231 · Germany 226. **831 titles (9.4%)** have no production country and are excluded from the ranking. Japan and South Korea are series-heavy; India is movie-heavy.
+
+**Inference (HMW-2).** The “local-for-global” story is a **long tail of national credits**, not a dethroning of the U.S.
+
+**Non-claim.** Credit ≠ cultural origin ≠ filming location ≠ the market that watched it. A U.S.–India co-credit is two rows after explode.
+
+<p align="center">
+  <img src="./Tableau/Distribution%20of%20content%20followed%20by%20countries.png" alt="Choropleth of production credits from the Tableau prototype" width="800"/>
+</p>
+
+<p align="center"><sub>Tableau choropleth (course prototype). Use the Python ranking above for any external readout — the workbook extract historically ranked Vietnamese “Không xác định” as a country.</sub></p>
+
+---
+
+### 4.4 Genre is a tag cloud, not a partition
+
+<p align="center">
+  <img src="./figures/05_genre_incidence.png" alt="Top 15 genre tag incidences" width="860"/>
 </p>
 
 **Observation.** At exploded grain, the most frequent tags are International Movies (2,752), Dramas (2,427), Comedies (1,674), International TV Shows (1,351), Documentaries (869). Mean tags per title = **2.19**.
 
-**Inference (HMW-4).** “International” is a **platform taxonomy** (non-U.S. or cross-border packaging), not a genre in the film-studies sense. Drama + comedy are the mass spine; anime, docuseries, and reality are **visible but smaller tag volumes** — consistent with a long-tail *inventory* strategy.
+**Inference (HMW-4).** “International” is a **platform taxonomy**, not a genre in the film-studies sense. Drama + comedy are the mass spine; anime, docuseries, and reality are **smaller tag volumes** — consistent with a long-tail *inventory* strategy.
 
 **Non-claim.** Tag growth ≠ audience growth. A line going up means **more titles carrying that tag were added**, possibly because tagging policy changed.
 
 ---
 
-### 4.4 Maturity mix is the strategy
+### 4.5 Maturity mix is the strategy
 
 <p align="center">
-  <img src="./Tableau/Number%20of%20Content%20followed%20by%20rating.png" alt="Title counts by maturity rating" width="620"/>
+  <img src="./figures/03_maturity_mix.png" alt="Title counts by maturity rating, colored by maturity band" width="860"/>
 </p>
 
-**Observation (raw `rating`, including known defects).** TV-MA 3,207 (36.4%) · TV-14 2,160 (24.5%) · TV-PG 863 · R 799 · PG-13 490. Kids-core (`TV-Y`, `TV-Y7`, `TV-Y7-FV`, `G`) is a thin slice. Family-adjacent set defined in the abstract = **23.4%**.
+**Observation.** TV-MA 3,207 (36.4%) · TV-14 2,160 (24.5%) · TV-PG 863 · R 799 · PG-13 490. Family-adjacent set = **23.4%**. Unknown = 7 titles after recoding the duration-swap rows.
 
 **Inference (HMW-3, RQ3, RQ5).** Netflix’s 2021 catalog is **positioned as a teen/adult destination**. That is a catalog fact. The family-first competitor story (Disney+) is a **positioning contrast**, not a measurement of Disney’s library in this file.
 
 **Non-claim.** “Netflix users are mostly adults” does not follow. A library can be mature-heavy while kids still generate outsized session time on a small title set (classic power-law). We cannot see that here.
 
 <p align="center">
-  <img src="./Tableau/Number%20of%20rating%27s%20content%20years.png" alt="Rating mix across release years" width="800"/>
+  <img src="./figures/07_maturity_over_add_year.png" alt="Stacked maturity bands by year added, 2015-2021" width="860"/>
 </p>
 
-**Observation.** Mature ratings thicken in the contemporary `release_year` window — partly because the library *is* contemporary, partly because older licensed G/PG catalogs were never the growth engine.
+**Observation.** Mature bands dominate every add-year of the expansion era. 2021 is truncated.
 
 ---
 
-### 4.5 Rating × genre is association, not “correlation” in the statistical sense
+### 4.6 Rating × genre is association, not “correlation”
 
 <p align="center">
-  <img src="./Tableau/Age%20rating%20category%20correlations.png" alt="Heatmap of rating by genre tag" width="800"/>
+  <img src="./figures/06_rating_genre_crosstab.png" alt="Heatmap of rating by genre tag incidences" width="900"/>
 </p>
 
-**Observation.** Heat is concentrated in cells such as TV-MA × International / Drama and TV-14 × International TV. That is a **cross-tab of tag incidence**, not a Pearson/Spearman correlation matrix (despite the filename).
+**Observation.** Heat is concentrated in cells such as TV-MA × International Movies (1,130) and TV-14 × International Movies (1,065). That is a **cross-tab of tag incidence**, not a Pearson/Spearman matrix.
 
-**Inference.** Mature international drama is the **modal inventory cell**. Recommendation *rules* that boost TV-MA international titles are aligning the product with **what the catalog is made of**. Whether that is good for retention is a different dataset.
+**Inference.** Mature international drama is the **modal inventory cell**. Recommendation *rules* that boost TV-MA international titles are aligning the product with **what the catalog is made of**.
 
 **Non-claim.** Cell size is not a taste affinity. It is tagging × rating policy.
 
 ---
 
-### 4.6 Cast lists are a production-style signal, weakly
+### 4.7 Cast lists are a production-style signal, weakly
 
 <p align="center">
-  <img src="./Tableau/Distribution%20cast%20with%20different%20listed%20in.png" alt="Cast-credit volume by genre tag" width="800"/>
+  <img src="./Tableau/Distribution%20cast%20with%20different%20listed%20in.png" alt="Cast-credit volume by genre tag from the Tableau prototype" width="800"/>
 </p>
 
 **Observation.** Ensemble-heavy tags (comedies, action & adventure, dramas) accumulate more cast-string tokens.
@@ -462,11 +499,11 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 
 | Tempting sentence | Why it is invalid on this file |
 |---|---|
-| “Teens prefer anime / adults prefer drama” | No viewers, no ages. `Age Group` is a title-level recode of `rating` |
+| “Teens prefer anime / adults prefer drama” | No viewers, no ages. `maturity_band` is a title-level recode of `rating` |
 | “Netflix should cut volume and chase ROI” | No cost, no hours viewed, no LTV |
 | “Korea is winning because K-content is popular” | We see **title credits**, not hours watched in 2021 or after *Squid Game* |
 | “Disney+ beats Netflix with families” | Disney’s catalog is not in the data; we only see Netflix’s family **supply** |
-| “Ratings measure quality” | `rating` is a maturity label; three rows are durations |
+| “Ratings measure quality” | `rating` is a maturity label; three duration-swap rows are recoded in the pipeline |
 | “The map is where titles were filmed” | Production credits, often co-production |
 
 ---
@@ -475,11 +512,11 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 
 | Threat | How it shows up | Mitigation in this write-up |
 |---|---|---|
-| **Construct validity** | Using catalog tags as “taste”; using `rating` as quality; using `Age Group` as viewers | Section 6; codebook; rename recommendation |
+| **Construct validity** | Using catalog tags as “taste”; using `rating` as quality; using `maturity_band` as viewers | Section 6; codebook; tests |
 | **Internal validity** | Reading `release_year` as Netflix strategy | Prefer `date_added` as the policy clock |
 | **External validity** | Snapshot ends 2021-09-25; no ad-tier, no games, no 2022–2026 originals | Bound every claim to “in this extract” |
 | **Measurement** | Multi-label explode inflates counts; multi-country explode double-credits | Always state grain |
-| **Processing** | Localized fill-ins leak into “Top 10” | Treat Unknown as missingness |
+| **Processing** | Localized fill-ins leak into “Top 10” | Analytic tables keep NULL; Python ranking excludes Unknown |
 | **Selection** | Kaggle/Flixable is not Netflix’s internal title master; regional availability differs | Do not treat N = 8,807 as “the global product” |
 
 ---
@@ -488,21 +525,29 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 
 ```
 .
-├── netflix_titles.csv                 # raw title grain (N = 8,807)
-├── netflix_titles_cleaned.csv      # display-layer fills (Vietnamese placeholders)
-├── netflix_titles_genres_split.csv # exploded genre grain (19,323 rows)
-├── Tableau/
-│   ├── Netflix & TV Show.twbx     # interactive prototype
-│   └── *.png / *.jpg               # static exports used in this paper
-└── Report/
-    └── Report Project.pdf         # course report (HCMUS)
+├── data/raw/netflix_titles.csv              # immutable source extract
+├── data/processed/                         # gold tables (NULL-preserving)
+│   ├── netflix_titles.csv
+│   ├── netflix_title_genres.csv
+│   ├── netflix_title_countries.csv
+│   ├── netflix_titles_tableau.csv
+│   └── quality_report.md
+├── data/dictionaries/                       # field + maturity codebooks
+├── netflix_catalog/                        # clean → quality → viz
+├── tests/test_clean.py                     # 10 wrangling invariants
+├── figures/                                # publication PNGs
+├── docs/                                   # dictionary, quality, viz specs
+├── Tableau/Netflix & TV Show.twbx          # interactive prototype
+└── Report/Report Project.pdf                # course report (HCMUS)
 ```
 
-**How to open the prototype.** Tableau Desktop / Tableau Public → `Tableau/Netflix & TV Show.twbx`.
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q
+python -m netflix_catalog
+```
 
-**How to rebuild the genre grain (logic).** Split `listed_in` on comma, trim whitespace, left-join `rating`, apply the Age Group codebook in §3.4. Do not drop titles with one tag.
-
-**Recommended next extract (not yet in repo).** A `data/processed/` table with: recoded Louis C.K. rows; `duration_value` / `duration_unit`; `year_added`; `country_list` arrays; English `unknown` flags; `maturity_band` with published mapping. Keep nulls as nulls.
+**How to open the prototype.** Tableau Desktop / Tableau Public → `Tableau/Netflix & TV Show.twbx`. Point a refresh at `data/processed/netflix_titles_tableau.csv`. Alias `Unknown` as “No production country” and keep it out of Top 10.
 
 **Course origin.** Studio project, *Data Visualization using Tableau*, Faculty of Information Technology, University of Science, VNU-HCM.
 
@@ -529,7 +574,7 @@ This repository:
 **Nguyen The Hien ([TheHien04](https://github.com/TheHien04))**  
 Data analysis · Tableau · catalog methodology  
 
-**Tools in this artifact.** Tableau (prototype), Python/pandas (profiling for this paper), the Kaggle title extract. SQL was not required at this grain.
+**Tools in this artifact.** Python/pandas (wrangling), matplotlib (publication figures), pytest (invariants), Tableau (interactive prototype).
 
 ---
 

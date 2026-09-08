@@ -41,7 +41,7 @@ python -m netflix_catalog    # processed tables + quality report + figures/
 | Publication figures | [`figures/`](./figures/) |
 | Quality report | [`docs/DATA_QUALITY.md`](./docs/DATA_QUALITY.md) |
 | Dictionary / viz specs | [`docs/DATA_DICTIONARY.md`](./docs/DATA_DICTIONARY.md) · [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md) |
-| Academic report (10+) | [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md) |
+| Academic report (PDF) | [`Report/Report Project.pdf`](./Report/Report%20Project.pdf) |
 
 ---
 
@@ -62,7 +62,7 @@ python -m netflix_catalog    # processed tables + quality report + figures/
 8. [Reproducibility and artifacts](#8-reproducibility-and-artifacts)
 9. [How to cite](#9-how-to-cite)
 
-The full Munzner-style course paper — dual Tableau/Python evidence, errata of the studio PDF — is [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md).
+The printable course report — dual Tableau/Python evidence, Munzner abstraction, errata of the studio Word draft — is [`Report/Report Project.pdf`](./Report/Report%20Project.pdf).
 
 ---
 
@@ -657,8 +657,9 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 ├── figures/                                # 12 publication PNGs (viz_*.png, Tableau cream/red/orange)
 ├── docs/                                   # dictionary, quality, viz specs
 ├── Tableau/Netflix & TV Show.twbx          # interactive prototype
-├── Report/ACADEMIC_REPORT.md               # archival academic paper (this study at 10+)
-└── Report/Report Project.pdf               # original studio PDF (historical; see Appendix A)
+├── Report/Report Project.pdf               # official academic course report (A4)
+├── Report/ACADEMIC_REPORT.md               # source markdown for the PDF
+└── Report/studio-draft-Report-Project.pdf  # Sep 2025 Word export (do not cite)
 ```
 
 ```bash

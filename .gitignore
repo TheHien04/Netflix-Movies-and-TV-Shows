@@ -9,4 +9,4 @@ venv/
 .DS_Store
 .mypy_cache/
 .ruff_cache/
-*.log
+Report/academic_report.html

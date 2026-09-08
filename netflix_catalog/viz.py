@@ -185,7 +185,7 @@ def fig_additions(titles: pd.DataFrame) -> Path:
         arrowprops=dict(arrowstyle="-|>", color=MUTED, lw=0.8),
     )
     ax.set_ylim(0, counts.max() * 1.16)
-    return _save(fig, "01_catalog_additions.png")
+    return _save(fig, "pub_01_catalog_additions.png")
 
 
 def fig_missingness(titles: pd.DataFrame) -> Path:
@@ -218,7 +218,7 @@ def fig_missingness(titles: pd.DataFrame) -> Path:
     ax.set_xlim(0, 108)
     ax.set_xlabel("Share of titles missing the field", color=MUTED)
     ax.legend(loc="lower right", prop=_font("medium", 10), labelcolor=INK)
-    return _save(fig, "02_missingness_by_type.png")
+    return _save(fig, "pub_02_missingness_by_type.png")
 
 
 def fig_maturity(titles: pd.DataFrame) -> Path:
@@ -252,7 +252,7 @@ def fig_maturity(titles: pd.DataFrame) -> Path:
     ax.legend(handles=handles, loc="upper right", title="Maturity band", prop=_font("medium", 9), labelcolor=INK, title_fontsize=9)
     ax.set_ylabel("Titles", color=MUTED)
     ax.set_ylim(0, max(values) * 1.14)
-    return _save(fig, "03_maturity_mix.png")
+    return _save(fig, "pub_03_maturity_mix.png")
 
 
 def fig_countries(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
@@ -281,7 +281,7 @@ def fig_countries(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
     ax.set_xlabel("Production credits (a co-production counts once per country)", color=MUTED)
     ax.legend(loc="lower right", prop=_font("medium", 10), labelcolor=INK)
     ax.set_xlim(0, top["total"].max() * 1.16)
-    return _save(fig, "04_producing_countries.png")
+    return _save(fig, "pub_04_producing_countries.png")
 
 
 def fig_genres(genres: pd.DataFrame) -> Path:
@@ -304,7 +304,7 @@ def fig_genres(genres: pd.DataFrame) -> Path:
     ax.set_yticks(y)
     ax.set_yticklabels(counts.index, fontproperties=_font("medium", 10), color=INK)
     ax.set_xlabel("Tag incidences", color=MUTED)
-    return _save(fig, "05_genre_incidence.png")
+    return _save(fig, "pub_05_genre_incidence.png")
 
 
 def fig_rating_genre(genres: pd.DataFrame) -> Path:
@@ -340,7 +340,7 @@ def fig_rating_genre(genres: pd.DataFrame) -> Path:
     cbar.ax.yaxis.set_tick_params(color=MUTED)
     plt.setp(cbar.ax.yaxis.get_ticklabels(), color=MUTED)
     cbar.set_label("Tag incidences", color=MUTED)
-    return _save(fig, "06_rating_genre_crosstab.png")
+    return _save(fig, "pub_06_rating_genre_crosstab.png")
 
 
 def fig_maturity_over_time(titles: pd.DataFrame) -> Path:
@@ -365,7 +365,7 @@ def fig_maturity_over_time(titles: pd.DataFrame) -> Path:
         bottom += vals
     ax.legend(loc="upper left", ncol=5, prop=_font("medium", 9), labelcolor=INK)
     ax.set_ylabel("Titles added", color=MUTED)
-    return _save(fig, "07_maturity_over_add_year.png")
+    return _save(fig, "pub_07_maturity_over_add_year.png")
 
 
 def fig_release_year(titles: pd.DataFrame) -> Path:
@@ -395,7 +395,7 @@ def fig_release_year(titles: pd.DataFrame) -> Path:
     ax.legend(loc="upper left", prop=_font("medium", 10), labelcolor=INK)
     ax.set_ylabel("Titles in the catalog", color=MUTED)
     ax.set_xlim(1980, 2021)
-    return _save(fig, "09_library_by_release_year.png")
+    return _save(fig, "pub_09_library_by_release_year.png")
 
 
 def fig_genre_trends(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
@@ -422,7 +422,7 @@ def fig_genre_trends(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
     ax.legend(loc="upper left", ncol=1, prop=_font("medium", 9), labelcolor=INK)
     ax.set_ylabel("Tag incidences added", color=MUTED)
     ax.set_xlim(2014, 2021)
-    return _save(fig, "10_genre_trends.png")
+    return _save(fig, "pub_10_genre_trends.png")
 
 
 def fig_rating_years(titles: pd.DataFrame) -> Path:
@@ -451,7 +451,7 @@ def fig_rating_years(titles: pd.DataFrame) -> Path:
     ax.legend(loc="upper left", ncol=5, prop=_font("medium", 8.5), labelcolor=INK)
     ax.set_ylabel("Titles", color=MUTED)
     ax.set_xlim(2000, 2021)
-    return _save(fig, "11_rating_over_release_year.png")
+    return _save(fig, "pub_11_rating_over_release_year.png")
 
 
 def fig_cast(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
@@ -476,7 +476,7 @@ def fig_cast(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
         ax.text(val + 80, i, f"{int(val):,}", va="center", color=INK, fontproperties=_font("medium", 9))
     ax.set_xlabel("Cast name-tokens (sum of list lengths)", color=MUTED)
     ax.set_xlim(0, totals.max() * 1.14)
-    return _save(fig, "12_cast_by_genre.png")
+    return _save(fig, "pub_12_cast_by_genre.png")
 
 
 def fig_briefing(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
@@ -555,7 +555,7 @@ def fig_briefing(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
     ax4.tick_params(colors=MUTED, labelsize=8)
 
     fig.text(0.045, 0.025, SOURCE_NOTE, color=MUTED, fontproperties=_font("regular", 7.6))
-    return _save(fig, "08_briefing_board.png")
+    return _save(fig, "pub_08_briefing_board.png")
 
 
 def render_all(titles: pd.DataFrame, genres: pd.DataFrame, countries: pd.DataFrame) -> list[Path]:

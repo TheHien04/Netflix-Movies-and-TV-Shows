@@ -33,12 +33,12 @@ Publication figures in `figures/` share the **Tableau workbook’s cream canvas 
 
 | Tableau export | Publication figure |
 |---|---|
-| Dashboard.png | `08_briefing_board.png` |
-| Content by years.png | `09_library_by_release_year.png` + `01_catalog_additions.png` |
-| Top 10 producing countries.png | `04_producing_countries.png` |
-| Distribution of content followed by countries.png | choropleth kept; ranking in `04` |
-| Trend in publishing over years.png | `10_genre_trends.png` + `05_genre_incidence.png` |
-| Number of Content followed by rating.png | `03_maturity_mix.png` |
-| Number of rating's content years.png | `11_rating_over_release_year.png` + `07_maturity_over_add_year.png` |
-| Age rating category correlations.png | `06_rating_genre_crosstab.png` |
-| Distribution cast with different listed in.png | `12_cast_by_genre.png` |
+| Dashboard.png | `pub_08_briefing_board.png` |
+| Content by years.png | `pub_09_library_by_release_year.png` + `pub_01_catalog_additions.png` |
+| Top 10 producing countries.png | `pub_04_producing_countries.png` |
+| Distribution of content followed by countries.png | choropleth kept; ranking in `pub_04` |
+| Trend in publishing over years.png | `pub_10_genre_trends.png` + `pub_05_genre_incidence.png` |
+| Number of Content followed by rating.png | `pub_03_maturity_mix.png` |
+| Number of rating's content years.png | `pub_11_rating_over_release_year.png` + `pub_07_maturity_over_add_year.png` |
+| Age rating category correlations.png | `pub_06_rating_genre_crosstab.png` |
+| Distribution cast with different listed in.png | `pub_12_cast_by_genre.png` |

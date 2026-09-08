@@ -1,6 +1,6 @@
-"""Publication figures — Netflix editorial theme.
+"""Publication figures — Tableau-harmonious editorial theme.
 
-Dark canvas, Inter, highlight encoding, sentence titles.
+Cream canvas, Tableau 10 hues sampled from the workbook, highlight encoding.
 Tableau remains the interactive prototype; these PNGs are the readout.
 """
 
@@ -23,28 +23,33 @@ from .constants import (
 
 FIGURES = ROOT / "figures"
 
-# Editorial tokens (dark card that sits on a white GitHub README).
-BG = "#0E0E0E"
-PANEL = "#161616"
-INK = "#F4F1EA"
-MUTED = "#A39E96"
-FAINT = "#3A3734"
-RED = "#E50914"
-RED_DIM = "#7A1218"
-CREAM = "#E8DCC8"
-BLUE = "#5BA3D9"
-GREEN = "#3DDC84"
-GOLD = "#F5C518"
-PURPLE = "#C4B5FD"
+# Hues sampled from the Tableau workbook + Tableau 10, so Python sits next to the prototype.
+BG = "#F4F1EC"       # worksheet cream
+PANEL = "#F8F6F2"
+INK = "#2C2A28"
+MUTED = "#6F6860"
+FAINT = "#DDD6CC"
+MOVIE = "#E15759"    # Tableau red  — stacked Movie in Content by years
+MOVIE_SOFT = "#E8A090"
+TV = "#F28E2B"       # Tableau orange — stacked TV Show
+BLUE = "#4E79A7"     # Tableau blue  — TV-MA in ratings-over-years
+TEAL = "#76B7B2"
+GREEN = "#59A14F"    # Tableau green — kids / TV-PG family of hues
+GOLD = "#EDC948"
+PURPLE = "#B07AA1"
+PINK = "#FF9DA7"
+BROWN = "#9C755F"
+GRAY = "#BAB0AC"
 WHITE = "#FFFFFF"
+ACCENT = MOVIE       # kicker / peak highlight, not Netflix #E50914
 
-TYPE_COLORS = {"Movie": RED, "TV Show": BLUE}
+TYPE_COLORS = {"Movie": MOVIE, "TV Show": TV}
 BAND_COLORS = {
     "Kids": GREEN,
     "Teens": GOLD,
-    "Adults": RED,
-    "Unrated": "#6F6A64",
-    "Unknown": PURPLE,
+    "Adults": BLUE,
+    "Unrated": BROWN,
+    "Unknown": GRAY,
 }
 HIGHLIGHT_GENRES = [
     "International Movies",
@@ -54,11 +59,11 @@ HIGHLIGHT_GENRES = [
     "Documentaries",
 ]
 GENRE_COLORS = {
-    "International Movies": RED,
-    "Dramas": GOLD,
+    "International Movies": MOVIE,
+    "Dramas": PURPLE,
     "Comedies": BLUE,
     "International TV Shows": GREEN,
-    "Documentaries": CREAM,
+    "Documentaries": TV,
 }
 
 
@@ -105,9 +110,9 @@ def canvas(
 ) -> tuple[plt.Figure, plt.Axes]:
     fig = plt.figure(figsize=figsize, facecolor=BG)
     fig.add_artist(
-        plt.Line2D([0, 1], [1, 1], transform=fig.transFigure, color=RED, lw=5.5, solid_capstyle="butt", clip_on=False)
+        plt.Line2D([0, 1], [1, 1], transform=fig.transFigure, color=ACCENT, lw=3.5, solid_capstyle="butt", clip_on=False)
     )
-    fig.text(0.055, 0.945, kicker, color=RED, fontproperties=_font("semibold", 8.2), va="top")
+    fig.text(0.055, 0.945, kicker, color=ACCENT, fontproperties=_font("semibold", 8.2), va="top")
     fig.text(0.055, 0.905, title, color=INK, fontproperties=_font("semibold", 17.5), va="top")
     fig.text(0.055, 0.845, subtitle, color=MUTED, fontproperties=_font("regular", 10.2), va="top", linespacing=1.45)
     fig.text(
@@ -157,7 +162,7 @@ def fig_additions(titles: pd.DataFrame) -> Path:
         grain="one title",
     )
     _grid_y(ax)
-    colors = [RED if y == peak else (RED_DIM if y != 2021 else "#3A2A2A") for y in years]
+    colors = [ACCENT if y == peak else (MOVIE_SOFT if y != 2021 else GRAY) for y in years]
     bars = ax.bar(years, counts.values, color=colors, width=0.78, zorder=3)
     for bar, value, year in zip(bars, counts.values, years):
         ax.text(
@@ -310,7 +315,7 @@ def fig_rating_genre(genres: pd.DataFrame) -> Path:
     table = (
         sub.groupby(["genre", "rating"]).size().unstack(fill_value=0).reindex(index=top_genres, columns=rating_order, fill_value=0)
     )
-    cmap = LinearSegmentedColormap.from_list("netflix_heat", ["#1A1212", "#5A1218", RED, "#FF6B73"])
+    cmap = LinearSegmentedColormap.from_list("tableau_heat", ["#F8F6F2", "#F2C9C0", MOVIE, "#B33A3C"])
     fig, ax = canvas(
         "Rating × genre is a cross-tab of inventory — not a correlation",
         "Cell = (title, genre tag) pairs. A large cell is tagging policy, not “this audience prefers this genre.”",
@@ -329,7 +334,7 @@ def fig_rating_genre(genres: pd.DataFrame) -> Path:
             val = int(table.values[i, j])
             if val == 0:
                 continue
-            color = WHITE if val > vmax * 0.45 else MUTED
+            color = WHITE if val > vmax * 0.45 else INK
             ax.text(j, i, f"{val:,}", ha="center", va="center", color=color, fontproperties=_font("medium", 6.6))
     cbar = fig.colorbar(im, ax=ax, fraction=0.03, pad=0.02)
     cbar.ax.yaxis.set_tick_params(color=MUTED)
@@ -382,7 +387,7 @@ def fig_release_year(titles: pd.DataFrame) -> Path:
         years,
         pivot["Movie"],
         pivot["TV Show"],
-        colors=[RED, BLUE],
+        colors=[MOVIE, TV],
         labels=["Movie", "TV Show"],
         alpha=0.92,
         lw=0,
@@ -408,7 +413,7 @@ def fig_genre_trends(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
     _grid_y(ax)
     others = [c for c in yearly.columns if c not in HIGHLIGHT_GENRES]
     for col in others:
-        ax.plot(yearly.index, yearly[col], color="#2A2A2A", lw=1.0, zorder=2)
+        ax.plot(yearly.index, yearly[col], color="#D5D0C8", lw=1.05, zorder=2)
     for name in HIGHLIGHT_GENRES:
         if name not in yearly:
             continue
@@ -463,7 +468,7 @@ def fig_cast(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
     )
     _grid_x(ax)
     y = np.arange(len(totals))
-    colors = [GENRE_COLORS.get(name, MUTED) if name in GENRE_COLORS else "#6A6660" for name in totals.index]
+    colors = [GENRE_COLORS.get(name, GRAY) for name in totals.index]
     ax.barh(y, totals.values, color=colors, height=0.72, zorder=3)
     ax.set_yticks(y)
     ax.set_yticklabels(totals.index, fontproperties=_font("medium", 10), color=INK)
@@ -477,9 +482,9 @@ def fig_cast(titles: pd.DataFrame, genres: pd.DataFrame) -> Path:
 def fig_briefing(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
     fig = plt.figure(figsize=(13.2, 8.55), facecolor=BG)
     fig.add_artist(
-        plt.Line2D([0, 1], [1, 1], transform=fig.transFigure, color=RED, lw=5.5, solid_capstyle="butt", clip_on=False)
+        plt.Line2D([0, 1], [1, 1], transform=fig.transFigure, color=ACCENT, lw=3.5, solid_capstyle="butt", clip_on=False)
     )
-    fig.text(0.045, 0.955, "NETFLIX CATALOG  ·  BRIEFING BOARD", color=RED, fontproperties=_font("semibold", 8.2), va="top")
+    fig.text(0.045, 0.955, "NETFLIX CATALOG  ·  BRIEFING BOARD", color=ACCENT, fontproperties=_font("semibold", 8.2), va="top")
     fig.text(0.045, 0.915, "Four facts a content meeting can use — and the limits of this file", color=INK, fontproperties=_font("semibold", 18), va="top")
     fig.text(
         0.045,
@@ -495,8 +500,8 @@ def fig_briefing(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
     ax1.set_facecolor(PANEL)
     counts = titles.dropna(subset=["year_added"]).groupby("year_added").size()
     years = counts.index.astype(int)
-    colors = [RED if y == 2019 else RED_DIM for y in years]
-    colors = ["#3A2A2A" if y == 2021 else c for y, c in zip(years, colors)]
+    colors = [ACCENT if y == 2019 else MOVIE_SOFT for y in years]
+    colors = [GRAY if y == 2021 else c for y, c in zip(years, colors)]
     ax1.bar(years, counts.values, color=colors, width=0.82, zorder=3)
     ax1.set_title("Additions peak in 2019", loc="left", color=INK, fontproperties=_font("semibold", 12.5), pad=8)
     ax1.yaxis.grid(True, color=FAINT, lw=0.6)
@@ -540,7 +545,7 @@ def fig_briefing(titles: pd.DataFrame, countries: pd.DataFrame) -> Path:
     ax4 = fig.add_subplot(gs[1, 1])
     ax4.set_facecolor(PANEL)
     top = countries["country_credit"].value_counts().head(8).sort_values()
-    ax4.barh(top.index, top.values, color=RED, zorder=3)
+    ax4.barh(top.index, top.values, color=MOVIE, zorder=3)
     ax4.set_title("U.S. still anchors production credits", loc="left", color=INK, fontproperties=_font("semibold", 12.5), pad=8)
     ax4.xaxis.grid(True, color=FAINT, lw=0.6)
     ax4.set_axisbelow(True)

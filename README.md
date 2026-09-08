@@ -618,7 +618,7 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 ├── data/dictionaries/                       # field + maturity codebooks
 ├── netflix_catalog/                        # clean → quality → viz
 ├── tests/test_clean.py                     # 10 wrangling invariants
-├── figures/                                # 12 publication PNGs (dark editorial)
+├── figures/                                # 12 publication PNGs (Tableau-harmonious cream)
 ├── docs/                                   # dictionary, quality, viz specs
 ├── Tableau/Netflix & TV Show.twbx          # interactive prototype
 └── Report/Report Project.pdf                # course report (HCMUS)

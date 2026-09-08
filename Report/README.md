@@ -2,5 +2,11 @@
 
 | File | What it is |
 |---|---|
-| **[ACADEMIC_REPORT.md](./ACADEMIC_REPORT.md)** | Archival academic write-up (10+). Stanford Design Thinking + Munzner nested model. Every domain task is a **Tableau \| Python** pair with observation / inference / non-claim. |
-| `Report Project.pdf` | Original studio submission (Sep 2025). Retained as a historical artifact. Construct errors and leftover example text are listed in Appendix A of the markdown report and **should not be cited**. |
+| **[Report Project.pdf](./Report%20Project.pdf)** | Official course report (print, A4). Stanford Design Thinking + Munzner nested model. Every domain task is **Tableau \| Python**. Rebuild: `python3 Report/build_academic_pdf.py` (needs `weasyprint`). |
+| [ACADEMIC_REPORT.md](./ACADEMIC_REPORT.md) | Source markdown for that PDF. |
+| `studio-draft-Report-Project.pdf` | September 2025 Word export. Historical only — do not cite (see Appendix A). |
+
+```bash
+python3 -m pip install weasyprint markdown
+python3 Report/build_academic_pdf.py
+```

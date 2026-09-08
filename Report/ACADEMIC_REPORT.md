@@ -19,7 +19,7 @@ Faculty of Information Technology · *Data Visualization using Tableau*
 | Publication layer | `python -m netflix_catalog` → `figures/viz_*.png` |
 | This document | Archival academic rewrite of the studio report |
 
-The file `Report Project.pdf` is the original studio submission. It is retained as a historical artifact. **This markdown report supersedes it.** Construct errors in the PDF (rating-as-reviews, country-as-filming-location, mean-imputation of non-numeric fields, ranking “Không xác định” as a country, and leftover heart-disease evaluation text) are corrected here.
+The official printable report is [`Report/Report Project.pdf`](./Report%20Project.pdf) (rebuild with `python3 Report/build_academic_pdf.py`). The September 2025 Word export is archived as `studio-draft-Report-Project.pdf`. Construct errors in that draft (rating-as-reviews, country-as-filming-location, mean-imputation of non-numeric fields, ranking “Không xác định” as a country, leftover heart-disease evaluation text) are corrected here and in the PDF.
 
 ---
 
@@ -210,7 +210,43 @@ Filters in the workbook: `type`, `rating`, `listed_in`, country, `release_year`,
 
 This is observational catalog metadata. It is not a probability sample of global film/TV and not a complete 2021 vintage.
 
-### 4.2 Dictionary (construct-correct)
+### 4.2 Data profiling (raw extract; NULLs preserved)
+
+Profiling is performed on the **raw** file, before any display fill. Completeness is \(1 - n_{\mathrm{null}}/N\). Distinctness is \(n_{\mathrm{unique}}/N\). Filling “No information” and then reporting 100% completeness is not profiling; it is hiding missingness.
+
+| Field | Nulls | Completeness | Unique (non-null) | Distinctness | Role |
+|---|---:|---:|---:|---:|---|
+| `show_id` | 0 | 100% | 8,807 | 100% | Primary key |
+| `type` | 0 | 100% | 2 | 0.023% | Binary product form |
+| `title` | 0 | 100% | 8,806 | 99.99% | Display name |
+| `director` | 2,634 | 70.09% | 4,528 | 51.4% | Person credit |
+| `cast` | 825 | 90.63% | 7,692 | 87.3% | Person credits |
+| `country` | 831 | 90.56% | 748 | 8.49% | Production-credit *combinations* |
+| `date_added` | 10 | 99.89% | 1,767 | 20.1% | Catalog-entry date (string) |
+| `release_year` | 0 | 100% | 74 | 0.84% | Original year, 1925–2021 |
+| `rating` | 4 | 99.95% | 17 | 0.19% | Includes three leaked durations |
+| `duration` | 3 | 99.97% | 220 | 2.50% | Heterogeneous units |
+| `listed_in` | 0 | 100% | 514 | 5.84% | Tag *combinations* |
+| `description` | 0 | 100% | 8,775 | 99.64% | Synopsis |
+
+**Attribute remarks (construct-correct).**
+
+- **`show_id`.** Unique key. String lengths are `s1`…`s8807` (2–5 characters: 9 / 90 / 900 / 7,808 rows). Format variation is padding, not a quality defect.
+- **`type`.** Movie 6,131 (69.62%); TV Show 2,676 (30.38%). Low distinctness is expected for a binary classifier; it is not “poor uniqueness.”
+- **`title`.** One duplicated *string*, `Consequences` (2014, Turkey), on two IDs with identical director, cast, runtime, and synopsis — a duplicate record, not a remake.
+- **`director`.** Completeness 70.09% is the finding. Top frequencies (Rajiv Chilaka 19; Raúl Campos, Jan Suter 18) are title-counts, not “directorial impact.” 91.4% of TV Shows have no director credit.
+- **`cast`.** 825 nulls. Cardinality of the *unexploded* string is 7,692; that is not 7,692 unique actors.
+- **`country`.** 748 unique *strings*, including co-production lists such as “France, Spain”. After explode: 122 country credits and 10,012 rows. The United States / India / UK ranking in Section 4.6 is at exploded grain.
+- **`date_added`.** Object strings with leading spaces; 10 nulls remain null. Modal add-date: 1 January 2020 (109 titles) — a batch update, not a cinematic premiere. Last date: 25 September 2021.
+- **`release_year`.** 74 years, 1925–2021. 2018 is the modal original year (1,147 titles). 57.5% of titles have `release_year` in 2016–2020. That is library *age*, not add policy.
+- **`rating`.** 17 non-null labels in the raw file, **including** `66 min`, `74 min`, `84 min`. Those three are runtimes, not age bands. After recode, `rating` is a maturity label, not an audience review score.
+- **`duration`.** 220 unique strings; movies in minutes, shows in seasons. Never average. The three null durations are the same Louis C.K. rows whose runtime sat in `rating`.
+- **`listed_in`.** 514 combinations; 42 tags after split. Mean 2.19 tags/title.
+- **`description`.** 32 duplicate synopses. Unused as a KPI.
+
+There is **no float column to mean-impute**. The studio PDF’s first preprocessing rule does not apply to this schema.
+
+### 4.3 Dictionary (construct-correct)
 
 | Field | Role | Notes a professional actually needs |
 |---|---|---|
@@ -227,7 +263,7 @@ This is observational catalog metadata. It is not a probability sample of global
 | `listed_in` | Genre tags | 42 tags after split; 1–3 per title; 514 raw combinations |
 | `description` | Synopsis | 32 duplicate texts; unused as a KPI |
 
-### 4.3 Missingness (kept as NULL)
+### 4.4 Missingness (kept as NULL)
 
 | Field | Nulls | % | Pattern |
 |---|---:|---:|---|
@@ -241,7 +277,7 @@ This is observational catalog metadata. It is not a probability sample of global
 
 The studio PDF filled object columns with “Unknown” / “No information” and claimed post-clean completeness of 100%. That procedure is rejected here. There is also **no numeric float to mean-impute**; `duration` is typed text.
 
-### 4.4 Recodes and derived grains
+### 4.5 Recodes and derived grains
 
 1. Three rows with `rating ∈ {66 min, 74 min, 84 min}` (Louis C.K. specials) → runtime restored to `duration`, `rating` set null, `rating_was_duration = True`.  
 2. `duration` parsed to `duration_value` + `duration_unit` (`minutes` | `seasons`).  
@@ -260,7 +296,7 @@ The studio PDF filled object columns with “Unknown” / “No information” a
 
 `family_adjacent` = Kids plus `PG` / `TV-PG` (**excludes `TV-14`**). The studio PDF grouped `PG-13` with teens; we do not. `PG-13` is an MPAA theatrical band whose content is not household-default.
 
-### 4.5 Robustness: Unknown as a false country (RQ2)
+### 4.6 Robustness: Unknown as a false country (RQ2)
 
 | Rank | Including Unknown as a nation | Credits | Excluding Unknown (publication) | Credits |
 |---:|---|---:|---|---:|
@@ -270,7 +306,7 @@ The studio PDF filled object columns with “Unknown” / “No information” a
 | 4 | United Kingdom | 806 | Canada | 445 |
 | 5 | Canada | 445 | France | 393 |
 
-The studio Top 10 chart ranks `Không xác định` third. That is a processing threat to validity, not a geographic finding. Python Figure 11 excludes those 831 titles and states the exclusion in the subtitle.
+The studio Top 10 chart ranks `Không xác định` third. That is a processing threat to validity, not a geographic finding. Figure 9 (Python panel) excludes those 831 titles and states the exclusion in the subtitle.
 
 ---
 

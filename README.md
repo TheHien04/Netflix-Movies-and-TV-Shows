@@ -41,6 +41,7 @@ python -m netflix_catalog    # processed tables + quality report + figures/
 | Publication figures | [`figures/`](./figures/) |
 | Quality report | [`docs/DATA_QUALITY.md`](./docs/DATA_QUALITY.md) |
 | Dictionary / viz specs | [`docs/DATA_DICTIONARY.md`](./docs/DATA_DICTIONARY.md) · [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md) |
+| Academic report (10+) | [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md) |
 
 ---
 
@@ -61,6 +62,8 @@ python -m netflix_catalog    # processed tables + quality report + figures/
 8. [Reproducibility and artifacts](#8-reproducibility-and-artifacts)
 9. [How to cite](#9-how-to-cite)
 
+The full Munzner-style course paper — dual Tableau/Python evidence, errata of the studio PDF — is [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md).
+
 ---
 
 ## 1. Design challenge
@@ -72,6 +75,8 @@ The design challenge is therefore:
 > How might a content, product, or regional team **see the catalog as a designed object** — its growth, geography, maturity mix, and genre architecture — without pretending the file contains viewers?
 
 That framing is what Stanford Design Thinking is for. The d.school’s modes exist for **ill-structured problems** where the human need is easy to assume and hard to evidence. Here the trap is assuming “users love X” because “Netflix listed many titles tagged X.”
+
+**Related work, in one paragraph.** Catalog analytics is not audience analytics (Lotz, 2017). Visualization work is judged at the *abstraction* layer first (Munzner, 2014; Mackinlay, 1986): a heatmap named “correlations” that computes no coefficient is a failed encoding regardless of color. Missingness is a signal (Rubin, 1976), not a completeness KPI to be filled until a profiler reads 100%. The archival paper that carries the full nested-model write-up, dual figures, and PDF errata is [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md).
 
 <p align="center">
   <img src="./Tableau/Netflix-worldwide.jpg" alt="Netflix as a global catalog, not a viewing panel" width="520"/>
@@ -155,7 +160,7 @@ We did not invent psychographic quotes, did not treat `rating` as audience revie
 | HMW-1 | How might we see catalog *growth as a policy*, not a vibe? | Time series of `date_added` vs. `release_year`, split by `type` |
 | HMW-2 | How might we see geographic concentration **including unknown production**? | Exploded country credits + explicit unknown bucket |
 | HMW-3 | How might we see maturity mix as a **strategic position**, not a bar chart of labels? | Rating distribution; rating × year; rating × genre |
-| HMW-4 | How might we respect multi-genre reality? | One-title-to-many-genre grain (`netflix_titles_genres_split.csv`) |
+| HMW-4 | How might we respect multi-genre reality? | One-title-to-many-genre grain (`data/processed/netflix_title_genres.csv`) |
 | HMW-5 | How might we stop claiming “users prefer X”? | Explicit non-claims (Section 6) on every insight card |
 
 **Research questions (falsifiable)**
@@ -178,7 +183,7 @@ We did not invent psychographic quotes, did not treat `rating` as audience revie
 |---|---|
 | Titles added by year | Distinguishes **library age** (`release_year`) from **acquisition/commissioning tempo** (`date_added`) |
 | Type split (Movie / TV Show) | Movies and series are different products; pooling them hides strategy |
-| Exploded countries | 1,320 titles list multiple countries; a “first country only” chart would be a silent bias |
+| Exploded countries | 1,315 titles list multiple countries; a “first country only” chart would be a silent bias |
 | Genre explode + age band | Required for HMW-4; documented as a **derived grain**, not the title grain |
 | Rating × genre heatmap | Tests whether mature ratings are uniform or genre-specific |
 | Cast volume by genre | Weak but legitimate *production-style* signal (ensemble vs. lean), **not** star power |
@@ -262,7 +267,7 @@ Test looping back to Define is the point: the first prototype was wrong in speci
 | `release_year` span | 1925–2021 |
 | `date_added` span | 2008-01-01 → **2021-09-25** (10 titles missing date added) |
 | Duplicate `show_id` | 0 |
-| Duplicate `title` | 1 (same title string, still unique IDs — inspect before any title-level join) |
+| Duplicate `title` | 1 string (`Consequences`, 2014, Turkey) on **two `show_id`s with identical director, cast, runtime, and synopsis** — a duplicate record, not a remake |
 
 This is **observational catalog metadata**. It is not a probability sample of global film/TV, not a panel of subscribers, and not a complete 2021 vintage.
 
@@ -275,7 +280,7 @@ This is **observational catalog metadata**. It is not a probability sample of gl
 | `title` | Display name | Not a key |
 | `director` | Person credit, comma-separated | **29.9% missing overall; 91.4% missing for TV Shows** — do not “clean” this into a fake complete field if you will model directors |
 | `cast` | Person credits, comma-separated | 9.4% missing; exploding creates a person–title edge list |
-| `country` | Production credits, comma-separated | 9.4% missing; 1,315 multi-country titles; **not** “filmed in” |
+| `country` | Production credits, comma-separated | 9.4% missing; **1,315** multi-country titles; **not** “filmed in” |
 | `date_added` | Netflix availability date | Strings with leading spaces; parse with `strip`. Measures **when it joined the catalog**, not cinematic release |
 | `release_year` | Original release year | Integer; can predate Netflix by decades (library licensing) |
 | `rating` | Maturity label | MPAA / TV Parental Guidelines-style. **Not** a crowd score. Three Louis C.K. rows recoded in the pipeline |
@@ -324,7 +329,9 @@ Filling `director` / `cast` / `country` with a display string is acceptable **fo
 
 ## 4. Evidence: Tableau library + publication figures
 
-Every chart exported from the course workbook is below. The left (or first) image is the **Tableau prototype**. The second is the **Python publication figure**: same question, corrected grain, sentence title, missingness handled, source line. Python uses the workbook palette sampled from those exports — cream canvas `#EFEBE8`, Movie `#E15658`, TV Show `#F28B25` — so the two columns read as one study.
+**Yes — two panels per question.** In every comparison table below, **left = Tableau prototype** (the interactive course workbook) and **right = Python publication figure** (same question, corrected grain, sentence title, Tableau-harmonious cream / `#E15658` / `#F28B25`). A few views are intentionally one-sided and labelled as such: missingness is Python-only (the workbook never isolated it); the choropleth is Tableau-only (a map is the right geographic idiom).
+
+Every chart exported from the course workbook is below. Python uses the workbook palette sampled from those exports so the two columns read as one study.
 
 Grammar: [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md). Voices on every view:
 
@@ -351,6 +358,10 @@ Grammar: [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md). Voices on every view:
 Tableau exported **Content by years** on `release_year`. The policy clock is `date_added`. Both belong in the argument.
 
 <table>
+<tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
 <tr>
 <td align="center" width="50%">
 <img src="./Tableau/Content%20by%20years.png" alt="Tableau: content by original release year"/><br/>
@@ -404,6 +415,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 
 <table>
 <tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
+<tr>
 <td align="center" width="50%">
 <img src="./Tableau/Top%2010%20producing%20countries.png" alt="Tableau: top 10 producing countries"/><br/>
 <sub>Tableau · Top 10 producing countries</sub>
@@ -421,7 +436,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 
 <p align="center"><sub>Tableau · Distribution of content by countries (choropleth). The map is the right form for geography; the ranking above is the honest Top 10.</sub></p>
 
-**Observation.** United States 3,690 · India 1,046 · United Kingdom 806. Japan and South Korea are series-heavy; India is movie-heavy. 831 titles have no country credit.
+**Observation.** United States 3,690 · India 1,046 · United Kingdom 806. If missing country is promoted to a nation label, **Unknown ranks third (831)**. Japan and South Korea are series-heavy; India is movie-heavy. 831 titles have no country credit.
 
 **Inference.** Local-for-global is a **long tail of credits**, not a dethroning of the U.S.
 
@@ -432,6 +447,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 ### 4.4 Genre tags over time
 
 <table>
+<tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
 <tr>
 <td align="center" width="50%">
 <img src="./Tableau/Trend%20in%20publishing%20over%20years.png" alt="Tableau: trend in publishing genres over years"/><br/>
@@ -460,6 +479,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 
 <table>
 <tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
+<tr>
 <td align="center" width="50%">
 <img src="./Tableau/Number%20of%20Content%20followed%20by%20rating.png" alt="Tableau: number of content by rating"/><br/>
 <sub>Tableau · Number of content by rating</sub>
@@ -472,6 +495,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 </table>
 
 <table>
+<tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
 <tr>
 <td align="center" width="50%">
 <img src="./Tableau/Number%20of%20rating%27s%20content%20years.png" alt="Tableau: ratings over release years"/><br/>
@@ -502,6 +529,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 
 <table>
 <tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
+<tr>
 <td align="center" width="50%">
 <img src="./Tableau/Age%20rating%20category%20correlations.png" alt="Tableau: age-rating category correlations"/><br/>
 <sub>Tableau · Age-rating category “correlations”</sub>
@@ -524,6 +555,10 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 ### 4.7 Cast × listed_in
 
 <table>
+<tr>
+<th align="center" width="50%">Tableau</th>
+<th align="center" width="50%">Python</th>
+</tr>
 <tr>
 <td align="center" width="50%">
 <img src="./Tableau/Distribution%20cast%20with%20different%20listed%20in.png" alt="Tableau: cast distribution by listed in"/><br/>
@@ -599,8 +634,9 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 | **Internal validity** | Reading `release_year` as Netflix strategy | Prefer `date_added` as the policy clock |
 | **External validity** | Snapshot ends 2021-09-25; no ad-tier, no games, no 2022–2026 originals | Bound every claim to “in this extract” |
 | **Measurement** | Multi-label explode inflates counts; multi-country explode double-credits | Always state grain |
-| **Processing** | Localized fill-ins leak into “Top 10” | Analytic tables keep NULL; Python ranking excludes Unknown |
+| **Processing** | Localized fill-ins leak into “Top 10”; Unknown would rank **3rd (831 credits)** | Analytic tables keep NULL; Python ranking excludes Unknown (Section 4.3) |
 | **Selection** | Kaggle/Flixable is not Netflix’s internal title master; regional availability differs | Do not treat N = 8,807 as “the global product” |
+| **Record identity** | Two `show_id`s share one `Consequences` record | Flagged; not treated as two distinct works |
 
 ---
 
@@ -621,7 +657,8 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 ├── figures/                                # 12 publication PNGs (viz_*.png, Tableau cream/red/orange)
 ├── docs/                                   # dictionary, quality, viz specs
 ├── Tableau/Netflix & TV Show.twbx          # interactive prototype
-└── Report/Report Project.pdf                # course report (HCMUS)
+├── Report/ACADEMIC_REPORT.md               # archival academic paper (this study at 10+)
+└── Report/Report Project.pdf               # original studio PDF (historical; see Appendix A)
 ```
 
 ```bash
@@ -646,7 +683,7 @@ This repository:
 
 > Nguyen, T. H. (2021/2026). *Netflix Movies and TV Shows: A catalog-supply inquiry through Stanford Design Thinking* [Tableau workbook and working paper]. GitHub. https://github.com/TheHien04/Netflix-Movies-and-TV-Shows
 
-**Methodological frame.** Hasso Plattner Institute of Design at Stanford (d.school). (2018). *Design Thinking Bootleg*.
+**Methodological frame.** Hasso Plattner Institute of Design at Stanford (d.school). (2018). *Design Thinking Bootleg*. Munzner, T. (2014). *Visualization analysis and design*. Full reference list: [`Report/ACADEMIC_REPORT.md`](./Report/ACADEMIC_REPORT.md).
 
 **License of this write-up.** Academic / educational use. The Kaggle dataset has its own license on the source page; this repo does not re-license Netflix’s titles.
 

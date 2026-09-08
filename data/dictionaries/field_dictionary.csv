@@ -1,0 +1,22 @@
+field,grain,definition
+show_id,title,Primary key in this extract
+type,title,Movie or TV Show
+title,title,Display name; not a key
+director,title,Comma-separated credits; missingness is structural for TV Shows
+cast,title,Comma-separated credits
+country,title,"Production credits, not filming location; explode for incidence"
+date_added,title,Netflix availability date; strip before parse
+release_year,title,"Original release year, not add year"
+rating,title,"Parental-guideline / MPAA-style maturity label, not a quality score"
+duration,title,"Heterogeneous: minutes for movies, seasons for shows"
+listed_in,title,Multi-label genre tags (1–3)
+description,title,Short synopsis
+date_added_parsed,title,ISO date; 10 raw nulls remain null
+year_added,title,Policy clock for catalog growth
+duration_value,title,Integer minutes or season count
+duration_unit,title,minutes or seasons
+maturity_band,title,Derived from rating; not viewer age
+family_adjacent,title,Kids ratings plus PG / TV-PG
+country_unknown,title,True when production country is missing
+genre,genre-credit,One listed_in tag; counts are incidences
+country_credit,country-credit,One production country; multi-credited titles appear once per country

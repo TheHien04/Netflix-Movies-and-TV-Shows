@@ -1,0 +1,16 @@
+rating,maturity_band,family_adjacent,titles
+NC-17,Adults,False,3
+PG-13,Adults,False,490
+R,Adults,False,799
+TV-MA,Adults,False,3207
+G,Kids,True,41
+TV-G,Kids,True,220
+TV-Y,Kids,True,307
+TV-Y7,Kids,True,334
+TV-Y7-FV,Kids,True,6
+PG,Teens,True,287
+TV-14,Teens,False,2160
+TV-PG,Teens,True,863
+,Unknown,False,7
+NR,Unrated,False,80
+UR,Unrated,False,3

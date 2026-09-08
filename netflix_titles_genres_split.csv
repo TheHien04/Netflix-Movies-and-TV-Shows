@@ -155,8 +155,8 @@ s64,TV-PG,Anime Features,Teens
 s64,TV-PG,International Movies,Teens
 s65,TV-PG,Children & Family Movies,Teens
 s66,TV-Y,Kids' TV,Kids
-s67,TV-G,Docuseries,Other
-s67,TV-G,International TV Shows,Other
+s67,TV-G,Docuseries,Kids
+s67,TV-G,International TV Shows,Kids
 s68,TV-PG,Kids' TV,Teens
 s68,TV-PG,TV Comedies,Teens
 s69,TV-14,Documentaries,Teens
@@ -174,7 +174,7 @@ s73,TV-MA,International TV Shows,Adults
 s74,TV-MA,Dramas,Adults
 s74,TV-MA,International Movies,Adults
 s75,TV-PG,Reality TV,Teens
-s76,TV-G,Children & Family Movies,Other
+s76,TV-G,Children & Family Movies,Kids
 s77,TV-14,Anime Series,Teens
 s77,TV-14,International TV Shows,Teens
 s78,TV-Y7,Children & Family Movies,Kids
@@ -238,13 +238,13 @@ s105,TV-Y,Korean TV Shows,Kids
 s106,TV-14,Action & Adventure,Teens
 s106,TV-14,Comedies,Teens
 s106,TV-14,Dramas,Teens
-s107,TV-G,Kids' TV,Other
-s107,TV-G,TV Comedies,Other
+s107,TV-G,Kids' TV,Kids
+s107,TV-G,TV Comedies,Kids
 s108,G,Children & Family Movies,Kids
 s108,G,Dramas,Kids
-s109,TV-G,Kids' TV,Other
-s109,TV-G,TV Dramas,Other
-s109,TV-G,Teen TV Shows,Other
+s109,TV-G,Kids' TV,Kids
+s109,TV-G,TV Dramas,Kids
+s109,TV-G,Teen TV Shows,Kids
 s110,TV-MA,Crime TV Shows,Adults
 s110,TV-MA,International TV Shows,Adults
 s110,TV-MA,Spanish-Language TV Shows,Adults
@@ -405,8 +405,8 @@ s186,TV-MA,Sports Movies,Adults
 s187,TV-14,International TV Shows,Teens
 s187,TV-14,Romantic TV Shows,Teens
 s187,TV-14,TV Comedies,Teens
-s188,TV-G,International TV Shows,Other
-s188,TV-G,TV Comedies,Other
+s188,TV-G,International TV Shows,Kids
+s188,TV-G,TV Comedies,Kids
 s189,TV-MA,Comedies,Adults
 s189,TV-MA,International Movies,Adults
 s190,TV-Y,Kids' TV,Kids
@@ -513,7 +513,7 @@ s231,TV-MA,Documentaries,Adults
 s231,TV-MA,Sports Movies,Adults
 s232,PG,Children & Family Movies,Teens
 s232,PG,Dramas,Teens
-s233,TV-G,Reality TV,Other
+s233,TV-G,Reality TV,Kids
 s234,TV-MA,Documentaries,Adults
 s234,TV-MA,Music & Musicals,Adults
 s235,TV-Y,Kids' TV,Kids
@@ -927,9 +927,9 @@ s426,TV-14,TV Dramas,Teens
 s427,TV-MA,Dramas,Adults
 s428,TV-14,Comedies,Teens
 s428,TV-14,International Movies,Teens
-s429,TV-G,Anime Features,Other
-s429,TV-G,Children & Family Movies,Other
-s429,TV-G,International Movies,Other
+s429,TV-G,Anime Features,Kids
+s429,TV-G,Children & Family Movies,Kids
+s429,TV-G,International Movies,Kids
 s430,TV-14,Dramas,Teens
 s430,TV-14,International Movies,Teens
 s430,TV-14,Thrillers,Teens
@@ -1056,7 +1056,7 @@ s483,TV-MA,Docuseries,Adults
 s484,TV-MA,Dramas,Adults
 s484,TV-MA,International Movies,Adults
 s484,TV-MA,Romantic Movies,Adults
-s485,TV-G,Stand-Up Comedy,Other
+s485,TV-G,Stand-Up Comedy,Kids
 s486,TV-14,Thrillers,Teens
 s487,PG,Children & Family Movies,Teens
 s487,PG,Comedies,Teens
@@ -1104,8 +1104,8 @@ s505,TV-MA,Spanish-Language TV Shows,Adults
 s505,TV-MA,TV Comedies,Adults
 s506,TV-PG,Dramas,Teens
 s506,TV-PG,International Movies,Teens
-s507,TV-G,International Movies,Other
-s507,TV-G,Romantic Movies,Other
+s507,TV-G,International Movies,Kids
+s507,TV-G,Romantic Movies,Kids
 s508,TV-14,Comedies,Teens
 s508,TV-14,International Movies,Teens
 s509,TV-MA,Dramas,Adults
@@ -1157,8 +1157,8 @@ s529,TV-14,International Movies,Teens
 s529,TV-14,Romantic Movies,Teens
 s530,TV-MA,Dramas,Adults
 s530,TV-MA,International Movies,Adults
-s531,TV-G,Kids' TV,Other
-s531,TV-G,TV Comedies,Other
+s531,TV-G,Kids' TV,Kids
+s531,TV-G,TV Comedies,Kids
 s532,TV-PG,Dramas,Teens
 s532,TV-PG,International Movies,Teens
 s533,TV-MA,Crime TV Shows,Adults
@@ -1166,8 +1166,8 @@ s533,TV-MA,TV Horror,Adults
 s533,TV-MA,TV Mysteries,Adults
 s534,TV-14,International TV Shows,Teens
 s534,TV-14,TV Dramas,Teens
-s535,TV-G,Dramas,Other
-s535,TV-G,International Movies,Other
+s535,TV-G,Dramas,Kids
+s535,TV-G,International Movies,Kids
 s536,TV-Y,Kids' TV,Kids
 s536,TV-Y,TV Comedies,Kids
 s537,TV-14,Docuseries,Teens
@@ -1181,8 +1181,8 @@ s539,TV-PG,TV Dramas,Teens
 s540,TV-PG,Kids' TV,Teens
 s540,TV-PG,TV Action & Adventure,Teens
 s540,TV-PG,TV Sci-Fi & Fantasy,Teens
-s541,TV-G,British TV Shows,Other
-s541,TV-G,Kids' TV,Other
+s541,TV-G,British TV Shows,Kids
+s541,TV-G,Kids' TV,Kids
 s542,TV-14,Comedies,Teens
 s542,TV-14,Dramas,Teens
 s542,TV-14,International Movies,Teens
@@ -1237,9 +1237,9 @@ s564,PG-13,Sci-Fi & Fantasy,Adults
 s565,R,Comedies,Adults
 s565,R,Dramas,Adults
 s565,R,Independent Movies,Adults
-s566,TV-G,International TV Shows,Other
-s566,TV-G,Kids' TV,Other
-s566,TV-G,TV Mysteries,Other
+s566,TV-G,International TV Shows,Kids
+s566,TV-G,Kids' TV,Kids
+s566,TV-G,TV Mysteries,Kids
 s567,PG-13,Action & Adventure,Adults
 s567,PG-13,Comedies,Adults
 s568,PG-13,Action & Adventure,Adults
@@ -1415,8 +1415,8 @@ s646,TV-14,International Movies,Teens
 s647,TV-MA,Comedies,Adults
 s647,TV-MA,International Movies,Adults
 s647,TV-MA,Music & Musicals,Adults
-s648,TV-G,International TV Shows,Other
-s648,TV-G,Reality TV,Other
+s648,TV-G,International TV Shows,Kids
+s648,TV-G,Reality TV,Kids
 s649,TV-MA,Reality TV,Adults
 s649,TV-MA,Romantic TV Shows,Adults
 s650,TV-14,Dramas,Teens
@@ -1593,14 +1593,14 @@ s716,TV-MA,International TV Shows,Adults
 s716,TV-MA,Romantic TV Shows,Adults
 s716,TV-MA,Spanish-Language TV Shows,Adults
 s717,TV-MA,Documentaries,Adults
-s718,TV-G,Documentaries,Other
+s718,TV-G,Documentaries,Kids
 s719,R,Comedies,Adults
 s719,R,Independent Movies,Adults
-s720,TV-G,Kids' TV,Other
+s720,TV-G,Kids' TV,Kids
 s721,TV-Y,Kids' TV,Kids
 s722,R,Action & Adventure,Adults
 s723,TV-MA,Documentaries,Adults
-s724,TV-G,Reality TV,Other
+s724,TV-G,Reality TV,Kids
 s725,TV-14,Documentaries,Teens
 s726,TV-MA,International TV Shows,Adults
 s726,TV-MA,Spanish-Language TV Shows,Adults
@@ -1666,9 +1666,9 @@ s754,TV-MA,Romantic TV Shows,Adults
 s754,TV-MA,Spanish-Language TV Shows,Adults
 s755,R,Dramas,Adults
 s755,R,Independent Movies,Adults
-s756,TV-G,Children & Family Movies,Other
-s756,TV-G,Documentaries,Other
-s756,TV-G,International Movies,Other
+s756,TV-G,Children & Family Movies,Kids
+s756,TV-G,Documentaries,Kids
+s756,TV-G,International Movies,Kids
 s757,TV-MA,Dramas,Adults
 s757,TV-MA,International Movies,Adults
 s757,TV-MA,Romantic Movies,Adults
@@ -1676,8 +1676,8 @@ s758,TV-PG,Documentaries,Teens
 s759,TV-MA,Romantic TV Shows,Adults
 s759,TV-MA,TV Comedies,Adults
 s759,TV-MA,TV Dramas,Adults
-s760,TV-G,Movies,Other
-s761,TV-G,Movies,Other
+s760,TV-G,Movies,Kids
+s761,TV-G,Movies,Kids
 s762,TV-PG,Docuseries,Teens
 s762,TV-PG,Science & Nature TV,Teens
 s763,TV-14,Comedies,Teens
@@ -1697,8 +1697,8 @@ s768,TV-14,TV Comedies,Teens
 s769,TV-MA,Comedies,Adults
 s769,TV-MA,Dramas,Adults
 s769,TV-MA,International Movies,Adults
-s770,TV-G,Documentaries,Other
-s770,TV-G,International Movies,Other
+s770,TV-G,Documentaries,Kids
+s770,TV-G,International Movies,Kids
 s771,TV-14,Documentaries,Teens
 s771,TV-14,International Movies,Teens
 s771,TV-14,Music & Musicals,Teens
@@ -1874,8 +1874,8 @@ s848,TV-MA,Romantic TV Shows,Adults
 s848,TV-MA,TV Comedies,Adults
 s849,TV-MA,TV Comedies,Adults
 s849,TV-MA,TV Dramas,Adults
-s850,TV-G,International Movies,Other
-s850,TV-G,Music & Musicals,Other
+s850,TV-G,International Movies,Kids
+s850,TV-G,Music & Musicals,Kids
 s851,TV-14,Dramas,Teens
 s851,TV-14,International Movies,Teens
 s851,TV-14,Music & Musicals,Teens
@@ -2123,8 +2123,8 @@ s966,TV-MA,Anime Series,Adults
 s966,TV-MA,International TV Shows,Adults
 s967,TV-MA,Comedies,Adults
 s967,TV-MA,International Movies,Adults
-s968,TV-G,Docuseries,Other
-s968,TV-G,Science & Nature TV,Other
+s968,TV-G,Docuseries,Kids
+s968,TV-G,Science & Nature TV,Kids
 s969,TV-MA,International TV Shows,Adults
 s969,TV-MA,TV Comedies,Adults
 s969,TV-MA,TV Dramas,Adults
@@ -2180,11 +2180,11 @@ s990,TV-MA,Comedies,Adults
 s990,TV-MA,International Movies,Adults
 s991,TV-MA,Comedies,Adults
 s991,TV-MA,International Movies,Adults
-s992,TV-G,Dramas,Other
-s992,TV-G,Independent Movies,Other
-s992,TV-G,International Movies,Other
-s993,TV-G,International Movies,Other
-s993,TV-G,Music & Musicals,Other
+s992,TV-G,Dramas,Kids
+s992,TV-G,Independent Movies,Kids
+s992,TV-G,International Movies,Kids
+s993,TV-G,International Movies,Kids
+s993,TV-G,Music & Musicals,Kids
 s994,TV-14,TV Action & Adventure,Teens
 s994,TV-14,TV Dramas,Teens
 s994,TV-14,TV Sci-Fi & Fantasy,Teens
@@ -2376,8 +2376,8 @@ s1080,TV-PG,TV Dramas,Teens
 s1081,TV-14,Action & Adventure,Teens
 s1081,TV-14,Anime Features,Teens
 s1081,TV-14,International Movies,Teens
-s1082,TV-G,Kids' TV,Other
-s1082,TV-G,TV Comedies,Other
+s1082,TV-G,Kids' TV,Kids
+s1082,TV-G,TV Comedies,Kids
 s1083,TV-14,International TV Shows,Teens
 s1083,TV-14,Reality TV,Teens
 s1084,R,Comedies,Adults
@@ -2469,9 +2469,9 @@ s1122,PG-13,Comedies,Adults
 s1122,PG-13,Romantic Movies,Adults
 s1123,TV-14,Dramas,Teens
 s1123,TV-14,International Movies,Teens
-s1124,TV-G,Docuseries,Other
-s1124,TV-G,International TV Shows,Other
-s1124,TV-G,Science & Nature TV,Other
+s1124,TV-G,Docuseries,Kids
+s1124,TV-G,International TV Shows,Kids
+s1124,TV-G,Science & Nature TV,Kids
 s1125,R,Action & Adventure,Adults
 s1126,TV-MA,British TV Shows,Adults
 s1126,TV-MA,Crime TV Shows,Adults
@@ -2542,7 +2542,7 @@ s1157,TV-PG,Children & Family Movies,Teens
 s1157,TV-PG,Faith & Spirituality,Teens
 s1157,TV-PG,Music & Musicals,Teens
 s1158,TV-MA,Comedies,Adults
-s1159,TV-G,Kids' TV,Other
+s1159,TV-G,Kids' TV,Kids
 s1160,TV-MA,Dramas,Adults
 s1160,TV-MA,International Movies,Adults
 s1161,TV-MA,Dramas,Adults
@@ -2589,8 +2589,8 @@ s1181,TV-Y7,Kids' TV,Kids
 s1181,TV-Y7,TV Comedies,Kids
 s1182,TV-PG,TV Comedies,Teens
 s1183,TV-MA,Docuseries,Adults
-s1184,TV-G,International Movies,Other
-s1184,TV-G,Music & Musicals,Other
+s1184,TV-G,International Movies,Kids
+s1184,TV-G,Music & Musicals,Kids
 s1185,TV-14,Action & Adventure,Teens
 s1185,TV-14,International Movies,Teens
 s1186,TV-MA,Comedies,Adults
@@ -2603,7 +2603,7 @@ s1188,R,Thrillers,Adults
 s1189,TV-14,Action & Adventure,Teens
 s1189,TV-14,Comedies,Teens
 s1189,TV-14,International Movies,Teens
-s1190,TV-G,Stand-Up Comedy,Other
+s1190,TV-G,Stand-Up Comedy,Kids
 s1191,R,Action & Adventure,Adults
 s1192,PG-13,Stand-Up Comedy,Adults
 s1193,TV-MA,Dramas,Adults
@@ -2636,15 +2636,15 @@ s1205,TV-14,Documentaries,Teens
 s1206,TV-MA,Docuseries,Adults
 s1206,TV-MA,Science & Nature TV,Adults
 s1206,TV-MA,TV Action & Adventure,Adults
-s1207,TV-G,British TV Shows,Other
-s1207,TV-G,Kids' TV,Other
-s1207,TV-G,TV Dramas,Other
+s1207,TV-G,British TV Shows,Kids
+s1207,TV-G,Kids' TV,Kids
+s1207,TV-G,TV Dramas,Kids
 s1208,TV-14,Documentaries,Teens
 s1209,TV-MA,Comedies,Adults
 s1209,TV-MA,International Movies,Adults
-s1210,TV-G,Comedies,Other
-s1210,TV-G,Dramas,Other
-s1210,TV-G,International Movies,Other
+s1210,TV-G,Comedies,Kids
+s1210,TV-G,Dramas,Kids
+s1210,TV-G,International Movies,Kids
 s1211,TV-MA,International TV Shows,Adults
 s1211,TV-MA,Korean TV Shows,Adults
 s1211,TV-MA,Romantic TV Shows,Adults
@@ -2681,8 +2681,8 @@ s1224,TV-MA,Crime TV Shows,Adults
 s1224,TV-MA,International TV Shows,Adults
 s1224,TV-MA,TV Action & Adventure,Adults
 s1225,TV-MA,Docuseries,Adults
-s1226,TV-G,Reality TV,Other
-s1226,TV-G,Romantic TV Shows,Other
+s1226,TV-G,Reality TV,Kids
+s1226,TV-G,Romantic TV Shows,Kids
 s1227,TV-14,Docuseries,Teens
 s1227,TV-14,International TV Shows,Teens
 s1228,TV-MA,International TV Shows,Adults
@@ -2736,9 +2736,9 @@ s1248,TV-PG,International Movies,Teens
 s1249,R,Documentaries,Adults
 s1249,R,Music & Musicals,Adults
 s1250,TV-MA,Stand-Up Comedy,Adults
-s1251,TV-G,Documentaries,Other
-s1251,TV-G,International Movies,Other
-s1251,TV-G,Music & Musicals,Other
+s1251,TV-G,Documentaries,Kids
+s1251,TV-G,International Movies,Kids
+s1251,TV-G,Music & Musicals,Kids
 s1252,PG-13,Action & Adventure,Adults
 s1252,PG-13,Classic Movies,Adults
 s1252,PG-13,Dramas,Adults
@@ -2804,7 +2804,7 @@ s1277,TV-MA,Dramas,Adults
 s1277,TV-MA,International Movies,Adults
 s1278,TV-14,TV Horror,Teens
 s1278,TV-14,Teen TV Shows,Teens
-s1279,TV-G,Stand-Up Comedy,Other
+s1279,TV-G,Stand-Up Comedy,Kids
 s1280,TV-14,Documentaries,Teens
 s1280,TV-14,International Movies,Teens
 s1281,TV-14,Documentaries,Teens
@@ -2827,9 +2827,9 @@ s1288,TV-14,Comedies,Teens
 s1288,TV-14,Dramas,Teens
 s1289,PG-13,Dramas,Adults
 s1289,PG-13,Thrillers,Adults
-s1290,TV-G,Documentaries,Other
-s1290,TV-G,International Movies,Other
-s1290,TV-G,Music & Musicals,Other
+s1290,TV-G,Documentaries,Kids
+s1290,TV-G,International Movies,Kids
+s1290,TV-G,Music & Musicals,Kids
 s1291,R,Comedies,Adults
 s1291,R,LGBTQ Movies,Adults
 s1291,R,Thrillers,Adults
@@ -2889,9 +2889,9 @@ s1316,TV-MA,Stand-Up Comedy,Adults
 s1317,TV-MA,Dramas,Adults
 s1317,TV-MA,International Movies,Adults
 s1317,TV-MA,Romantic Movies,Adults
-s1318,TV-G,British TV Shows,Other
-s1318,TV-G,International TV Shows,Other
-s1318,TV-G,Reality TV,Other
+s1318,TV-G,British TV Shows,Kids
+s1318,TV-G,International TV Shows,Kids
+s1318,TV-G,Reality TV,Kids
 s1319,TV-14,Comedies,Teens
 s1319,TV-14,Romantic Movies,Teens
 s1320,TV-Y7,Children & Family Movies,Kids
@@ -2924,8 +2924,8 @@ s1330,TV-MA,International Movies,Adults
 s1331,PG,Dramas,Teens
 s1331,PG,Romantic Movies,Teens
 s1332,TV-MA,TV Shows,Adults
-s1333,TV-G,Kids' TV,Other
-s1333,TV-G,TV Comedies,Other
+s1333,TV-G,Kids' TV,Kids
+s1333,TV-G,TV Comedies,Kids
 s1334,R,Comedies,Adults
 s1334,R,Dramas,Adults
 s1335,TV-14,Action & Adventure,Teens
@@ -3071,11 +3071,11 @@ s1402,TV-Y7,TV Thrillers,Kids
 s1403,TV-14,TV Action & Adventure,Teens
 s1403,TV-14,TV Comedies,Teens
 s1403,TV-14,TV Sci-Fi & Fantasy,Teens
-s1404,TV-G,Children & Family Movies,Other
-s1404,TV-G,Comedies,Other
-s1404,TV-G,Dramas,Other
-s1405,TV-G,Kids' TV,Other
-s1405,TV-G,TV Comedies,Other
+s1404,TV-G,Children & Family Movies,Kids
+s1404,TV-G,Comedies,Kids
+s1404,TV-G,Dramas,Kids
+s1405,TV-G,Kids' TV,Kids
+s1405,TV-G,TV Comedies,Kids
 s1406,R,Action & Adventure,Adults
 s1407,PG,Children & Family Movies,Teens
 s1407,PG,Comedies,Teens
@@ -3154,8 +3154,8 @@ s1441,TV-PG,Spanish-Language TV Shows,Teens
 s1442,TV-14,Action & Adventure,Teens
 s1442,TV-14,Comedies,Teens
 s1442,TV-14,International Movies,Teens
-s1443,TV-G,Docuseries,Other
-s1443,TV-G,International TV Shows,Other
+s1443,TV-G,Docuseries,Kids
+s1443,TV-G,International TV Shows,Kids
 s1444,TV-14,Docuseries,Teens
 s1445,PG-13,Comedies,Adults
 s1445,PG-13,Romantic Movies,Adults
@@ -3169,7 +3169,7 @@ s1448,R,Thrillers,Adults
 s1449,TV-14,TV Action & Adventure,Teens
 s1449,TV-14,TV Comedies,Teens
 s1449,TV-14,TV Dramas,Teens
-s1450,TV-G,Reality TV,Other
+s1450,TV-G,Reality TV,Kids
 s1451,R,Stand-Up Comedy,Adults
 s1452,TV-Y,Children & Family Movies,Kids
 s1452,TV-Y,Dramas,Kids
@@ -3179,8 +3179,8 @@ s1453,PG-13,Independent Movies,Adults
 s1454,PG,Children & Family Movies,Teens
 s1454,PG,Comedies,Teens
 s1455,PG-13,Documentaries,Adults
-s1456,TV-G,Docuseries,Other
-s1456,TV-G,Science & Nature TV,Other
+s1456,TV-G,Docuseries,Kids
+s1456,TV-G,Science & Nature TV,Kids
 s1457,R,Action & Adventure,Adults
 s1457,R,Dramas,Adults
 s1457,R,Independent Movies,Adults
@@ -3198,9 +3198,9 @@ s1463,TV-Y7,Kids' TV,Kids
 s1463,TV-Y7,TV Comedies,Kids
 s1464,TV-Y,Kids' TV,Kids
 s1465,TV-14,Documentaries,Teens
-s1466,TV-G,Kids' TV,Other
-s1466,TV-G,TV Comedies,Other
-s1466,TV-G,TV Sci-Fi & Fantasy,Other
+s1466,TV-G,Kids' TV,Kids
+s1466,TV-G,TV Comedies,Kids
+s1466,TV-G,TV Sci-Fi & Fantasy,Kids
 s1467,TV-14,Documentaries,Teens
 s1468,PG-13,Action & Adventure,Adults
 s1468,PG-13,Thrillers,Adults
@@ -3224,7 +3224,7 @@ s1475,TV-PG,Faith & Spirituality,Teens
 s1476,TV-14,Comedies,Teens
 s1476,TV-14,Dramas,Teens
 s1476,TV-14,International Movies,Teens
-s1477,TV-G,Reality TV,Other
+s1477,TV-G,Reality TV,Kids
 s1478,TV-MA,Crime TV Shows,Adults
 s1478,TV-MA,TV Dramas,Adults
 s1478,TV-MA,TV Thrillers,Adults
@@ -3260,16 +3260,16 @@ s1492,TV-MA,Dramas,Adults
 s1492,TV-MA,International Movies,Adults
 s1493,TV-MA,Romantic TV Shows,Adults
 s1493,TV-MA,TV Dramas,Adults
-s1494,TV-G,International Movies,Other
-s1494,TV-G,Romantic Movies,Other
+s1494,TV-G,International Movies,Kids
+s1494,TV-G,Romantic Movies,Kids
 s1495,PG,Children & Family Movies,Teens
 s1495,PG,Comedies,Teens
 s1496,TV-MA,Comedies,Adults
 s1496,TV-MA,Dramas,Adults
 s1496,TV-MA,International Movies,Adults
-s1497,TV-G,Children & Family Movies,Other
-s1497,TV-G,Dramas,Other
-s1497,TV-G,International Movies,Other
+s1497,TV-G,Children & Family Movies,Kids
+s1497,TV-G,Dramas,Kids
+s1497,TV-G,International Movies,Kids
 s1498,TV-14,Dramas,Teens
 s1498,TV-14,International Movies,Teens
 s1498,TV-14,Romantic Movies,Teens
@@ -3413,8 +3413,8 @@ s1564,TV-MA,LGBTQ Movies,Adults
 s1565,TV-14,Crime TV Shows,Teens
 s1565,TV-14,International TV Shows,Teens
 s1565,TV-14,TV Dramas,Teens
-s1566,TV-G,International Movies,Other
-s1566,TV-G,Romantic Movies,Other
+s1566,TV-G,International Movies,Kids
+s1566,TV-G,Romantic Movies,Kids
 s1567,TV-14,Dramas,Teens
 s1567,TV-14,International Movies,Teens
 s1567,TV-14,Romantic Movies,Teens
@@ -3432,8 +3432,8 @@ s1571,TV-14,TV Dramas,Teens
 s1572,TV-14,Comedies,Teens
 s1572,TV-14,Dramas,Teens
 s1572,TV-14,International Movies,Teens
-s1573,TV-G,Kids' TV,Other
-s1573,TV-G,TV Comedies,Other
+s1573,TV-G,Kids' TV,Kids
+s1573,TV-G,TV Comedies,Kids
 s1574,TV-PG,Kids' TV,Teens
 s1574,TV-PG,TV Comedies,Teens
 s1574,TV-PG,Teen TV Shows,Teens
@@ -3624,8 +3624,8 @@ s1665,R,Action & Adventure,Adults
 s1666,TV-14,International Movies,Teens
 s1666,TV-14,Thrillers,Teens
 s1667,TV-Y,Children & Family Movies,Kids
-s1668,TV-G,Docuseries,Other
-s1668,TV-G,International TV Shows,Other
+s1668,TV-G,Docuseries,Kids
+s1668,TV-G,International TV Shows,Kids
 s1669,TV-14,International TV Shows,Teens
 s1669,TV-14,TV Dramas,Teens
 s1670,PG,Dramas,Teens
@@ -3657,15 +3657,15 @@ s1680,TV-14,International Movies,Teens
 s1681,TV-14,Dramas,Teens
 s1681,TV-14,International Movies,Teens
 s1681,TV-14,Thrillers,Teens
-s1682,TV-G,Children & Family Movies,Other
-s1682,TV-G,Comedies,Other
-s1682,TV-G,Dramas,Other
-s1683,TV-G,Comedies,Other
-s1683,TV-G,Dramas,Other
-s1683,TV-G,International Movies,Other
+s1682,TV-G,Children & Family Movies,Kids
+s1682,TV-G,Comedies,Kids
+s1682,TV-G,Dramas,Kids
+s1683,TV-G,Comedies,Kids
+s1683,TV-G,Dramas,Kids
+s1683,TV-G,International Movies,Kids
 s1684,TV-14,Comedies,Teens
 s1684,TV-14,International Movies,Teens
-s1685,TV-G,Reality TV,Other
+s1685,TV-G,Reality TV,Kids
 s1686,TV-PG,Dramas,Teens
 s1686,TV-PG,International Movies,Teens
 s1687,TV-MA,Stand-Up Comedy,Adults
@@ -3676,22 +3676,22 @@ s1689,TV-MA,Reality TV,Adults
 s1690,PG-13,Dramas,Adults
 s1690,PG-13,Romantic Movies,Adults
 s1691,R,Documentaries,Adults
-s1692,TV-G,Music & Musicals,Other
-s1692,TV-G,Romantic Movies,Other
+s1692,TV-G,Music & Musicals,Kids
+s1692,TV-G,Romantic Movies,Kids
 s1693,TV-14,Reality TV,Teens
 s1694,TV-Y,Anime Series,Kids
 s1694,TV-Y,Kids' TV,Kids
 s1695,PG,Children & Family Movies,Teens
 s1695,PG,Comedies,Teens
-s1696,TV-G,Romantic Movies,Other
+s1696,TV-G,Romantic Movies,Kids
 s1697,TV-Y,Kids' TV,Kids
 s1698,TV-14,Reality TV,Teens
 s1699,TV-MA,British TV Shows,Adults
 s1699,TV-MA,International TV Shows,Adults
 s1699,TV-MA,TV Dramas,Adults
-s1700,TV-G,Children & Family Movies,Other
-s1700,TV-G,Classic Movies,Other
-s1700,TV-G,Comedies,Other
+s1700,TV-G,Children & Family Movies,Kids
+s1700,TV-G,Classic Movies,Kids
+s1700,TV-G,Comedies,Kids
 s1701,TV-14,Thrillers,Teens
 s1702,TV-MA,TV Horror,Adults
 s1702,TV-MA,TV Mysteries,Adults
@@ -3707,8 +3707,8 @@ s1706,PG-13,International Movies,Adults
 s1707,TV-MA,Crime TV Shows,Adults
 s1707,TV-MA,International TV Shows,Adults
 s1707,TV-MA,Spanish-Language TV Shows,Adults
-s1708,TV-G,International Movies,Other
-s1708,TV-G,Romantic Movies,Other
+s1708,TV-G,International Movies,Kids
+s1708,TV-G,Romantic Movies,Kids
 s1709,TV-MA,International TV Shows,Adults
 s1709,TV-MA,TV Dramas,Adults
 s1710,TV-MA,Dramas,Adults
@@ -3766,19 +3766,19 @@ s1733,TV-14,Romantic Movies,Teens
 s1734,TV-14,Crime TV Shows,Teens
 s1734,TV-14,Docuseries,Teens
 s1734,TV-14,International TV Shows,Teens
-s1735,TV-G,Comedies,Other
-s1735,TV-G,Romantic Movies,Other
+s1735,TV-G,Comedies,Kids
+s1735,TV-G,Romantic Movies,Kids
 s1736,TV-14,Dramas,Teens
 s1736,TV-14,International Movies,Teens
 s1736,TV-14,Romantic Movies,Teens
-s1737,TV-G,Children & Family Movies,Other
-s1737,TV-G,Comedies,Other
-s1737,TV-G,Romantic Movies,Other
+s1737,TV-G,Children & Family Movies,Kids
+s1737,TV-G,Comedies,Kids
+s1737,TV-G,Romantic Movies,Kids
 s1738,TV-14,International TV Shows,Teens
 s1738,TV-14,TV Dramas,Teens
 s1738,TV-14,TV Horror,Teens
-s1739,TV-G,Dramas,Other
-s1739,TV-G,Romantic Movies,Other
+s1739,TV-G,Dramas,Kids
+s1739,TV-G,Romantic Movies,Kids
 s1740,TV-PG,Comedies,Teens
 s1740,TV-PG,Dramas,Teens
 s1740,TV-PG,Romantic Movies,Teens
@@ -4256,7 +4256,7 @@ s1959,TV-MA,Docuseries,Adults
 s1960,PG-13,Action & Adventure,Adults
 s1960,PG-13,Children & Family Movies,Adults
 s1960,PG-13,Dramas,Adults
-s1961,TV-G,Documentaries,Other
+s1961,TV-G,Documentaries,Kids
 s1962,TV-MA,Docuseries,Adults
 s1963,TV-PG,Documentaries,Teens
 s1964,TV-PG,Dramas,Teens
@@ -4296,7 +4296,7 @@ s1978,TV-MA,International Movies,Adults
 s1979,TV-MA,TV Dramas,Adults
 s1979,TV-MA,TV Horror,Adults
 s1979,TV-MA,TV Mysteries,Adults
-s1980,TV-G,Reality TV,Other
+s1980,TV-G,Reality TV,Kids
 s1981,TV-14,Crime TV Shows,Teens
 s1981,TV-14,TV Dramas,Teens
 s1981,TV-14,TV Thrillers,Teens
@@ -4388,12 +4388,12 @@ s2019,TV-PG,International Movies,Teens
 s2020,TV-PG,Comedies,Teens
 s2020,TV-PG,Dramas,Teens
 s2020,TV-PG,International Movies,Teens
-s2021,TV-G,Children & Family Movies,Other
-s2021,TV-G,Dramas,Other
-s2021,TV-G,International Movies,Other
+s2021,TV-G,Children & Family Movies,Kids
+s2021,TV-G,Dramas,Kids
+s2021,TV-G,International Movies,Kids
 s2022,TV-14,TV Dramas,Teens
-s2023,TV-G,Kids' TV,Other
-s2023,TV-G,TV Comedies,Other
+s2023,TV-G,Kids' TV,Kids
+s2023,TV-G,TV Comedies,Kids
 s2024,TV-MA,Dramas,Adults
 s2024,TV-MA,International Movies,Adults
 s2024,TV-MA,Romantic Movies,Adults
@@ -4406,7 +4406,7 @@ s2026,TV-14,International Movies,Teens
 s2027,TV-14,Comedies,Teens
 s2027,TV-14,Dramas,Teens
 s2027,TV-14,International Movies,Teens
-s2028,TV-G,Children & Family Movies,Other
+s2028,TV-G,Children & Family Movies,Kids
 s2029,TV-14,Dramas,Teens
 s2029,TV-14,International Movies,Teens
 s2029,TV-14,Thrillers,Teens
@@ -4431,9 +4431,9 @@ s2037,TV-MA,Thrillers,Adults
 s2038,TV-14,International TV Shows,Teens
 s2038,TV-14,Romantic TV Shows,Teens
 s2038,TV-14,TV Dramas,Teens
-s2039,TV-G,Children & Family Movies,Other
-s2039,TV-G,Documentaries,Other
-s2039,TV-G,International Movies,Other
+s2039,TV-G,Children & Family Movies,Kids
+s2039,TV-G,Documentaries,Kids
+s2039,TV-G,International Movies,Kids
 s2040,TV-MA,Dramas,Adults
 s2040,TV-MA,Independent Movies,Adults
 s2040,TV-MA,International Movies,Adults
@@ -4475,9 +4475,9 @@ s2056,TV-MA,Independent Movies,Adults
 s2056,TV-MA,International Movies,Adults
 s2057,PG,Children & Family Movies,Teens
 s2057,PG,Comedies,Teens
-s2058,TV-G,Documentaries,Other
-s2058,TV-G,International Movies,Other
-s2058,TV-G,Music & Musicals,Other
+s2058,TV-G,Documentaries,Kids
+s2058,TV-G,International Movies,Kids
+s2058,TV-G,Music & Musicals,Kids
 s2059,TV-MA,Docuseries,Adults
 s2059,TV-MA,TV Sci-Fi & Fantasy,Adults
 s2060,PG-13,Action & Adventure,Adults
@@ -4574,8 +4574,8 @@ s2101,PG-13,Thrillers,Adults
 s2102,TV-MA,British TV Shows,Adults
 s2102,TV-MA,Reality TV,Adults
 s2102,TV-MA,Romantic TV Shows,Adults
-s2103,TV-G,International TV Shows,Other
-s2103,TV-G,TV Comedies,Other
+s2103,TV-G,International TV Shows,Kids
+s2103,TV-G,TV Comedies,Kids
 s2104,TV-14,Dramas,Teens
 s2104,TV-14,International Movies,Teens
 s2104,TV-14,Thrillers,Teens
@@ -4635,9 +4635,9 @@ s2127,TV-PG,Music & Musicals,Teens
 s2128,TV-MA,International TV Shows,Adults
 s2128,TV-MA,TV Dramas,Adults
 s2128,TV-MA,TV Sci-Fi & Fantasy,Adults
-s2129,TV-G,Documentaries,Other
-s2129,TV-G,International Movies,Other
-s2129,TV-G,Sports Movies,Other
+s2129,TV-G,Documentaries,Kids
+s2129,TV-G,International Movies,Kids
+s2129,TV-G,Sports Movies,Kids
 s2130,TV-Y7,Children & Family Movies,Kids
 s2130,TV-Y7,Comedies,Kids
 s2131,TV-MA,Dramas,Adults
@@ -4671,8 +4671,8 @@ s2143,PG,Children & Family Movies,Teens
 s2143,PG,Comedies,Teens
 s2143,PG,Sci-Fi & Fantasy,Teens
 s2144,TV-MA,Stand-Up Comedy,Adults
-s2145,TV-G,Kids' TV,Other
-s2145,TV-G,TV Comedies,Other
+s2145,TV-G,Kids' TV,Kids
+s2145,TV-G,TV Comedies,Kids
 s2146,TV-MA,International TV Shows,Adults
 s2146,TV-MA,Reality TV,Adults
 s2147,PG-13,Dramas,Adults
@@ -4717,8 +4717,8 @@ s2166,TV-14,Crime TV Shows,Teens
 s2166,TV-14,Docuseries,Teens
 s2166,TV-14,International TV Shows,Teens
 s2167,TV-Y,Children & Family Movies,Kids
-s2168,TV-G,Children & Family Movies,Other
-s2168,TV-G,Comedies,Other
+s2168,TV-G,Children & Family Movies,Kids
+s2168,TV-G,Comedies,Kids
 s2169,TV-PG,Docuseries,Teens
 s2169,TV-PG,International TV Shows,Teens
 s2169,TV-PG,Science & Nature TV,Teens
@@ -4730,15 +4730,15 @@ s2172,TV-MA,Independent Movies,Adults
 s2173,R,Comedies,Adults
 s2174,TV-PG,TV Comedies,Teens
 s2174,TV-PG,Teen TV Shows,Teens
-s2175,TV-G,Kids' TV,Other
+s2175,TV-G,Kids' TV,Kids
 s2176,TV-14,Anime Series,Teens
 s2176,TV-14,Romantic TV Shows,Teens
 s2176,TV-14,Teen TV Shows,Teens
 s2177,R,Action & Adventure,Adults
 s2178,TV-Y,Children & Family Movies,Kids
-s2179,TV-G,Kids' TV,Other
-s2179,TV-G,Reality TV,Other
-s2179,TV-G,TV Dramas,Other
+s2179,TV-G,Kids' TV,Kids
+s2179,TV-G,Reality TV,Kids
+s2179,TV-G,TV Dramas,Kids
 s2180,R,Dramas,Adults
 s2180,R,Romantic Movies,Adults
 s2181,TV-14,Anime Series,Teens
@@ -4759,7 +4759,7 @@ s2187,TV-MA,Thrillers,Adults
 s2188,TV-MA,Comedies,Adults
 s2188,TV-MA,International Movies,Adults
 s2188,TV-MA,Romantic Movies,Adults
-s2189,TV-G,Children & Family Movies,Other
+s2189,TV-G,Children & Family Movies,Kids
 s2190,TV-PG,Reality TV,Teens
 s2191,TV-14,TV Action & Adventure,Teens
 s2191,TV-14,TV Mysteries,Teens
@@ -4811,9 +4811,9 @@ s2211,TV-MA,Thrillers,Adults
 s2212,TV-MA,Dramas,Adults
 s2212,TV-MA,International Movies,Adults
 s2212,TV-MA,Romantic Movies,Adults
-s2213,TV-G,International TV Shows,Other
-s2213,TV-G,Reality TV,Other
-s2213,TV-G,Spanish-Language TV Shows,Other
+s2213,TV-G,International TV Shows,Kids
+s2213,TV-G,Reality TV,Kids
+s2213,TV-G,Spanish-Language TV Shows,Kids
 s2214,TV-14,Comedies,Teens
 s2214,TV-14,Romantic Movies,Teens
 s2215,TV-14,Docuseries,Teens
@@ -4897,8 +4897,8 @@ s2251,R,Action & Adventure,Adults
 s2252,TV-MA,Crime TV Shows,Adults
 s2252,TV-MA,International TV Shows,Adults
 s2252,TV-MA,TV Dramas,Adults
-s2253,TV-G,Comedies,Other
-s2253,TV-G,International Movies,Other
+s2253,TV-G,Comedies,Kids
+s2253,TV-G,International Movies,Kids
 s2254,TV-MA,Anime Series,Adults
 s2254,TV-MA,International TV Shows,Adults
 s2255,TV-MA,International TV Shows,Adults
@@ -5016,12 +5016,12 @@ s2298,TV-MA,International TV Shows,Adults
 s2298,TV-MA,TV Horror,Adults
 s2298,TV-MA,TV Mysteries,Adults
 s2299,TV-PG,Reality TV,Teens
-s2300,TV-G,Kids' TV,Other
-s2300,TV-G,TV Dramas,Other
+s2300,TV-G,Kids' TV,Kids
+s2300,TV-G,TV Dramas,Kids
 s2301,TV-MA,Comedies,Adults
 s2301,TV-MA,Dramas,Adults
 s2301,TV-MA,International Movies,Adults
-s2302,TV-G,Reality TV,Other
+s2302,TV-G,Reality TV,Kids
 s2303,TV-MA,Stand-Up Comedy,Adults
 s2304,TV-MA,TV Action & Adventure,Adults
 s2304,TV-MA,TV Mysteries,Adults
@@ -5065,9 +5065,9 @@ s2323,TV-MA,TV Dramas,Adults
 s2324,TV-14,Action & Adventure,Teens
 s2324,TV-14,Dramas,Teens
 s2324,TV-14,International Movies,Teens
-s2325,TV-G,Dramas,Other
-s2325,TV-G,International Movies,Other
-s2325,TV-G,Romantic Movies,Other
+s2325,TV-G,Dramas,Kids
+s2325,TV-G,International Movies,Kids
+s2325,TV-G,Romantic Movies,Kids
 s2326,TV-MA,Documentaries,Adults
 s2326,TV-MA,International Movies,Adults
 s2327,TV-14,Dramas,Teens
@@ -5099,9 +5099,9 @@ s2336,TV-14,International Movies,Teens
 s2336,TV-14,Romantic Movies,Teens
 s2337,TV-14,Dramas,Teens
 s2337,TV-14,International Movies,Teens
-s2338,TV-G,International TV Shows,Other
-s2338,TV-G,Korean TV Shows,Other
-s2338,TV-G,Reality TV,Other
+s2338,TV-G,International TV Shows,Kids
+s2338,TV-G,Korean TV Shows,Kids
+s2338,TV-G,Reality TV,Kids
 s2339,TV-MA,International Movies,Adults
 s2339,TV-MA,Romantic Movies,Adults
 s2340,TV-14,Action & Adventure,Teens
@@ -5147,9 +5147,9 @@ s2355,TV-14,Dramas,Teens
 s2355,TV-14,International Movies,Teens
 s2356,TV-MA,Documentaries,Adults
 s2356,TV-MA,LGBTQ Movies,Adults
-s2357,TV-G,Children & Family Movies,Other
-s2357,TV-G,Comedies,Other
-s2357,TV-G,Dramas,Other
+s2357,TV-G,Children & Family Movies,Kids
+s2357,TV-G,Comedies,Kids
+s2357,TV-G,Dramas,Kids
 s2358,TV-PG,Reality TV,Teens
 s2359,TV-MA,Action & Adventure,Adults
 s2359,TV-MA,Dramas,Adults
@@ -5191,9 +5191,9 @@ s2371,TV-PG,International Movies,Teens
 s2371,TV-PG,Sports Movies,Teens
 s2372,TV-14,Comedies,Teens
 s2372,TV-14,International Movies,Teens
-s2373,TV-G,Documentaries,Other
-s2373,TV-G,International Movies,Other
-s2373,TV-G,Music & Musicals,Other
+s2373,TV-G,Documentaries,Kids
+s2373,TV-G,International Movies,Kids
+s2373,TV-G,Music & Musicals,Kids
 s2374,TV-MA,Action & Adventure,Adults
 s2374,TV-MA,Classic Movies,Adults
 s2374,TV-MA,Dramas,Adults
@@ -5231,8 +5231,8 @@ s2387,TV-14,International Movies,Teens
 s2388,TV-MA,Dramas,Adults
 s2388,TV-MA,International Movies,Adults
 s2388,TV-MA,Thrillers,Adults
-s2389,TV-G,Kids' TV,Other
-s2389,TV-G,TV Comedies,Other
+s2389,TV-G,Kids' TV,Kids
+s2389,TV-G,TV Comedies,Kids
 s2390,TV-14,Dramas,Teens
 s2390,TV-14,International Movies,Teens
 s2391,TV-14,Crime TV Shows,Teens
@@ -5335,8 +5335,8 @@ s2430,TV-MA,Romantic Movies,Adults
 s2431,R,Comedies,Adults
 s2431,R,Dramas,Adults
 s2431,R,Independent Movies,Adults
-s2432,TV-G,Children & Family Movies,Other
-s2432,TV-G,Documentaries,Other
+s2432,TV-G,Children & Family Movies,Kids
+s2432,TV-G,Documentaries,Kids
 s2433,TV-14,Reality TV,Teens
 s2434,TV-14,Comedies,Teens
 s2434,TV-14,International Movies,Teens
@@ -5370,9 +5370,9 @@ s2445,TV-Y7,International TV Shows,Kids
 s2446,TV-14,Comedies,Teens
 s2446,TV-14,Dramas,Teens
 s2446,TV-14,Independent Movies,Teens
-s2447,TV-G,Comedies,Other
-s2447,TV-G,International Movies,Other
-s2447,TV-G,Romantic Movies,Other
+s2447,TV-G,Comedies,Kids
+s2447,TV-G,International Movies,Kids
+s2447,TV-G,Romantic Movies,Kids
 s2448,TV-MA,International TV Shows,Adults
 s2448,TV-MA,Korean TV Shows,Adults
 s2448,TV-MA,TV Dramas,Adults
@@ -5418,8 +5418,8 @@ s2465,TV-14,International Movies,Teens
 s2466,TV-MA,Dramas,Adults
 s2466,TV-MA,International Movies,Adults
 s2466,TV-MA,Thrillers,Adults
-s2467,TV-G,Kids' TV,Other
-s2467,TV-G,TV Comedies,Other
+s2467,TV-G,Kids' TV,Kids
+s2467,TV-G,TV Comedies,Kids
 s2468,TV-MA,Dramas,Adults
 s2468,TV-MA,Independent Movies,Adults
 s2468,TV-MA,International Movies,Adults
@@ -5435,11 +5435,11 @@ s2473,TV-MA,International TV Shows,Adults
 s2473,TV-MA,TV Action & Adventure,Adults
 s2473,TV-MA,TV Horror,Adults
 s2474,TV-14,TV Dramas,Teens
-s2475,TV-G,Dramas,Other
-s2475,TV-G,International Movies,Other
-s2476,TV-G,Dramas,Other
-s2476,TV-G,International Movies,Other
-s2476,TV-G,Music & Musicals,Other
+s2475,TV-G,Dramas,Kids
+s2475,TV-G,International Movies,Kids
+s2476,TV-G,Dramas,Kids
+s2476,TV-G,International Movies,Kids
+s2476,TV-G,Music & Musicals,Kids
 s2477,TV-14,British TV Shows,Teens
 s2477,TV-14,Docuseries,Teens
 s2477,TV-14,International TV Shows,Teens
@@ -5452,9 +5452,9 @@ s2480,R,Action & Adventure,Adults
 s2480,R,Comedies,Adults
 s2480,R,Romantic Movies,Adults
 s2481,TV-MA,TV Comedies,Adults
-s2482,TV-G,Dramas,Other
-s2482,TV-G,International Movies,Other
-s2482,TV-G,Romantic Movies,Other
+s2482,TV-G,Dramas,Kids
+s2482,TV-G,International Movies,Kids
+s2482,TV-G,Romantic Movies,Kids
 s2483,TV-14,Comedies,Teens
 s2483,TV-14,Dramas,Teens
 s2483,TV-14,International Movies,Teens
@@ -5584,9 +5584,9 @@ s2532,TV-14,Romantic Movies,Teens
 s2533,TV-14,Dramas,Teens
 s2533,TV-14,International Movies,Teens
 s2533,TV-14,Romantic Movies,Teens
-s2534,TV-G,Children & Family Movies,Other
-s2534,TV-G,Dramas,Other
-s2534,TV-G,International Movies,Other
+s2534,TV-G,Children & Family Movies,Kids
+s2534,TV-G,Dramas,Kids
+s2534,TV-G,International Movies,Kids
 s2535,TV-MA,Action & Adventure,Adults
 s2535,TV-MA,International Movies,Adults
 s2535,TV-MA,Romantic Movies,Adults
@@ -5651,9 +5651,9 @@ s2561,TV-MA,Romantic Movies,Adults
 s2562,TV-PG,Stand-Up Comedy,Teens
 s2563,PG,Children & Family Movies,Teens
 s2563,PG,Comedies,Teens
-s2564,TV-G,Children & Family Movies,Other
-s2564,TV-G,Comedies,Other
-s2564,TV-G,Music & Musicals,Other
+s2564,TV-G,Children & Family Movies,Kids
+s2564,TV-G,Comedies,Kids
+s2564,TV-G,Music & Musicals,Kids
 s2565,TV-14,Dramas,Teens
 s2565,TV-14,International Movies,Teens
 s2566,TV-MA,International TV Shows,Adults
@@ -5698,8 +5698,8 @@ s2587,TV-PG,Anime Series,Teens
 s2587,TV-PG,Romantic TV Shows,Teens
 s2588,TV-MA,International Movies,Adults
 s2588,TV-MA,Thrillers,Adults
-s2589,TV-G,Kids' TV,Other
-s2589,TV-G,TV Comedies,Other
+s2589,TV-G,Kids' TV,Kids
+s2589,TV-G,TV Comedies,Kids
 s2590,TV-MA,Horror Movies,Adults
 s2590,TV-MA,International Movies,Adults
 s2590,TV-MA,Thrillers,Adults
@@ -5744,9 +5744,9 @@ s2608,TV-14,Comedies,Teens
 s2608,TV-14,Dramas,Teens
 s2608,TV-14,International Movies,Teens
 s2609,TV-MA,Documentaries,Adults
-s2610,TV-G,British TV Shows,Other
-s2610,TV-G,International TV Shows,Other
-s2610,TV-G,Reality TV,Other
+s2610,TV-G,British TV Shows,Kids
+s2610,TV-G,International TV Shows,Kids
+s2610,TV-G,Reality TV,Kids
 s2611,TV-14,Action & Adventure,Teens
 s2611,TV-14,Comedies,Teens
 s2611,TV-14,Dramas,Teens
@@ -5838,8 +5838,8 @@ s2645,TV-MA,Stand-Up Comedy,Adults
 s2646,TV-14,Anime Series,Teens
 s2646,TV-14,Crime TV Shows,Teens
 s2646,TV-14,International TV Shows,Teens
-s2647,TV-G,Comedies,Other
-s2647,TV-G,International Movies,Other
+s2647,TV-G,Comedies,Kids
+s2647,TV-G,International Movies,Kids
 s2648,TV-14,Comedies,Teens
 s2648,TV-14,International Movies,Teens
 s2649,TV-MA,International TV Shows,Adults
@@ -5913,9 +5913,9 @@ s2679,PG,Dramas,Teens
 s2679,PG,Music & Musicals,Teens
 s2680,TV-MA,Stand-Up Comedy,Adults
 s2681,R,Comedies,Adults
-s2682,TV-G,Children & Family Movies,Other
-s2682,TV-G,Comedies,Other
-s2682,TV-G,International Movies,Other
+s2682,TV-G,Children & Family Movies,Kids
+s2682,TV-G,Comedies,Kids
+s2682,TV-G,International Movies,Kids
 s2683,TV-14,Dramas,Teens
 s2683,TV-14,International Movies,Teens
 s2683,TV-14,Romantic Movies,Teens
@@ -5947,9 +5947,9 @@ s2694,TV-MA,Romantic Movies,Adults
 s2695,TV-MA,Comedies,Adults
 s2695,TV-MA,Dramas,Adults
 s2695,TV-MA,International Movies,Adults
-s2696,TV-G,Children & Family Movies,Other
-s2696,TV-G,Comedies,Other
-s2696,TV-G,Sports Movies,Other
+s2696,TV-G,Children & Family Movies,Kids
+s2696,TV-G,Comedies,Kids
+s2696,TV-G,Sports Movies,Kids
 s2697,TV-MA,Crime TV Shows,Adults
 s2697,TV-MA,International TV Shows,Adults
 s2697,TV-MA,TV Dramas,Adults
@@ -6068,7 +6068,7 @@ s2743,TV-MA,British TV Shows,Adults
 s2743,TV-MA,Docuseries,Adults
 s2743,TV-MA,International TV Shows,Adults
 s2744,TV-MA,TV Comedies,Adults
-s2745,TV-G,Children & Family Movies,Other
+s2745,TV-G,Children & Family Movies,Kids
 s2746,R,Dramas,Adults
 s2746,R,Independent Movies,Adults
 s2746,R,Music & Musicals,Adults
@@ -6085,9 +6085,9 @@ s2750,R,Horror Movies,Adults
 s2750,R,Independent Movies,Adults
 s2750,R,Sci-Fi & Fantasy,Adults
 s2751,TV-Y7,Children & Family Movies,Kids
-s2752,TV-G,Kids' TV,Other
-s2752,TV-G,TV Comedies,Other
-s2752,TV-G,TV Dramas,Other
+s2752,TV-G,Kids' TV,Kids
+s2752,TV-G,TV Comedies,Kids
+s2752,TV-G,TV Dramas,Kids
 s2753,TV-Y7,Kids' TV,Kids
 s2754,TV-MA,Stand-Up Comedy,Adults
 s2755,PG,Children & Family Movies,Teens
@@ -6140,8 +6140,8 @@ s2775,TV-MA,International TV Shows,Adults
 s2776,TV-MA,Dramas,Adults
 s2776,TV-MA,International Movies,Adults
 s2776,TV-MA,Romantic Movies,Adults
-s2777,TV-G,Documentaries,Other
-s2777,TV-G,International Movies,Other
+s2777,TV-G,Documentaries,Kids
+s2777,TV-G,International Movies,Kids
 s2778,TV-MA,International TV Shows,Adults
 s2778,TV-MA,TV Dramas,Adults
 s2779,PG,Children & Family Movies,Teens
@@ -6401,8 +6401,8 @@ s2892,TV-MA,TV Dramas,Adults
 s2893,TV-MA,International TV Shows,Adults
 s2893,TV-MA,Korean TV Shows,Adults
 s2893,TV-MA,Romantic TV Shows,Adults
-s2894,TV-G,International TV Shows,Other
-s2894,TV-G,Reality TV,Other
+s2894,TV-G,International TV Shows,Kids
+s2894,TV-G,Reality TV,Kids
 s2895,TV-MA,Crime TV Shows,Adults
 s2895,TV-MA,International TV Shows,Adults
 s2895,TV-MA,Spanish-Language TV Shows,Adults
@@ -6569,9 +6569,9 @@ s2962,PG-13,International Movies,Adults
 s2962,PG-13,Romantic Movies,Adults
 s2963,TV-Y7,Kids' TV,Kids
 s2963,TV-Y7,TV Action & Adventure,Kids
-s2964,TV-G,Children & Family Movies,Other
-s2964,TV-G,Comedies,Other
-s2964,TV-G,International Movies,Other
+s2964,TV-G,Children & Family Movies,Kids
+s2964,TV-G,Comedies,Kids
+s2964,TV-G,International Movies,Kids
 s2965,TV-PG,Movies,Teens
 s2966,TV-MA,Anime Series,Adults
 s2966,TV-MA,International TV Shows,Adults
@@ -6581,9 +6581,9 @@ s2968,TV-Y,Kids' TV,Kids
 s2969,TV-MA,Action & Adventure,Adults
 s2969,TV-MA,Horror Movies,Adults
 s2969,TV-MA,Sci-Fi & Fantasy,Adults
-s2970,TV-G,Dramas,Other
-s2970,TV-G,International Movies,Other
-s2970,TV-G,Music & Musicals,Other
+s2970,TV-G,Dramas,Kids
+s2970,TV-G,International Movies,Kids
+s2970,TV-G,Music & Musicals,Kids
 s2971,TV-MA,Dramas,Adults
 s2971,TV-MA,International Movies,Adults
 s2972,TV-MA,International TV Shows,Adults
@@ -6721,9 +6721,9 @@ s3029,TV-Y,Kids' TV,Kids
 s3030,TV-MA,Action & Adventure,Adults
 s3030,TV-MA,Dramas,Adults
 s3030,TV-MA,International Movies,Adults
-s3031,TV-G,Kids' TV,Other
-s3031,TV-G,TV Comedies,Other
-s3031,TV-G,TV Dramas,Other
+s3031,TV-G,Kids' TV,Kids
+s3031,TV-G,TV Comedies,Kids
+s3031,TV-G,TV Dramas,Kids
 s3032,TV-14,Documentaries,Teens
 s3033,TV-MA,Comedies,Adults
 s3033,TV-MA,Dramas,Adults
@@ -6805,9 +6805,9 @@ s3063,G,Sci-Fi & Fantasy,Kids
 s3064,TV-MA,International TV Shows,Adults
 s3064,TV-MA,Korean TV Shows,Adults
 s3064,TV-MA,Romantic TV Shows,Adults
-s3065,TV-G,Children & Family Movies,Other
-s3065,TV-G,Comedies,Other
-s3065,TV-G,Music & Musicals,Other
+s3065,TV-G,Children & Family Movies,Kids
+s3065,TV-G,Comedies,Kids
+s3065,TV-G,Music & Musicals,Kids
 s3066,TV-MA,TV Dramas,Adults
 s3066,TV-MA,TV Thrillers,Adults
 s3067,TV-Y7,Kids' TV,Kids
@@ -7141,8 +7141,8 @@ s3204,TV-MA,Thrillers,Adults
 s3205,TV-14,International TV Shows,Teens
 s3205,TV-14,Korean TV Shows,Teens
 s3205,TV-14,Romantic TV Shows,Teens
-s3206,TV-G,Documentaries,Other
-s3206,TV-G,International Movies,Other
+s3206,TV-G,Documentaries,Kids
+s3206,TV-G,International Movies,Kids
 s3207,TV-14,Comedies,Teens
 s3207,TV-14,Dramas,Teens
 s3207,TV-14,International Movies,Teens
@@ -7250,9 +7250,9 @@ s3252,TV-14,International Movies,Teens
 s3252,TV-14,Romantic Movies,Teens
 s3253,TV-MA,International TV Shows,Adults
 s3253,TV-MA,TV Dramas,Adults
-s3254,TV-G,Documentaries,Other
-s3254,TV-G,International Movies,Other
-s3254,TV-G,Sports Movies,Other
+s3254,TV-G,Documentaries,Kids
+s3254,TV-G,International Movies,Kids
+s3254,TV-G,Sports Movies,Kids
 s3255,TV-14,Dramas,Teens
 s3255,TV-14,Independent Movies,Teens
 s3255,TV-14,International Movies,Teens
@@ -7370,9 +7370,9 @@ s3302,TV-14,TV Dramas,Teens
 s3303,TV-14,Action & Adventure,Teens
 s3303,TV-14,Dramas,Teens
 s3303,TV-14,International Movies,Teens
-s3304,TV-G,Children & Family Movies,Other
-s3304,TV-G,Comedies,Other
-s3304,TV-G,Music & Musicals,Other
+s3304,TV-G,Children & Family Movies,Kids
+s3304,TV-G,Comedies,Kids
+s3304,TV-G,Music & Musicals,Kids
 s3305,TV-PG,Kids' TV,Teens
 s3305,TV-PG,TV Comedies,Teens
 s3306,TV-MA,Stand-Up Comedy,Adults
@@ -7398,8 +7398,8 @@ s3314,TV-MA,Docuseries,Adults
 s3315,TV-Y,Movies,Kids
 s3316,TV-Y7,Children & Family Movies,Kids
 s3316,TV-Y7,Comedies,Kids
-s3317,TV-G,Kids' TV,Other
-s3317,TV-G,TV Comedies,Other
+s3317,TV-G,Kids' TV,Kids
+s3317,TV-G,TV Comedies,Kids
 s3318,TV-PG,Children & Family Movies,Teens
 s3318,TV-PG,Comedies,Teens
 s3318,TV-PG,Music & Musicals,Teens
@@ -7415,8 +7415,8 @@ s3324,TV-Y,Children & Family Movies,Kids
 s3324,TV-Y,Comedies,Kids
 s3325,TV-Y,Children & Family Movies,Kids
 s3325,TV-Y,Comedies,Kids
-s3326,TV-G,Kids' TV,Other
-s3326,TV-G,TV Comedies,Other
+s3326,TV-G,Kids' TV,Kids
+s3326,TV-G,TV Comedies,Kids
 s3327,TV-MA,Comedies,Adults
 s3327,TV-MA,International Movies,Adults
 s3328,TV-PG,Docuseries,Teens
@@ -7503,15 +7503,15 @@ s3365,TV-14,Documentaries,Teens
 s3365,TV-14,International Movies,Teens
 s3366,TV-PG,Documentaries,Teens
 s3366,TV-PG,International Movies,Teens
-s3367,TV-G,Documentaries,Other
-s3367,TV-G,International Movies,Other
-s3367,TV-G,Sports Movies,Other
+s3367,TV-G,Documentaries,Kids
+s3367,TV-G,International Movies,Kids
+s3367,TV-G,Sports Movies,Kids
 s3368,TV-PG,International TV Shows,Teens
 s3368,TV-PG,Romantic TV Shows,Teens
 s3368,TV-PG,Teen TV Shows,Teens
-s3369,TV-G,International TV Shows,Other
-s3369,TV-G,Romantic TV Shows,Other
-s3369,TV-G,Teen TV Shows,Other
+s3369,TV-G,International TV Shows,Kids
+s3369,TV-G,Romantic TV Shows,Kids
+s3369,TV-G,Teen TV Shows,Kids
 s3370,TV-MA,TV Comedies,Adults
 s3371,TV-MA,Crime TV Shows,Adults
 s3371,TV-MA,International TV Shows,Adults
@@ -7776,8 +7776,8 @@ s3489,TV-MA,Crime TV Shows,Adults
 s3489,TV-MA,International TV Shows,Adults
 s3489,TV-MA,Spanish-Language TV Shows,Adults
 s3490,TV-14,Docuseries,Teens
-s3491,TV-G,Documentaries,Other
-s3491,TV-G,International Movies,Other
+s3491,TV-G,Documentaries,Kids
+s3491,TV-G,International Movies,Kids
 s3492,TV-MA,International TV Shows,Adults
 s3492,TV-MA,TV Dramas,Adults
 s3492,TV-MA,TV Horror,Adults
@@ -7882,7 +7882,7 @@ s3534,TV-14,Romantic Movies,Teens
 s3535,TV-MA,International TV Shows,Adults
 s3535,TV-MA,TV Dramas,Adults
 s3535,TV-MA,TV Thrillers,Adults
-s3536,TV-G,Documentaries,Other
+s3536,TV-G,Documentaries,Kids
 s3537,TV-14,Dramas,Teens
 s3537,TV-14,Independent Movies,Teens
 s3537,TV-14,International Movies,Teens
@@ -7892,8 +7892,8 @@ s3538,TV-14,International Movies,Teens
 s3539,TV-MA,Documentaries,Adults
 s3539,TV-MA,International Movies,Adults
 s3540,TV-Y,Kids' TV,Kids
-s3541,TV-G,Docuseries,Other
-s3541,TV-G,Science & Nature TV,Other
+s3541,TV-G,Docuseries,Kids
+s3541,TV-G,Science & Nature TV,Kids
 s3542,TV-14,Anime Series,Teens
 s3542,TV-14,International TV Shows,Teens
 s3543,TV-MA,Dramas,Adults
@@ -7965,7 +7965,7 @@ s3571,TV-MA,Thrillers,Adults
 s3572,TV-PG,Reality TV,Teens
 s3573,TV-MA,International Movies,Adults
 s3573,TV-MA,Romantic Movies,Adults
-s3574,TV-G,Documentaries,Other
+s3574,TV-G,Documentaries,Kids
 s3575,TV-MA,Stand-Up Comedy,Adults
 s3576,TV-MA,International TV Shows,Adults
 s3576,TV-MA,Romantic TV Shows,Adults
@@ -8202,12 +8202,12 @@ s3679,TV-14,Documentaries,Teens
 s3679,TV-14,International Movies,Teens
 s3679,TV-14,Music & Musicals,Teens
 s3680,TV-MA,Stand-Up Comedy,Adults
-s3681,TV-G,British TV Shows,Other
-s3681,TV-G,Kids' TV,Other
-s3681,TV-G,TV Dramas,Other
-s3682,TV-G,Documentaries,Other
-s3682,TV-G,International Movies,Other
-s3682,TV-G,Sports Movies,Other
+s3681,TV-G,British TV Shows,Kids
+s3681,TV-G,Kids' TV,Kids
+s3681,TV-G,TV Dramas,Kids
+s3682,TV-G,Documentaries,Kids
+s3682,TV-G,International Movies,Kids
+s3682,TV-G,Sports Movies,Kids
 s3683,TV-14,International TV Shows,Teens
 s3683,TV-14,Romantic TV Shows,Teens
 s3683,TV-14,TV Dramas,Teens
@@ -8429,9 +8429,9 @@ s3777,TV-14,Stand-Up Comedy,Teens
 s3778,TV-Y,Children & Family Movies,Kids
 s3778,TV-Y,Sci-Fi & Fantasy,Kids
 s3779,TV-14,TV Comedies,Teens
-s3780,TV-G,Kids' TV,Other
-s3780,TV-G,TV Action & Adventure,Other
-s3780,TV-G,TV Comedies,Other
+s3780,TV-G,Kids' TV,Kids
+s3780,TV-G,TV Action & Adventure,Kids
+s3780,TV-G,TV Comedies,Kids
 s3781,TV-MA,International TV Shows,Adults
 s3781,TV-MA,Korean TV Shows,Adults
 s3781,TV-MA,TV Action & Adventure,Adults
@@ -8495,8 +8495,8 @@ s3805,TV-14,Action & Adventure,Teens
 s3805,TV-14,Comedies,Teens
 s3805,TV-14,International Movies,Teens
 s3806,TV-MA,Stand-Up Comedy,Adults
-s3807,TV-G,Kids' TV,Other
-s3807,TV-G,TV Comedies,Other
+s3807,TV-G,Kids' TV,Kids
+s3807,TV-G,TV Comedies,Kids
 s3808,TV-MA,Crime TV Shows,Adults
 s3808,TV-MA,International TV Shows,Adults
 s3808,TV-MA,Spanish-Language TV Shows,Adults
@@ -8545,8 +8545,8 @@ s3827,TV-14,Anime Series,Teens
 s3827,TV-14,International TV Shows,Teens
 s3828,TV-MA,Comedies,Adults
 s3829,TV-MA,Documentaries,Adults
-s3830,TV-G,Children & Family Movies,Other
-s3830,TV-G,Comedies,Other
+s3830,TV-G,Children & Family Movies,Kids
+s3830,TV-G,Comedies,Kids
 s3831,TV-14,Documentaries,Teens
 s3832,TV-14,Crime TV Shows,Teens
 s3832,TV-14,International TV Shows,Teens
@@ -9083,13 +9083,13 @@ s4056,TV-Y7,Korean TV Shows,Kids
 s4056,TV-Y7,TV Comedies,Kids
 s4057,TV-MA,Docuseries,Adults
 s4058,TV-14,TV Dramas,Teens
-s4059,TV-G,Children & Family Movies,Other
-s4059,TV-G,Comedies,Other
+s4059,TV-G,Children & Family Movies,Kids
+s4059,TV-G,Comedies,Kids
 s4060,TV-14,Horror Movies,Teens
 s4060,TV-14,International Movies,Teens
 s4060,TV-14,Thrillers,Teens
-s4061,TV-G,Children & Family Movies,Other
-s4061,TV-G,Comedies,Other
+s4061,TV-G,Children & Family Movies,Kids
+s4061,TV-G,Comedies,Kids
 s4062,TV-14,Dramas,Teens
 s4062,TV-14,International Movies,Teens
 s4062,TV-14,Music & Musicals,Teens
@@ -9276,8 +9276,8 @@ s4136,TV-MA,Documentaries,Adults
 s4137,TV-MA,Comedies,Adults
 s4137,TV-MA,Dramas,Adults
 s4137,TV-MA,International Movies,Adults
-s4138,TV-G,Children & Family Movies,Other
-s4138,TV-G,Dramas,Other
+s4138,TV-G,Children & Family Movies,Kids
+s4138,TV-G,Dramas,Kids
 s4139,TV-Y7,Movies,Kids
 s4140,TV-Y7,Children & Family Movies,Kids
 s4141,TV-Y,Children & Family Movies,Kids
@@ -9379,9 +9379,9 @@ s4182,TV-MA,International Movies,Adults
 s4183,TV-MA,Dramas,Adults
 s4183,TV-MA,Independent Movies,Adults
 s4183,TV-MA,International Movies,Adults
-s4184,TV-G,British TV Shows,Other
-s4184,TV-G,Docuseries,Other
-s4184,TV-G,International TV Shows,Other
+s4184,TV-G,British TV Shows,Kids
+s4184,TV-G,Docuseries,Kids
+s4184,TV-G,International TV Shows,Kids
 s4185,TV-MA,Docuseries,Adults
 s4185,TV-MA,Stand-Up Comedy & Talk Shows,Adults
 s4186,TV-14,Documentaries,Teens
@@ -9606,8 +9606,8 @@ s4285,TV-MA,TV Comedies,Adults
 s4286,TV-MA,Dramas,Adults
 s4286,TV-MA,Independent Movies,Adults
 s4286,TV-MA,International Movies,Adults
-s4287,TV-G,Children & Family Movies,Other
-s4287,TV-G,Comedies,Other
+s4287,TV-G,Children & Family Movies,Kids
+s4287,TV-G,Comedies,Kids
 s4288,TV-14,Comedies,Teens
 s4288,TV-14,Dramas,Teens
 s4288,TV-14,International Movies,Teens
@@ -9677,8 +9677,8 @@ s4317,TV-MA,TV Dramas,Adults
 s4318,PG-13,Comedies,Adults
 s4318,PG-13,Dramas,Adults
 s4318,PG-13,Independent Movies,Adults
-s4319,TV-G,Children & Family Movies,Other
-s4319,TV-G,Dramas,Other
+s4319,TV-G,Children & Family Movies,Kids
+s4319,TV-G,Dramas,Kids
 s4320,PG-13,Action & Adventure,Adults
 s4320,PG-13,Children & Family Movies,Adults
 s4320,PG-13,Dramas,Adults
@@ -9731,8 +9731,8 @@ s4339,TV-14,Romantic Movies,Teens
 s4340,TV-14,Action & Adventure,Teens
 s4340,TV-14,Dramas,Teens
 s4340,TV-14,International Movies,Teens
-s4341,TV-G,Kids' TV,Other
-s4341,TV-G,Korean TV Shows,Other
+s4341,TV-G,Kids' TV,Kids
+s4341,TV-G,Korean TV Shows,Kids
 s4342,TV-14,Action & Adventure,Teens
 s4342,TV-14,International Movies,Teens
 s4343,TV-MA,Action & Adventure,Adults
@@ -9829,13 +9829,13 @@ s4383,TV-MA,Thrillers,Adults
 s4384,TV-MA,Comedies,Adults
 s4384,TV-MA,Dramas,Adults
 s4384,TV-MA,International Movies,Adults
-s4385,TV-G,Kids' TV,Other
-s4385,TV-G,TV Dramas,Other
+s4385,TV-G,Kids' TV,Kids
+s4385,TV-G,TV Dramas,Kids
 s4386,R,Comedies,Adults
 s4386,R,Dramas,Adults
-s4387,TV-G,Children & Family Movies,Other
-s4387,TV-G,Dramas,Other
-s4387,TV-G,Romantic Movies,Other
+s4387,TV-G,Children & Family Movies,Kids
+s4387,TV-G,Dramas,Kids
+s4387,TV-G,Romantic Movies,Kids
 s4388,TV-MA,Docuseries,Adults
 s4388,TV-MA,International TV Shows,Adults
 s4388,TV-MA,Reality TV,Adults
@@ -9900,11 +9900,11 @@ s4414,TV-14,TV Comedies,Teens
 s4415,TV-MA,Comedies,Adults
 s4415,TV-MA,International Movies,Adults
 s4415,TV-MA,LGBTQ Movies,Adults
-s4416,TV-G,Kids' TV,Other
+s4416,TV-G,Kids' TV,Kids
 s4417,TV-14,Documentaries,Teens
 s4417,TV-14,Music & Musicals,Teens
-s4418,TV-G,Dramas,Other
-s4418,TV-G,Romantic Movies,Other
+s4418,TV-G,Dramas,Kids
+s4418,TV-G,Romantic Movies,Kids
 s4419,R,Classic Movies,Adults
 s4419,R,Dramas,Adults
 s4419,R,Independent Movies,Adults
@@ -10442,9 +10442,9 @@ s4647,TV-MA,Dramas,Adults
 s4647,TV-MA,International Movies,Adults
 s4648,TV-MA,Stand-Up Comedy & Talk Shows,Adults
 s4648,TV-MA,TV Comedies,Adults
-s4649,TV-G,Docuseries,Other
-s4649,TV-G,Kids' TV,Other
-s4649,TV-G,Science & Nature TV,Other
+s4649,TV-G,Docuseries,Kids
+s4649,TV-G,Kids' TV,Kids
+s4649,TV-G,Science & Nature TV,Kids
 s4650,TV-MA,Dramas,Adults
 s4650,TV-MA,International Movies,Adults
 s4651,TV-14,International TV Shows,Teens
@@ -10663,8 +10663,8 @@ s4737,TV-14,Romantic Movies,Teens
 s4738,TV-PG,Children & Family Movies,Teens
 s4738,TV-PG,Dramas,Teens
 s4738,TV-PG,Independent Movies,Teens
-s4739,TV-G,Docuseries,Other
-s4739,TV-G,International TV Shows,Other
+s4739,TV-G,Docuseries,Kids
+s4739,TV-G,International TV Shows,Kids
 s4740,TV-MA,Documentaries,Adults
 s4741,TV-MA,Dramas,Adults
 s4741,TV-MA,Independent Movies,Adults
@@ -10732,9 +10732,9 @@ s4769,TV-14,Music & Musicals,Teens
 s4770,TV-14,Action & Adventure,Teens
 s4770,TV-14,Anime Features,Teens
 s4770,TV-14,International Movies,Teens
-s4771,TV-G,Children & Family Movies,Other
-s4771,TV-G,Dramas,Other
-s4771,TV-G,International Movies,Other
+s4771,TV-G,Children & Family Movies,Kids
+s4771,TV-G,Dramas,Kids
+s4771,TV-G,International Movies,Kids
 s4772,TV-MA,Stand-Up Comedy & Talk Shows,Adults
 s4772,TV-MA,TV Comedies,Adults
 s4773,TV-14,International TV Shows,Teens
@@ -10864,8 +10864,8 @@ s4826,TV-MA,Dramas,Adults
 s4826,TV-MA,International Movies,Adults
 s4827,TV-MA,Comedies,Adults
 s4827,TV-MA,International Movies,Adults
-s4828,TV-G,Documentaries,Other
-s4828,TV-G,International Movies,Other
+s4828,TV-G,Documentaries,Kids
+s4828,TV-G,International Movies,Kids
 s4829,TV-MA,Comedies,Adults
 s4829,TV-MA,Romantic Movies,Adults
 s4830,PG-13,Dramas,Adults
@@ -10959,8 +10959,8 @@ s4873,TV-MA,Horror Movies,Adults
 s4874,G,Children & Family Movies,Kids
 s4874,G,Comedies,Kids
 s4874,G,Music & Musicals,Kids
-s4875,TV-G,Stand-Up Comedy & Talk Shows,Other
-s4875,TV-G,TV Comedies,Other
+s4875,TV-G,Stand-Up Comedy & Talk Shows,Kids
+s4875,TV-G,TV Comedies,Kids
 s4876,TV-MA,Dramas,Adults
 s4876,TV-MA,Sci-Fi & Fantasy,Adults
 s4876,TV-MA,Thrillers,Adults
@@ -11216,17 +11216,17 @@ s4994,TV-MA,Thrillers,Adults
 s4995,TV-MA,Crime TV Shows,Adults
 s4995,TV-MA,International TV Shows,Adults
 s4995,TV-MA,Korean TV Shows,Adults
-s4996,TV-G,Documentaries,Other
-s4996,TV-G,International Movies,Other
-s4996,TV-G,Sports Movies,Other
+s4996,TV-G,Documentaries,Kids
+s4996,TV-G,International Movies,Kids
+s4996,TV-G,Sports Movies,Kids
 s4997,R,International Movies,Adults
 s4997,R,Thrillers,Adults
 s4998,TV-MA,Crime TV Shows,Adults
 s4998,TV-MA,International TV Shows,Adults
 s4998,TV-MA,TV Dramas,Adults
 s4999,TV-14,Stand-Up Comedy,Teens
-s5000,TV-G,Children & Family Movies,Other
-s5000,TV-G,Documentaries,Other
+s5000,TV-G,Children & Family Movies,Kids
+s5000,TV-G,Documentaries,Kids
 s5001,TV-MA,Docuseries,Adults
 s5001,TV-MA,Science & Nature TV,Adults
 s5002,TV-MA,Stand-Up Comedy,Adults
@@ -11475,8 +11475,8 @@ s5114,TV-MA,Sci-Fi & Fantasy,Adults
 s5115,TV-MA,Dramas,Adults
 s5115,TV-MA,International Movies,Adults
 s5115,TV-MA,Romantic Movies,Adults
-s5116,TV-G,Children & Family Movies,Other
-s5116,TV-G,Comedies,Other
+s5116,TV-G,Children & Family Movies,Kids
+s5116,TV-G,Comedies,Kids
 s5117,R,Documentaries,Adults
 s5118,TV-MA,Stand-Up Comedy,Adults
 s5119,TV-14,Crime TV Shows,Teens
@@ -11488,9 +11488,9 @@ s5120,TV-MA,Romantic TV Shows,Adults
 s5121,TV-MA,International TV Shows,Adults
 s5121,TV-MA,Stand-Up Comedy & Talk Shows,Adults
 s5121,TV-MA,TV Comedies,Adults
-s5122,TV-G,Dramas,Other
-s5122,TV-G,International Movies,Other
-s5122,TV-G,Romantic Movies,Other
+s5122,TV-G,Dramas,Kids
+s5122,TV-G,International Movies,Kids
+s5122,TV-G,Romantic Movies,Kids
 s5123,TV-MA,Comedies,Adults
 s5123,TV-MA,Dramas,Adults
 s5123,TV-MA,International Movies,Adults
@@ -11607,7 +11607,7 @@ s5178,TV-MA,International Movies,Adults
 s5179,TV-MA,Anime Series,Adults
 s5179,TV-MA,International TV Shows,Adults
 s5180,R,Documentaries,Adults
-s5181,TV-G,Kids' TV,Other
+s5181,TV-G,Kids' TV,Kids
 s5182,R,Dramas,Adults
 s5183,TV-MA,Documentaries,Adults
 s5184,PG-13,Comedies,Adults
@@ -11626,8 +11626,8 @@ s5188,TV-MA,Thrillers,Adults
 s5189,TV-PG,Action & Adventure,Teens
 s5189,TV-PG,Dramas,Teens
 s5189,TV-PG,International Movies,Teens
-s5190,TV-G,Children & Family Movies,Other
-s5190,TV-G,Comedies,Other
+s5190,TV-G,Children & Family Movies,Kids
+s5190,TV-G,Comedies,Kids
 s5191,TV-MA,Action & Adventure,Adults
 s5191,TV-MA,Dramas,Adults
 s5191,TV-MA,International Movies,Adults
@@ -11693,8 +11693,8 @@ s5220,TV-Y,Kids' TV,Kids
 s5221,TV-PG,Comedies,Teens
 s5221,TV-PG,Dramas,Teens
 s5221,TV-PG,International Movies,Teens
-s5222,TV-G,Docuseries,Other
-s5222,TV-G,Reality TV,Other
+s5222,TV-G,Docuseries,Kids
+s5222,TV-G,Reality TV,Kids
 s5223,TV-14,Comedies,Teens
 s5223,TV-14,Dramas,Teens
 s5223,TV-14,International Movies,Teens
@@ -11783,8 +11783,8 @@ s5263,TV-14,International TV Shows,Teens
 s5263,TV-14,Reality TV,Teens
 s5264,TV-14,TV Sci-Fi & Fantasy,Teens
 s5264,TV-14,TV Thrillers,Teens
-s5265,NC-17,Comedies,Other
-s5265,NC-17,International Movies,Other
+s5265,NC-17,Comedies,Adults
+s5265,NC-17,International Movies,Adults
 s5266,TV-MA,Comedies,Adults
 s5266,TV-MA,Horror Movies,Adults
 s5266,TV-MA,International Movies,Adults
@@ -11882,8 +11882,8 @@ s5310,TV-14,Romantic Movies,Teens
 s5311,TV-MA,Comedies,Adults
 s5311,TV-MA,Dramas,Adults
 s5311,TV-MA,International Movies,Adults
-s5312,TV-G,Children & Family Movies,Other
-s5312,TV-G,Comedies,Other
+s5312,TV-G,Children & Family Movies,Kids
+s5312,TV-G,Comedies,Kids
 s5313,TV-14,Documentaries,Teens
 s5313,TV-14,International Movies,Teens
 s5314,TV-MA,Dramas,Adults
@@ -12387,7 +12387,7 @@ s5540,TV-MA,Romantic Movies,Adults
 s5541,TV-MA,Comedies,Adults
 s5541,TV-MA,Independent Movies,Adults
 s5541,TV-MA,Romantic Movies,Adults
-s5542,74 min,Movies,Other
+s5542,,Movies,Unknown
 s5543,TV-MA,International TV Shows,Adults
 s5543,TV-MA,TV Dramas,Adults
 s5544,TV-MA,Comedies,Adults
@@ -12685,8 +12685,8 @@ s5679,TV-MA,Stand-Up Comedy,Adults
 s5680,TV-MA,Documentaries,Adults
 s5681,TV-MA,Crime TV Shows,Adults
 s5681,TV-MA,Docuseries,Adults
-s5682,TV-G,Children & Family Movies,Other
-s5682,TV-G,Music & Musicals,Other
+s5682,TV-G,Children & Family Movies,Kids
+s5682,TV-G,Music & Musicals,Kids
 s5683,TV-14,Action & Adventure,Teens
 s5683,TV-14,Sci-Fi & Fantasy,Teens
 s5684,TV-14,Docuseries,Teens
@@ -12713,9 +12713,9 @@ s5691,TV-MA,TV Horror,Adults
 s5692,TV-MA,Dramas,Adults
 s5692,TV-MA,International Movies,Adults
 s5692,TV-MA,Sports Movies,Adults
-s5693,TV-G,Kids' TV,Other
-s5693,TV-G,TV Comedies,Other
-s5693,TV-G,TV Dramas,Other
+s5693,TV-G,Kids' TV,Kids
+s5693,TV-G,TV Comedies,Kids
+s5693,TV-G,TV Dramas,Kids
 s5694,TV-14,Documentaries,Teens
 s5695,TV-MA,Dramas,Adults
 s5695,TV-MA,Independent Movies,Adults
@@ -12926,7 +12926,7 @@ s5793,TV-MA,International Movies,Adults
 s5793,TV-MA,Sci-Fi & Fantasy,Adults
 s5793,TV-MA,Thrillers,Adults
 s5794,TV-MA,Stand-Up Comedy,Adults
-s5795,84 min,Movies,Other
+s5795,,Movies,Unknown
 s5796,TV-PG,Documentaries,Teens
 s5797,TV-14,Documentaries,Teens
 s5797,TV-14,Music & Musicals,Teens
@@ -12961,7 +12961,7 @@ s5812,TV-14,Docuseries,Teens
 s5813,TV-MA,British TV Shows,Adults
 s5813,TV-MA,Crime TV Shows,Adults
 s5813,TV-MA,Docuseries,Adults
-s5814,66 min,Movies,Other
+s5814,,Movies,Unknown
 s5815,TV-14,Documentaries,Teens
 s5816,TV-14,Stand-Up Comedy,Teens
 s5817,TV-PG,Stand-Up Comedy,Teens
@@ -12973,9 +12973,9 @@ s5822,TV-MA,Documentaries,Adults
 s5823,TV-14,British TV Shows,Teens
 s5823,TV-14,Crime TV Shows,Teens
 s5823,TV-14,Docuseries,Teens
-s5824,TV-G,British TV Shows,Other
-s5824,TV-G,Docuseries,Other
-s5824,TV-G,Science & Nature TV,Other
+s5824,TV-G,British TV Shows,Kids
+s5824,TV-G,Docuseries,Kids
+s5824,TV-G,Science & Nature TV,Kids
 s5825,TV-MA,Documentaries,Adults
 s5826,TV-MA,International TV Shows,Adults
 s5826,TV-MA,Spanish-Language TV Shows,Adults
@@ -13147,8 +13147,8 @@ s5922,TV-MA,Stand-Up Comedy,Adults
 s5923,TV-MA,Crime TV Shows,Adults
 s5923,TV-MA,TV Comedies,Adults
 s5923,TV-MA,TV Dramas,Adults
-s5924,TV-G,Kids' TV,Other
-s5924,TV-G,TV Thrillers,Other
+s5924,TV-G,Kids' TV,Kids
+s5924,TV-G,TV Thrillers,Kids
 s5925,TV-MA,Stand-Up Comedy,Adults
 s5926,TV-MA,Documentaries,Adults
 s5926,TV-MA,International Movies,Adults
@@ -13164,9 +13164,9 @@ s5934,TV-MA,TV Dramas,Adults
 s5935,TV-PG,Documentaries,Teens
 s5936,TV-MA,Documentaries,Adults
 s5936,TV-MA,International Movies,Adults
-s5937,TV-G,Children & Family Movies,Other
-s5937,TV-G,Comedies,Other
-s5937,TV-G,Music & Musicals,Other
+s5937,TV-G,Children & Family Movies,Kids
+s5937,TV-G,Comedies,Kids
+s5937,TV-G,Music & Musicals,Kids
 s5938,PG,Children & Family Movies,Teens
 s5938,PG,Documentaries,Teens
 s5938,PG,Sports Movies,Teens
@@ -13231,7 +13231,7 @@ s5970,TV-14,Dramas,Teens
 s5970,TV-14,International Movies,Teens
 s5971,TV-14,Dramas,Teens
 s5971,TV-14,International Movies,Teens
-s5972,NR,Documentaries,Adults
+s5972,NR,Documentaries,Unrated
 s5973,TV-14,Documentaries,Teens
 s5973,TV-14,International Movies,Teens
 s5974,TV-14,Comedies,Teens
@@ -13266,12 +13266,12 @@ s5986,TV-MA,Sports Movies,Adults
 s5987,TV-14,International TV Shows,Teens
 s5987,TV-14,Korean TV Shows,Teens
 s5987,TV-14,Romantic TV Shows,Teens
-s5988,NR,Horror Movies,Adults
-s5988,NR,Independent Movies,Adults
-s5988,NR,Thrillers,Adults
+s5988,NR,Horror Movies,Unrated
+s5988,NR,Independent Movies,Unrated
+s5988,NR,Thrillers,Unrated
 s5989,R,Horror Movies,Adults
 s5989,R,Thrillers,Adults
-s5990,Không xác định,Movies,Other
+s5990,,Movies,Unknown
 s5991,R,Action & Adventure,Adults
 s5991,R,International Movies,Adults
 s5992,TV-MA,Horror Movies,Adults
@@ -13320,8 +13320,8 @@ s6013,R,Comedies,Adults
 s6014,TV-14,Dramas,Teens
 s6014,TV-14,International Movies,Teens
 s6015,TV-MA,Documentaries,Adults
-s6016,NR,Comedies,Adults
-s6016,NR,LGBTQ Movies,Adults
+s6016,NR,Comedies,Unrated
+s6016,NR,LGBTQ Movies,Unrated
 s6017,TV-MA,Action & Adventure,Adults
 s6017,TV-MA,Comedies,Adults
 s6017,TV-MA,International Movies,Adults
@@ -13381,9 +13381,9 @@ s6040,R,Comedies,Adults
 s6040,R,Horror Movies,Adults
 s6041,TV-14,Horror Movies,Teens
 s6041,TV-14,Independent Movies,Teens
-s6042,TV-G,Children & Family Movies,Other
-s6042,TV-G,Comedies,Other
-s6042,TV-G,Romantic Movies,Other
+s6042,TV-G,Children & Family Movies,Kids
+s6042,TV-G,Comedies,Kids
+s6042,TV-G,Romantic Movies,Kids
 s6043,R,Thrillers,Adults
 s6044,TV-MA,Documentaries,Adults
 s6045,TV-14,Crime TV Shows,Teens
@@ -13408,7 +13408,7 @@ s6053,R,Romantic Movies,Adults
 s6054,TV-PG,Children & Family Movies,Teens
 s6054,TV-PG,Dramas,Teens
 s6054,TV-PG,Romantic Movies,Teens
-s6055,NR,Stand-Up Comedy,Adults
+s6055,NR,Stand-Up Comedy,Unrated
 s6056,TV-MA,International Movies,Adults
 s6056,TV-MA,Thrillers,Adults
 s6057,PG-13,Dramas,Adults
@@ -13480,8 +13480,8 @@ s6086,PG-13,Dramas,Adults
 s6086,PG-13,Music & Musicals,Adults
 s6086,PG-13,Romantic Movies,Adults
 s6087,R,Action & Adventure,Adults
-s6088,NR,Action & Adventure,Adults
-s6088,NR,International Movies,Adults
+s6088,NR,Action & Adventure,Unrated
+s6088,NR,International Movies,Unrated
 s6089,R,Action & Adventure,Adults
 s6090,TV-14,TV Comedies,Teens
 s6091,TV-14,Action & Adventure,Teens
@@ -13493,11 +13493,11 @@ s6092,R,International Movies,Adults
 s6093,TV-14,Horror Movies,Teens
 s6093,TV-14,Independent Movies,Teens
 s6093,TV-14,International Movies,Teens
-s6094,NR,Comedies,Adults
+s6094,NR,Comedies,Unrated
 s6095,TV-PG,British TV Shows,Teens
 s6095,TV-PG,Docuseries,Teens
 s6095,TV-PG,International TV Shows,Teens
-s6096,NR,Documentaries,Adults
+s6096,NR,Documentaries,Unrated
 s6097,TV-MA,Documentaries,Adults
 s6098,TV-MA,Dramas,Adults
 s6098,TV-MA,Independent Movies,Adults
@@ -13546,18 +13546,18 @@ s6116,R,Independent Movies,Adults
 s6117,G,Children & Family Movies,Kids
 s6118,TV-MA,International Movies,Adults
 s6118,TV-MA,Thrillers,Adults
-s6119,TV-G,Children & Family Movies,Other
-s6119,TV-G,Independent Movies,Other
+s6119,TV-G,Children & Family Movies,Kids
+s6119,TV-G,Independent Movies,Kids
 s6120,TV-MA,Horror Movies,Adults
 s6120,TV-MA,Thrillers,Adults
 s6121,R,Horror Movies,Adults
 s6122,R,Action & Adventure,Adults
 s6123,R,Dramas,Adults
 s6124,R,Thrillers,Adults
-s6125,TV-G,Children & Family Movies,Other
+s6125,TV-G,Children & Family Movies,Kids
 s6126,TV-Y7,Children & Family Movies,Kids
 s6127,TV-Y,Kids' TV,Kids
-s6128,TV-G,Documentaries,Other
+s6128,TV-G,Documentaries,Kids
 s6129,TV-14,Comedies,Teens
 s6129,TV-14,Romantic Movies,Teens
 s6130,TV-MA,Comedies,Adults
@@ -13655,7 +13655,7 @@ s6177,TV-14,International Movies,Teens
 s6178,TV-Y7,Anime Series,Kids
 s6178,TV-Y7,Kids' TV,Kids
 s6179,TV-MA,Documentaries,Adults
-s6180,NR,Documentaries,Adults
+s6180,NR,Documentaries,Unrated
 s6181,PG-13,Horror Movies,Adults
 s6181,PG-13,Sci-Fi & Fantasy,Adults
 s6181,PG-13,Thrillers,Adults
@@ -13681,9 +13681,9 @@ s6189,PG-13,Romantic Movies,Adults
 s6190,TV-MA,Horror Movies,Adults
 s6190,TV-MA,Sci-Fi & Fantasy,Adults
 s6190,TV-MA,Thrillers,Adults
-s6191,NR,Action & Adventure,Adults
-s6191,NR,Dramas,Adults
-s6191,NR,International Movies,Adults
+s6191,NR,Action & Adventure,Unrated
+s6191,NR,Dramas,Unrated
+s6191,NR,International Movies,Unrated
 s6192,TV-MA,Documentaries,Adults
 s6192,TV-MA,Sports Movies,Adults
 s6193,TV-14,Dramas,Teens
@@ -13723,12 +13723,12 @@ s6206,R,Dramas,Adults
 s6206,R,Independent Movies,Adults
 s6207,TV-MA,Documentaries,Adults
 s6207,TV-MA,International Movies,Adults
-s6208,NR,Comedies,Adults
-s6208,NR,Dramas,Adults
-s6208,NR,International Movies,Adults
-s6209,NR,Horror Movies,Adults
-s6209,NR,Independent Movies,Adults
-s6209,NR,Thrillers,Adults
+s6208,NR,Comedies,Unrated
+s6208,NR,Dramas,Unrated
+s6208,NR,International Movies,Unrated
+s6209,NR,Horror Movies,Unrated
+s6209,NR,Independent Movies,Unrated
+s6209,NR,Thrillers,Unrated
 s6210,TV-MA,Dramas,Adults
 s6210,TV-MA,Independent Movies,Adults
 s6210,TV-MA,Thrillers,Adults
@@ -13763,9 +13763,9 @@ s6225,TV-14,Romantic Movies,Teens
 s6226,R,Comedies,Adults
 s6226,R,Dramas,Adults
 s6226,R,Independent Movies,Adults
-s6227,NR,Action & Adventure,Adults
-s6227,NR,Comedies,Adults
-s6227,NR,Independent Movies,Adults
+s6227,NR,Action & Adventure,Unrated
+s6227,NR,Comedies,Unrated
+s6227,NR,Independent Movies,Unrated
 s6228,TV-MA,Action & Adventure,Adults
 s6228,TV-MA,International Movies,Adults
 s6229,TV-MA,International TV Shows,Adults
@@ -13827,13 +13827,13 @@ s6258,PG,Comedies,Teens
 s6258,PG,Dramas,Teens
 s6258,PG,Romantic Movies,Teens
 s6259,TV-Y,Kids' TV,Kids
-s6260,TV-G,Documentaries,Other
-s6260,TV-G,International Movies,Other
+s6260,TV-G,Documentaries,Kids
+s6260,TV-G,International Movies,Kids
 s6261,PG-13,Comedies,Adults
 s6261,PG-13,International Movies,Adults
-s6262,TV-G,Children & Family Movies,Other
-s6262,TV-G,Documentaries,Other
-s6262,TV-G,International Movies,Other
+s6262,TV-G,Children & Family Movies,Kids
+s6262,TV-G,Documentaries,Kids
+s6262,TV-G,International Movies,Kids
 s6263,TV-PG,Docuseries,Teens
 s6264,TV-14,International TV Shows,Teens
 s6264,TV-14,Korean TV Shows,Teens
@@ -13884,7 +13884,7 @@ s6283,TV-MA,Independent Movies,Adults
 s6283,TV-MA,Thrillers,Adults
 s6284,PG,Children & Family Movies,Teens
 s6284,PG,Dramas,Teens
-s6285,TV-G,Children & Family Movies,Other
+s6285,TV-G,Children & Family Movies,Kids
 s6286,TV-14,Comedies,Teens
 s6286,TV-14,International Movies,Teens
 s6286,TV-14,Sports Movies,Teens
@@ -13926,13 +13926,13 @@ s6300,TV-MA,Thrillers,Adults
 s6301,TV-14,Dramas,Teens
 s6301,TV-14,Independent Movies,Teens
 s6301,TV-14,International Movies,Teens
-s6302,TV-G,Kids' TV,Other
-s6302,TV-G,TV Comedies,Other
+s6302,TV-G,Kids' TV,Kids
+s6302,TV-G,TV Comedies,Kids
 s6303,TV-MA,Comedies,Adults
 s6304,PG-13,Comedies,Adults
-s6305,TV-G,British TV Shows,Other
-s6305,TV-G,International TV Shows,Other
-s6305,TV-G,Reality TV,Other
+s6305,TV-G,British TV Shows,Kids
+s6305,TV-G,International TV Shows,Kids
+s6305,TV-G,Reality TV,Kids
 s6306,PG,Children & Family Movies,Teens
 s6306,PG,Comedies,Teens
 s6307,R,Action & Adventure,Adults
@@ -13941,7 +13941,7 @@ s6309,PG,Children & Family Movies,Teens
 s6309,PG,Comedies,Teens
 s6310,R,Documentaries,Adults
 s6310,R,Music & Musicals,Adults
-s6311,NR,Stand-Up Comedy,Adults
+s6311,NR,Stand-Up Comedy,Unrated
 s6312,R,Dramas,Adults
 s6312,R,Independent Movies,Adults
 s6312,R,International Movies,Adults
@@ -14003,16 +14003,16 @@ s6336,TV-14,TV Sci-Fi & Fantasy,Teens
 s6337,R,Action & Adventure,Adults
 s6337,R,International Movies,Adults
 s6338,R,Dramas,Adults
-s6339,NC-17,Dramas,Other
-s6339,NC-17,Independent Movies,Other
-s6339,NC-17,International Movies,Other
+s6339,NC-17,Dramas,Adults
+s6339,NC-17,Independent Movies,Adults
+s6339,NC-17,International Movies,Adults
 s6340,PG-13,Comedies,Adults
 s6340,PG-13,Dramas,Adults
 s6340,PG-13,Independent Movies,Adults
 s6341,R,Comedies,Adults
-s6342,TV-G,British TV Shows,Other
-s6342,TV-G,Docuseries,Other
-s6342,TV-G,Science & Nature TV,Other
+s6342,TV-G,British TV Shows,Kids
+s6342,TV-G,Docuseries,Kids
+s6342,TV-G,Science & Nature TV,Kids
 s6343,R,Independent Movies,Adults
 s6343,R,Thrillers,Adults
 s6344,PG-13,Action & Adventure,Adults
@@ -14022,8 +14022,8 @@ s6345,R,Independent Movies,Adults
 s6345,R,Romantic Movies,Adults
 s6346,TV-MA,Documentaries,Adults
 s6347,TV-MA,Documentaries,Adults
-s6348,TV-G,TV Shows,Other
-s6349,TV-G,Children & Family Movies,Other
+s6348,TV-G,TV Shows,Kids
+s6349,TV-G,Children & Family Movies,Kids
 s6350,TV-MA,Documentaries,Adults
 s6351,TV-14,Classic Movies,Teens
 s6351,TV-14,Dramas,Teens
@@ -14063,8 +14063,8 @@ s6366,TV-MA,Thrillers,Adults
 s6367,PG,Children & Family Movies,Teens
 s6368,TV-MA,Comedies,Adults
 s6368,TV-MA,Romantic Movies,Adults
-s6369,TV-G,Docuseries,Other
-s6369,TV-G,Science & Nature TV,Other
+s6369,TV-G,Docuseries,Kids
+s6369,TV-G,Science & Nature TV,Kids
 s6370,TV-MA,Dramas,Adults
 s6370,TV-MA,Romantic Movies,Adults
 s6370,TV-MA,Sports Movies,Adults
@@ -14100,8 +14100,8 @@ s6386,TV-PG,International TV Shows,Teens
 s6386,TV-PG,TV Dramas,Teens
 s6387,TV-MA,Action & Adventure,Adults
 s6387,TV-MA,International Movies,Adults
-s6388,TV-G,Documentaries,Other
-s6388,TV-G,International Movies,Other
+s6388,TV-G,Documentaries,Kids
+s6388,TV-G,International Movies,Kids
 s6389,TV-MA,Independent Movies,Adults
 s6389,TV-MA,Thrillers,Adults
 s6390,TV-PG,Kids' TV,Teens
@@ -14151,9 +14151,9 @@ s6409,TV-14,Romantic TV Shows,Teens
 s6409,TV-14,Spanish-Language TV Shows,Teens
 s6410,TV-MA,Comedies,Adults
 s6410,TV-MA,Dramas,Adults
-s6411,TV-G,Children & Family Movies,Other
-s6411,TV-G,Comedies,Other
-s6411,TV-G,Dramas,Other
+s6411,TV-G,Children & Family Movies,Kids
+s6411,TV-G,Comedies,Kids
+s6411,TV-G,Dramas,Kids
 s6412,TV-MA,Docuseries,Adults
 s6413,R,Dramas,Adults
 s6413,R,Independent Movies,Adults
@@ -14199,8 +14199,8 @@ s6430,TV-MA,International Movies,Adults
 s6431,TV-MA,International TV Shows,Adults
 s6431,TV-MA,Romantic TV Shows,Adults
 s6431,TV-MA,TV Comedies,Adults
-s6432,NR,Classic Movies,Adults
-s6432,NR,Dramas,Adults
+s6432,NR,Classic Movies,Unrated
+s6432,NR,Dramas,Unrated
 s6433,TV-14,Documentaries,Teens
 s6434,PG,Children & Family Movies,Teens
 s6434,PG,Comedies,Teens
@@ -14224,8 +14224,8 @@ s6441,TV-14,Romantic Movies,Teens
 s6442,TV-14,Comedies,Teens
 s6442,TV-14,Dramas,Teens
 s6442,TV-14,International Movies,Teens
-s6443,TV-G,Documentaries,Other
-s6443,TV-G,International Movies,Other
+s6443,TV-G,Documentaries,Kids
+s6443,TV-G,International Movies,Kids
 s6444,PG,Dramas,Teens
 s6445,TV-14,Dramas,Teens
 s6445,TV-14,International Movies,Teens
@@ -14281,13 +14281,13 @@ s6468,TV-MA,Dramas,Adults
 s6468,TV-MA,International Movies,Adults
 s6469,R,Cult Movies,Adults
 s6469,R,Horror Movies,Adults
-s6470,TV-G,TV Shows,Other
+s6470,TV-G,TV Shows,Kids
 s6471,TV-MA,Action & Adventure,Adults
 s6471,TV-MA,International Movies,Adults
 s6472,TV-MA,Stand-Up Comedy,Adults
-s6473,NR,Dramas,Adults
-s6473,NR,Independent Movies,Adults
-s6473,NR,International Movies,Adults
+s6473,NR,Dramas,Unrated
+s6473,NR,Independent Movies,Unrated
+s6473,NR,International Movies,Unrated
 s6474,G,Children & Family Movies,Kids
 s6474,G,Classic Movies,Kids
 s6474,G,Comedies,Kids
@@ -14301,9 +14301,9 @@ s6477,PG,Romantic Movies,Teens
 s6478,TV-MA,Docuseries,Adults
 s6479,TV-PG,Comedies,Teens
 s6479,TV-PG,Romantic Movies,Teens
-s6480,TV-G,Children & Family Movies,Other
-s6480,TV-G,Dramas,Other
-s6480,TV-G,Romantic Movies,Other
+s6480,TV-G,Children & Family Movies,Kids
+s6480,TV-G,Dramas,Kids
+s6480,TV-G,Romantic Movies,Kids
 s6481,PG,Children & Family Movies,Teens
 s6481,PG,Comedies,Teens
 s6482,PG,Children & Family Movies,Teens
@@ -14442,9 +14442,9 @@ s6538,TV-14,Thrillers,Teens
 s6539,TV-MA,Crime TV Shows,Adults
 s6539,TV-MA,Docuseries,Adults
 s6539,TV-MA,International TV Shows,Adults
-s6540,TV-G,Documentaries,Other
-s6540,TV-G,Faith & Spirituality,Other
-s6540,TV-G,Music & Musicals,Other
+s6540,TV-G,Documentaries,Kids
+s6540,TV-G,Faith & Spirituality,Kids
+s6540,TV-G,Music & Musicals,Kids
 s6541,R,Dramas,Adults
 s6541,R,Independent Movies,Adults
 s6542,TV-MA,Comedies,Adults
@@ -14472,9 +14472,9 @@ s6551,PG,Comedies,Teens
 s6552,TV-MA,Dramas,Adults
 s6552,TV-MA,Independent Movies,Adults
 s6552,TV-MA,LGBTQ Movies,Adults
-s6553,NR,Action & Adventure,Adults
-s6553,NR,Horror Movies,Adults
-s6553,NR,International Movies,Adults
+s6553,NR,Action & Adventure,Unrated
+s6553,NR,Horror Movies,Unrated
+s6553,NR,International Movies,Unrated
 s6554,TV-14,Dramas,Teens
 s6554,TV-14,International Movies,Teens
 s6555,TV-MA,Dramas,Adults
@@ -14518,9 +14518,9 @@ s6569,TV-MA,TV Horror,Adults
 s6569,TV-MA,TV Thrillers,Adults
 s6570,TV-14,Dramas,Teens
 s6570,TV-14,International Movies,Teens
-s6571,NR,Classic Movies,Adults
-s6571,NR,Dramas,Adults
-s6571,NR,Independent Movies,Adults
+s6571,NR,Classic Movies,Unrated
+s6571,NR,Dramas,Unrated
+s6571,NR,Independent Movies,Unrated
 s6572,TV-MA,Crime TV Shows,Adults
 s6572,TV-MA,International TV Shows,Adults
 s6572,TV-MA,TV Dramas,Adults
@@ -14543,8 +14543,8 @@ s6580,PG-13,Independent Movies,Adults
 s6581,TV-14,Comedies,Teens
 s6581,TV-14,Dramas,Teens
 s6581,TV-14,Independent Movies,Teens
-s6582,TV-Y7-FV,Children & Family Movies,Other
-s6582,TV-Y7-FV,Comedies,Other
+s6582,TV-Y7-FV,Children & Family Movies,Kids
+s6582,TV-Y7-FV,Comedies,Kids
 s6583,TV-PG,Comedies,Teens
 s6583,TV-PG,Romantic Movies,Teens
 s6584,R,Comedies,Adults
@@ -14561,8 +14561,8 @@ s6589,TV-MA,Thrillers,Adults
 s6590,TV-14,Documentaries,Teens
 s6591,R,Horror Movies,Adults
 s6591,R,Thrillers,Adults
-s6592,NR,Documentaries,Adults
-s6592,NR,International Movies,Adults
+s6592,NR,Documentaries,Unrated
+s6592,NR,International Movies,Unrated
 s6593,R,Action & Adventure,Adults
 s6594,R,Stand-Up Comedy,Adults
 s6595,TV-MA,Dramas,Adults
@@ -14593,16 +14593,16 @@ s6606,TV-14,Sci-Fi & Fantasy,Teens
 s6607,TV-PG,Documentaries,Teens
 s6608,TV-PG,Documentaries,Teens
 s6608,TV-PG,International Movies,Teens
-s6609,NR,Dramas,Adults
-s6609,NR,International Movies,Adults
+s6609,NR,Dramas,Unrated
+s6609,NR,International Movies,Unrated
 s6610,PG-13,Action & Adventure,Adults
 s6611,TV-14,Dramas,Teens
 s6611,TV-14,International Movies,Teens
 s6611,TV-14,Music & Musicals,Teens
 s6612,TV-MA,Stand-Up Comedy & Talk Shows,Adults
 s6613,PG-13,Comedies,Adults
-s6614,TV-G,Docuseries,Other
-s6614,TV-G,Science & Nature TV,Other
+s6614,TV-G,Docuseries,Kids
+s6614,TV-G,Science & Nature TV,Kids
 s6615,TV-14,Action & Adventure,Teens
 s6615,TV-14,International Movies,Teens
 s6616,TV-MA,Documentaries,Adults
@@ -14671,7 +14671,7 @@ s6646,TV-Y,Children & Family Movies,Kids
 s6647,TV-14,Romantic TV Shows,Teens
 s6647,TV-14,TV Comedies,Teens
 s6647,TV-14,TV Dramas,Teens
-s6648,TV-G,Documentaries,Other
+s6648,TV-G,Documentaries,Kids
 s6649,TV-MA,Documentaries,Adults
 s6649,TV-MA,International Movies,Adults
 s6649,TV-MA,LGBTQ Movies,Adults
@@ -14721,9 +14721,9 @@ s6670,TV-MA,Dramas,Adults
 s6670,TV-MA,International Movies,Adults
 s6670,TV-MA,Thrillers,Adults
 s6671,R,Action & Adventure,Adults
-s6672,NR,International TV Shows,Adults
-s6672,NR,Romantic TV Shows,Adults
-s6672,NR,Spanish-Language TV Shows,Adults
+s6672,NR,International TV Shows,Unrated
+s6672,NR,Romantic TV Shows,Unrated
+s6672,NR,Spanish-Language TV Shows,Unrated
 s6673,TV-MA,Crime TV Shows,Adults
 s6673,TV-MA,International TV Shows,Adults
 s6673,TV-MA,Spanish-Language TV Shows,Adults
@@ -14748,7 +14748,7 @@ s6680,TV-PG,Documentaries,Teens
 s6680,TV-PG,International Movies,Teens
 s6681,TV-MA,International Movies,Adults
 s6681,TV-MA,Sci-Fi & Fantasy,Adults
-s6682,TV-G,Documentaries,Other
+s6682,TV-G,Documentaries,Kids
 s6683,R,Dramas,Adults
 s6683,R,Sci-Fi & Fantasy,Adults
 s6684,TV-14,Documentaries,Teens
@@ -14800,9 +14800,9 @@ s6704,R,Sci-Fi & Fantasy,Adults
 s6705,TV-MA,Comedies,Adults
 s6705,TV-MA,Dramas,Adults
 s6705,TV-MA,Independent Movies,Adults
-s6706,NR,Comedies,Adults
-s6706,NR,Cult Movies,Adults
-s6706,NR,International Movies,Adults
+s6706,NR,Comedies,Unrated
+s6706,NR,Cult Movies,Unrated
+s6706,NR,International Movies,Unrated
 s6707,TV-14,Dramas,Teens
 s6707,TV-14,International Movies,Teens
 s6707,TV-14,Romantic Movies,Teens
@@ -14840,8 +14840,8 @@ s6719,TV-14,TV Dramas,Teens
 s6720,R,Action & Adventure,Adults
 s6721,TV-MA,Documentaries,Adults
 s6721,TV-MA,International Movies,Adults
-s6722,NR,Comedies,Adults
-s6722,NR,Romantic Movies,Adults
+s6722,NR,Comedies,Unrated
+s6722,NR,Romantic Movies,Unrated
 s6723,R,Action & Adventure,Adults
 s6724,TV-14,Action & Adventure,Teens
 s6724,TV-14,Dramas,Teens
@@ -14864,9 +14864,9 @@ s6731,TV-MA,Dramas,Adults
 s6731,TV-MA,Independent Movies,Adults
 s6732,TV-MA,Anime Series,Adults
 s6732,TV-MA,International TV Shows,Adults
-s6733,TV-G,British TV Shows,Other
-s6733,TV-G,Crime TV Shows,Other
-s6733,TV-G,Docuseries,Other
+s6733,TV-G,British TV Shows,Kids
+s6733,TV-G,Crime TV Shows,Kids
+s6733,TV-G,Docuseries,Kids
 s6734,TV-14,Action & Adventure,Teens
 s6734,TV-14,Dramas,Teens
 s6734,TV-14,International Movies,Teens
@@ -14878,9 +14878,9 @@ s6737,TV-MA,International Movies,Adults
 s6738,TV-14,Documentaries,Teens
 s6738,TV-14,International Movies,Teens
 s6739,TV-14,Thrillers,Teens
-s6740,NR,Dramas,Adults
-s6740,NR,Independent Movies,Adults
-s6740,NR,International Movies,Adults
+s6740,NR,Dramas,Unrated
+s6740,NR,Independent Movies,Unrated
+s6740,NR,International Movies,Unrated
 s6741,TV-MA,Comedies,Adults
 s6741,TV-MA,International Movies,Adults
 s6742,TV-MA,Crime TV Shows,Adults
@@ -14899,8 +14899,8 @@ s6746,TV-MA,Documentaries,Adults
 s6747,G,Classic Movies,Kids
 s6747,G,Dramas,Kids
 s6747,G,Music & Musicals,Kids
-s6748,NR,Dramas,Adults
-s6748,NR,International Movies,Adults
+s6748,NR,Dramas,Unrated
+s6748,NR,International Movies,Unrated
 s6749,TV-Y7,Children & Family Movies,Kids
 s6749,TV-Y7,Comedies,Kids
 s6750,TV-PG,Documentaries,Teens
@@ -14928,7 +14928,7 @@ s6761,TV-MA,Horror Movies,Adults
 s6761,TV-MA,International Movies,Adults
 s6762,TV-14,Documentaries,Teens
 s6762,TV-14,Sports Movies,Teens
-s6763,NR,Documentaries,Adults
+s6763,NR,Documentaries,Unrated
 s6764,TV-14,International TV Shows,Teens
 s6764,TV-14,Reality TV,Teens
 s6765,TV-14,Documentaries,Teens
@@ -14936,7 +14936,7 @@ s6765,TV-14,International Movies,Teens
 s6765,TV-14,Sports Movies,Teens
 s6766,R,Action & Adventure,Adults
 s6766,R,International Movies,Adults
-s6767,TV-G,Reality TV,Other
+s6767,TV-G,Reality TV,Kids
 s6768,PG-13,Dramas,Adults
 s6769,TV-14,Comedies,Teens
 s6769,TV-14,International Movies,Teens
@@ -15063,8 +15063,8 @@ s6826,TV-PG,International TV Shows,Teens
 s6826,TV-PG,Stand-Up Comedy & Talk Shows,Teens
 s6826,TV-PG,TV Comedies,Teens
 s6827,R,Dramas,Adults
-s6828,Không xác định,Anime Series,Other
-s6828,Không xác định,International TV Shows,Other
+s6828,,Anime Series,Unknown
+s6828,,International TV Shows,Unknown
 s6829,TV-PG,Children & Family Movies,Teens
 s6829,TV-PG,Dramas,Teens
 s6829,TV-PG,Sports Movies,Teens
@@ -15130,16 +15130,16 @@ s6855,PG-13,Dramas,Adults
 s6855,PG-13,Independent Movies,Adults
 s6856,TV-14,Comedies,Teens
 s6856,TV-14,International Movies,Teens
-s6857,NR,Documentaries,Adults
-s6857,NR,Sports Movies,Adults
+s6857,NR,Documentaries,Unrated
+s6857,NR,Sports Movies,Unrated
 s6858,TV-14,International TV Shows,Teens
 s6858,TV-14,TV Dramas,Teens
 s6859,PG,Children & Family Movies,Teens
 s6859,PG,Dramas,Teens
 s6859,PG,Faith & Spirituality,Teens
 s6860,TV-PG,Documentaries,Teens
-s6861,NR,Action & Adventure,Adults
-s6861,NR,International Movies,Adults
+s6861,NR,Action & Adventure,Unrated
+s6861,NR,International Movies,Unrated
 s6862,PG,Dramas,Teens
 s6862,PG,Faith & Spirituality,Teens
 s6863,PG,Dramas,Teens
@@ -15227,8 +15227,8 @@ s6901,TV-PG,International Movies,Teens
 s6901,TV-PG,Sports Movies,Teens
 s6902,TV-14,Anime Series,Teens
 s6902,TV-14,Crime TV Shows,Teens
-s6903,TV-G,Documentaries,Other
-s6903,TV-G,International Movies,Other
+s6903,TV-G,Documentaries,Kids
+s6903,TV-G,International Movies,Kids
 s6904,TV-MA,Comedies,Adults
 s6904,TV-MA,International Movies,Adults
 s6905,TV-MA,Comedies,Adults
@@ -15263,16 +15263,16 @@ s6917,TV-14,Documentaries,Teens
 s6918,TV-MA,TV Horror,Adults
 s6918,TV-MA,TV Mysteries,Adults
 s6918,TV-MA,TV Thrillers,Adults
-s6919,TV-G,International Movies,Other
-s6919,TV-G,Music & Musicals,Other
+s6919,TV-G,International Movies,Kids
+s6919,TV-G,Music & Musicals,Kids
 s6920,TV-14,International TV Shows,Teens
 s6920,TV-14,Romantic TV Shows,Teens
 s6920,TV-14,TV Comedies,Teens
 s6921,TV-MA,Horror Movies,Adults
 s6921,TV-MA,Independent Movies,Adults
-s6922,NR,Comedies,Adults
-s6922,NR,International Movies,Adults
-s6922,NR,Romantic Movies,Adults
+s6922,NR,Comedies,Unrated
+s6922,NR,International Movies,Unrated
+s6922,NR,Romantic Movies,Unrated
 s6923,TV-MA,British TV Shows,Adults
 s6923,TV-MA,Crime TV Shows,Adults
 s6923,TV-MA,International TV Shows,Adults
@@ -15293,13 +15293,13 @@ s6930,TV-14,Documentaries,Teens
 s6931,TV-14,British TV Shows,Teens
 s6931,TV-14,Crime TV Shows,Teens
 s6931,TV-14,Docuseries,Teens
-s6932,TV-G,Children & Family Movies,Other
-s6932,TV-G,Comedies,Other
+s6932,TV-G,Children & Family Movies,Kids
+s6932,TV-G,Comedies,Kids
 s6933,TV-Y7,Kids' TV,Kids
 s6933,TV-Y7,TV Comedies,Kids
 s6934,TV-PG,Documentaries,Teens
 s6934,TV-PG,Sports Movies,Teens
-s6935,NR,Documentaries,Adults
+s6935,NR,Documentaries,Unrated
 s6936,TV-PG,TV Comedies,Teens
 s6936,TV-PG,TV Dramas,Teens
 s6937,TV-PG,Action & Adventure,Teens
@@ -15406,7 +15406,7 @@ s6984,TV-MA,International Movies,Adults
 s6984,TV-MA,LGBTQ Movies,Adults
 s6985,TV-MA,Comedies,Adults
 s6985,TV-MA,Horror Movies,Adults
-s6986,NR,Documentaries,Adults
+s6986,NR,Documentaries,Unrated
 s6987,TV-14,Comedies,Teens
 s6987,TV-14,Faith & Spirituality,Teens
 s6987,TV-14,International Movies,Teens
@@ -15446,7 +15446,7 @@ s7001,TV-14,International Movies,Teens
 s7002,TV-PG,Documentaries,Teens
 s7002,TV-PG,International Movies,Teens
 s7003,R,Dramas,Adults
-s7004,NR,Comedies,Adults
+s7004,NR,Comedies,Unrated
 s7005,TV-MA,Comedies,Adults
 s7005,TV-MA,Independent Movies,Adults
 s7006,PG-13,Comedies,Adults
@@ -15471,8 +15471,8 @@ s7014,PG,Children & Family Movies,Teens
 s7014,PG,Comedies,Teens
 s7015,PG-13,Comedies,Adults
 s7016,R,Comedies,Adults
-s7017,NR,Documentaries,Adults
-s7017,NR,International Movies,Adults
+s7017,NR,Documentaries,Unrated
+s7017,NR,International Movies,Unrated
 s7018,TV-MA,British TV Shows,Adults
 s7018,TV-MA,International TV Shows,Adults
 s7018,TV-MA,Reality TV,Adults
@@ -15483,9 +15483,9 @@ s7021,TV-14,Dramas,Teens
 s7021,TV-14,International Movies,Teens
 s7022,PG-13,Action & Adventure,Adults
 s7022,PG-13,Sci-Fi & Fantasy,Adults
-s7023,TV-G,Dramas,Other
-s7023,TV-G,International Movies,Other
-s7023,TV-G,Music & Musicals,Other
+s7023,TV-G,Dramas,Kids
+s7023,TV-G,International Movies,Kids
+s7023,TV-G,Music & Musicals,Kids
 s7024,TV-PG,International Movies,Teens
 s7024,TV-PG,Music & Musicals,Teens
 s7024,TV-PG,Romantic Movies,Teens
@@ -15529,8 +15529,8 @@ s7040,TV-14,TV Comedies,Teens
 s7041,TV-14,Comedies,Teens
 s7041,TV-14,Dramas,Teens
 s7041,TV-14,International Movies,Teens
-s7042,NR,Documentaries,Adults
-s7042,NR,International Movies,Adults
+s7042,NR,Documentaries,Unrated
+s7042,NR,International Movies,Unrated
 s7043,R,Action & Adventure,Adults
 s7044,R,Action & Adventure,Adults
 s7044,R,Dramas,Adults
@@ -15561,13 +15561,13 @@ s7054,TV-14,Romantic Movies,Teens
 s7055,TV-PG,Reality TV,Teens
 s7055,TV-PG,TV Comedies,Teens
 s7056,PG,Children & Family Movies,Teens
-s7057,NR,Stand-Up Comedy,Adults
+s7057,NR,Stand-Up Comedy,Unrated
 s7058,PG,Children & Family Movies,Teens
 s7058,PG,Comedies,Teens
 s7058,PG,Sci-Fi & Fantasy,Teens
-s7059,UR,Dramas,Other
-s7059,UR,International Movies,Other
-s7059,UR,Romantic Movies,Other
+s7059,UR,Dramas,Unrated
+s7059,UR,International Movies,Unrated
+s7059,UR,Romantic Movies,Unrated
 s7060,TV-14,International TV Shows,Teens
 s7060,TV-14,Romantic TV Shows,Teens
 s7060,TV-14,TV Comedies,Teens
@@ -15588,9 +15588,9 @@ s7066,R,Thrillers,Adults
 s7067,TV-MA,Documentaries,Adults
 s7068,PG,Children & Family Movies,Teens
 s7068,PG,Comedies,Teens
-s7069,NR,Dramas,Adults
-s7069,NR,Independent Movies,Adults
-s7069,NR,International Movies,Adults
+s7069,NR,Dramas,Unrated
+s7069,NR,Independent Movies,Unrated
+s7069,NR,International Movies,Unrated
 s7070,TV-PG,British TV Shows,Teens
 s7070,TV-PG,Docuseries,Teens
 s7070,TV-PG,Science & Nature TV,Teens
@@ -15684,8 +15684,8 @@ s7106,TV-MA,Romantic Movies,Adults
 s7107,TV-14,Comedies,Teens
 s7107,TV-14,International Movies,Teens
 s7107,TV-14,Music & Musicals,Teens
-s7108,NR,Documentaries,Adults
-s7108,NR,Sports Movies,Adults
+s7108,NR,Documentaries,Unrated
+s7108,NR,Sports Movies,Unrated
 s7109,TV-Y7,Children & Family Movies,Kids
 s7110,TV-14,Dramas,Teens
 s7110,TV-14,International Movies,Teens
@@ -15714,14 +15714,14 @@ s7119,TV-14,International Movies,Teens
 s7120,TV-14,Comedies,Teens
 s7120,TV-14,Dramas,Teens
 s7120,TV-14,International Movies,Teens
-s7121,TV-G,International TV Shows,Other
-s7121,TV-G,Stand-Up Comedy & Talk Shows,Other
+s7121,TV-G,International TV Shows,Kids
+s7121,TV-G,Stand-Up Comedy & Talk Shows,Kids
 s7122,R,Comedies,Adults
 s7122,R,Cult Movies,Adults
 s7123,TV-MA,Dramas,Adults
 s7123,TV-MA,International Movies,Adults
 s7123,TV-MA,Romantic Movies,Adults
-s7124,TV-G,Reality TV,Other
+s7124,TV-G,Reality TV,Kids
 s7125,PG-13,Documentaries,Adults
 s7126,TV-14,Classic & Cult TV,Teens
 s7126,TV-14,TV Action & Adventure,Teens
@@ -15833,7 +15833,7 @@ s7171,PG-13,Romantic Movies,Adults
 s7172,TV-PG,Comedies,Teens
 s7172,TV-PG,Dramas,Teens
 s7172,TV-PG,Independent Movies,Teens
-s7173,NR,Stand-Up Comedy,Adults
+s7173,NR,Stand-Up Comedy,Unrated
 s7174,TV-14,Dramas,Teens
 s7174,TV-14,International Movies,Teens
 s7175,TV-14,Comedies,Teens
@@ -15908,8 +15908,8 @@ s7206,TV-MA,International Movies,Adults
 s7207,R,Dramas,Adults
 s7207,R,Independent Movies,Adults
 s7207,R,Thrillers,Adults
-s7208,NR,Dramas,Adults
-s7208,NR,Independent Movies,Adults
+s7208,NR,Dramas,Unrated
+s7208,NR,Independent Movies,Unrated
 s7209,PG-13,Action & Adventure,Adults
 s7209,PG-13,Comedies,Adults
 s7210,TV-PG,British TV Shows,Teens
@@ -15939,7 +15939,7 @@ s7220,TV-14,Classic Movies,Teens
 s7220,TV-14,Documentaries,Teens
 s7221,PG-13,Sci-Fi & Fantasy,Adults
 s7221,PG-13,Thrillers,Adults
-s7222,TV-G,Documentaries,Other
+s7222,TV-G,Documentaries,Kids
 s7223,TV-PG,Docuseries,Teens
 s7223,TV-PG,International TV Shows,Teens
 s7224,PG-13,Action & Adventure,Adults
@@ -15961,7 +15961,7 @@ s7234,TV-Y7,Children & Family Movies,Kids
 s7235,R,Dramas,Adults
 s7235,R,Independent Movies,Adults
 s7236,TV-Y7,Kids' TV,Kids
-s7237,NR,Horror Movies,Adults
+s7237,NR,Horror Movies,Unrated
 s7238,R,Comedies,Adults
 s7238,R,Dramas,Adults
 s7239,TV-MA,Dramas,Adults
@@ -16024,8 +16024,8 @@ s7261,TV-MA,International Movies,Adults
 s7262,R,Action & Adventure,Adults
 s7263,PG-13,Sci-Fi & Fantasy,Adults
 s7263,PG-13,Thrillers,Adults
-s7264,NC-17,Comedies,Other
-s7264,NC-17,Independent Movies,Other
+s7264,NC-17,Comedies,Adults
+s7264,NC-17,Independent Movies,Adults
 s7265,TV-14,International TV Shows,Teens
 s7265,TV-14,Spanish-Language TV Shows,Teens
 s7265,TV-14,TV Dramas,Teens
@@ -16075,15 +16075,15 @@ s7286,TV-PG,Docuseries,Teens
 s7287,R,Action & Adventure,Adults
 s7287,R,Horror Movies,Adults
 s7287,R,Sci-Fi & Fantasy,Adults
-s7288,TV-G,Kids' TV,Other
+s7288,TV-G,Kids' TV,Kids
 s7289,TV-Y,Kids' TV,Kids
-s7290,TV-G,Documentaries,Other
-s7290,TV-G,International Movies,Other
-s7291,TV-Y7-FV,Action & Adventure,Other
-s7291,TV-Y7-FV,Children & Family Movies,Other
+s7290,TV-G,Documentaries,Kids
+s7290,TV-G,International Movies,Kids
+s7291,TV-Y7-FV,Action & Adventure,Kids
+s7291,TV-Y7-FV,Children & Family Movies,Kids
 s7292,TV-Y,Kids' TV,Kids
-s7293,TV-Y7-FV,Children & Family Movies,Other
-s7293,TV-Y7-FV,Comedies,Other
+s7293,TV-Y7-FV,Children & Family Movies,Kids
+s7293,TV-Y7-FV,Comedies,Kids
 s7294,TV-MA,Documentaries,Adults
 s7294,TV-MA,International Movies,Adults
 s7294,TV-MA,Sports Movies,Adults
@@ -16100,9 +16100,9 @@ s7299,R,Horror Movies,Adults
 s7299,R,Independent Movies,Adults
 s7300,TV-PG,Documentaries,Teens
 s7300,TV-PG,LGBTQ Movies,Teens
-s7301,TV-G,British TV Shows,Other
-s7301,TV-G,Docuseries,Other
-s7301,TV-G,Science & Nature TV,Other
+s7301,TV-G,British TV Shows,Kids
+s7301,TV-G,Docuseries,Kids
+s7301,TV-G,Science & Nature TV,Kids
 s7302,TV-14,British TV Shows,Teens
 s7302,TV-14,Docuseries,Teens
 s7302,TV-14,Science & Nature TV,Teens
@@ -16128,8 +16128,8 @@ s7311,TV-14,Music & Musicals,Teens
 s7312,TV-14,Action & Adventure,Teens
 s7312,TV-14,International Movies,Teens
 s7312,TV-14,Romantic Movies,Teens
-s7313,Không xác định,Kids' TV,Other
-s7313,Không xác định,TV Comedies,Other
+s7313,,Kids' TV,Unknown
+s7313,,TV Comedies,Unknown
 s7314,TV-Y7,Children & Family Movies,Kids
 s7314,TV-Y7,Comedies,Kids
 s7315,TV-Y7,Children & Family Movies,Kids
@@ -16137,17 +16137,17 @@ s7315,TV-Y7,Comedies,Kids
 s7316,PG,Dramas,Teens
 s7316,PG,Independent Movies,Teens
 s7317,PG-13,Comedies,Adults
-s7318,TV-Y7-FV,Children & Family Movies,Other
-s7318,TV-Y7-FV,Comedies,Other
+s7318,TV-Y7-FV,Children & Family Movies,Kids
+s7318,TV-Y7-FV,Comedies,Kids
 s7319,TV-Y7,Children & Family Movies,Kids
 s7319,TV-Y7,Comedies,Kids
 s7320,TV-Y7,Children & Family Movies,Kids
 s7320,TV-Y7,Comedies,Kids
-s7321,NR,Comedies,Adults
-s7321,NR,Dramas,Adults
-s7321,NR,Independent Movies,Adults
-s7322,TV-G,Kids' TV,Other
-s7322,TV-G,TV Comedies,Other
+s7321,NR,Comedies,Unrated
+s7321,NR,Dramas,Unrated
+s7321,NR,Independent Movies,Unrated
+s7322,TV-G,Kids' TV,Kids
+s7322,TV-G,TV Comedies,Kids
 s7323,TV-14,Thrillers,Teens
 s7324,PG-13,Documentaries,Adults
 s7325,TV-14,Crime TV Shows,Teens
@@ -16183,8 +16183,8 @@ s7335,TV-14,Music & Musicals,Teens
 s7336,TV-14,Action & Adventure,Teens
 s7336,TV-14,Comedies,Teens
 s7336,TV-14,International Movies,Teens
-s7337,NR,Comedies,Adults
-s7337,NR,International Movies,Adults
+s7337,NR,Comedies,Unrated
+s7337,NR,International Movies,Unrated
 s7338,TV-14,Dramas,Teens
 s7338,TV-14,International Movies,Teens
 s7338,TV-14,Sports Movies,Teens
@@ -16229,9 +16229,9 @@ s7352,TV-14,Romantic Movies,Teens
 s7353,TV-14,Comedies,Teens
 s7353,TV-14,International Movies,Teens
 s7353,TV-14,Romantic Movies,Teens
-s7354,TV-G,British TV Shows,Other
-s7354,TV-G,International TV Shows,Other
-s7354,TV-G,Reality TV,Other
+s7354,TV-G,British TV Shows,Kids
+s7354,TV-G,International TV Shows,Kids
+s7354,TV-G,Reality TV,Kids
 s7355,R,Comedies,Adults
 s7355,R,International Movies,Adults
 s7355,R,Romantic Movies,Adults
@@ -16268,8 +16268,8 @@ s7368,R,Classic Movies,Adults
 s7368,R,Cult Movies,Adults
 s7369,TV-14,TV Dramas,Teens
 s7370,PG-13,Comedies,Adults
-s7371,NR,Cult Movies,Adults
-s7371,NR,Horror Movies,Adults
+s7371,NR,Cult Movies,Unrated
+s7371,NR,Horror Movies,Unrated
 s7372,TV-MA,Dramas,Adults
 s7372,TV-MA,International Movies,Adults
 s7373,TV-14,Dramas,Teens
@@ -16381,8 +16381,8 @@ s7419,TV-14,Reality TV,Teens
 s7420,TV-14,Dramas,Teens
 s7420,TV-14,Independent Movies,Teens
 s7420,TV-14,International Movies,Teens
-s7421,NR,Action & Adventure,Adults
-s7421,NR,International Movies,Adults
+s7421,NR,Action & Adventure,Unrated
+s7421,NR,International Movies,Unrated
 s7422,TV-MA,Dramas,Adults
 s7422,TV-MA,Independent Movies,Adults
 s7422,TV-MA,International Movies,Adults
@@ -16415,9 +16415,9 @@ s7434,TV-MA,Horror Movies,Adults
 s7434,TV-MA,International Movies,Adults
 s7434,TV-MA,Thrillers,Adults
 s7435,TV-14,Documentaries,Teens
-s7436,TV-G,British TV Shows,Other
-s7436,TV-G,Docuseries,Other
-s7436,TV-G,International TV Shows,Other
+s7436,TV-G,British TV Shows,Kids
+s7436,TV-G,Docuseries,Kids
+s7436,TV-G,International TV Shows,Kids
 s7437,TV-PG,Reality TV,Teens
 s7438,TV-PG,Dramas,Teens
 s7438,TV-PG,International Movies,Teens
@@ -16470,7 +16470,7 @@ s7456,TV-Y7,Kids' TV,Kids
 s7457,R,Dramas,Adults
 s7457,R,Independent Movies,Adults
 s7457,R,LGBTQ Movies,Adults
-s7458,TV-G,Kids' TV,Other
+s7458,TV-G,Kids' TV,Kids
 s7459,TV-14,Dramas,Teens
 s7459,TV-14,International Movies,Teens
 s7460,TV-PG,Reality TV,Teens
@@ -16489,14 +16489,14 @@ s7465,PG-13,Anime Features,Adults
 s7466,PG-13,Dramas,Adults
 s7466,PG-13,International Movies,Adults
 s7467,TV-14,Romantic Movies,Teens
-s7468,NR,Documentaries,Adults
+s7468,NR,Documentaries,Unrated
 s7469,TV-MA,International TV Shows,Adults
 s7469,TV-MA,Romantic TV Shows,Adults
 s7469,TV-MA,TV Comedies,Adults
 s7470,TV-MA,Documentaries,Adults
 s7470,TV-MA,Music & Musicals,Adults
-s7471,NR,Dramas,Adults
-s7471,NR,Independent Movies,Adults
+s7471,NR,Dramas,Unrated
+s7471,NR,Independent Movies,Unrated
 s7472,TV-14,Documentaries,Teens
 s7473,TV-MA,Action & Adventure,Adults
 s7473,TV-MA,Dramas,Adults
@@ -16547,17 +16547,17 @@ s7497,TV-Y7,Children & Family Movies,Kids
 s7498,TV-Y7,Children & Family Movies,Kids
 s7499,TV-Y7,Children & Family Movies,Kids
 s7500,TV-Y7,Children & Family Movies,Kids
-s7501,TV-G,Children & Family Movies,Other
+s7501,TV-G,Children & Family Movies,Kids
 s7502,TV-Y7,Children & Family Movies,Kids
 s7503,TV-Y,Kids' TV,Kids
 s7504,PG-13,Comedies,Adults
 s7504,PG-13,Romantic Movies,Adults
-s7505,TV-G,British TV Shows,Other
-s7505,TV-G,Docuseries,Other
-s7505,TV-G,International TV Shows,Other
-s7506,TV-G,British TV Shows,Other
-s7506,TV-G,Docuseries,Other
-s7506,TV-G,International TV Shows,Other
+s7505,TV-G,British TV Shows,Kids
+s7505,TV-G,Docuseries,Kids
+s7505,TV-G,International TV Shows,Kids
+s7506,TV-G,British TV Shows,Kids
+s7506,TV-G,Docuseries,Kids
+s7506,TV-G,International TV Shows,Kids
 s7507,R,Dramas,Adults
 s7507,R,Independent Movies,Adults
 s7507,R,Sci-Fi & Fantasy,Adults
@@ -16576,8 +16576,8 @@ s7511,R,International Movies,Adults
 s7512,TV-MA,Documentaries,Adults
 s7513,TV-14,Dramas,Teens
 s7513,TV-14,International Movies,Teens
-s7514,TV-Y7-FV,Children & Family Movies,Other
-s7514,TV-Y7-FV,Comedies,Other
+s7514,TV-Y7-FV,Children & Family Movies,Kids
+s7514,TV-Y7-FV,Comedies,Kids
 s7515,PG,Action & Adventure,Teens
 s7515,PG,Documentaries,Teens
 s7515,PG,International Movies,Teens
@@ -16591,8 +16591,8 @@ s7520,TV-14,Comedies,Teens
 s7520,TV-14,Dramas,Teens
 s7520,TV-14,International Movies,Teens
 s7521,PG-13,Comedies,Adults
-s7522,TV-G,Kids' TV,Other
-s7522,TV-G,TV Comedies,Other
+s7522,TV-G,Kids' TV,Kids
+s7522,TV-G,TV Comedies,Kids
 s7523,TV-14,Comedies,Teens
 s7523,TV-14,International Movies,Teens
 s7524,PG-13,Dramas,Adults
@@ -16603,9 +16603,9 @@ s7525,TV-PG,Romantic Movies,Teens
 s7526,PG,Children & Family Movies,Teens
 s7527,PG,Children & Family Movies,Teens
 s7527,PG,Comedies,Teens
-s7528,NR,Comedies,Adults
-s7528,NR,Cult Movies,Adults
-s7528,NR,Horror Movies,Adults
+s7528,NR,Comedies,Unrated
+s7528,NR,Cult Movies,Unrated
+s7528,NR,Horror Movies,Unrated
 s7529,TV-MA,Crime TV Shows,Adults
 s7529,TV-MA,Docuseries,Adults
 s7530,TV-PG,Kids' TV,Teens
@@ -16626,7 +16626,7 @@ s7536,PG-13,Comedies,Adults
 s7536,PG-13,Independent Movies,Adults
 s7537,TV-MA,Comedies,Adults
 s7537,TV-MA,Romantic Movies,Adults
-s7538,Không xác định,Dramas,Other
+s7538,,Dramas,Unknown
 s7539,TV-PG,British TV Shows,Teens
 s7539,TV-PG,International TV Shows,Teens
 s7539,TV-PG,Reality TV,Teens
@@ -16669,8 +16669,8 @@ s7557,TV-PG,Documentaries,Teens
 s7558,TV-14,Action & Adventure,Teens
 s7558,TV-14,Comedies,Teens
 s7558,TV-14,International Movies,Teens
-s7559,NR,Dramas,Adults
-s7559,NR,Independent Movies,Adults
+s7559,NR,Dramas,Unrated
+s7559,NR,Independent Movies,Unrated
 s7560,TV-14,Action & Adventure,Teens
 s7560,TV-14,Anime Features,Teens
 s7560,TV-14,International Movies,Teens
@@ -16679,7 +16679,7 @@ s7562,TV-MA,Documentaries,Adults
 s7563,PG-13,Action & Adventure,Adults
 s7563,PG-13,Comedies,Adults
 s7563,PG-13,Independent Movies,Adults
-s7564,TV-G,Documentaries,Other
+s7564,TV-G,Documentaries,Kids
 s7565,PG,Action & Adventure,Teens
 s7565,PG,Children & Family Movies,Teens
 s7566,TV-14,Dramas,Teens
@@ -16689,9 +16689,9 @@ s7568,R,Dramas,Adults
 s7568,R,Independent Movies,Adults
 s7569,TV-PG,Docuseries,Teens
 s7569,TV-PG,Science & Nature TV,Teens
-s7570,TV-G,Docuseries,Other
-s7570,TV-G,Science & Nature TV,Other
-s7571,TV-G,Documentaries,Other
+s7570,TV-G,Docuseries,Kids
+s7570,TV-G,Science & Nature TV,Kids
+s7571,TV-G,Documentaries,Kids
 s7572,TV-PG,British TV Shows,Teens
 s7572,TV-PG,Docuseries,Teens
 s7572,TV-PG,Science & Nature TV,Teens
@@ -16713,7 +16713,7 @@ s7579,TV-PG,Dramas,Teens
 s7579,TV-PG,Faith & Spirituality,Teens
 s7580,PG,Children & Family Movies,Teens
 s7580,PG,Comedies,Teens
-s7581,NR,Documentaries,Adults
+s7581,NR,Documentaries,Unrated
 s7582,PG-13,Action & Adventure,Adults
 s7582,PG-13,Sci-Fi & Fantasy,Adults
 s7583,TV-14,Action & Adventure,Teens
@@ -16734,8 +16734,8 @@ s7588,PG-13,Dramas,Adults
 s7588,PG-13,Romantic Movies,Adults
 s7589,TV-Y7,Anime Series,Kids
 s7589,TV-Y7,Kids' TV,Kids
-s7590,TV-G,Kids' TV,Other
-s7590,TV-G,TV Comedies,Other
+s7590,TV-G,Kids' TV,Kids
+s7590,TV-G,TV Comedies,Kids
 s7591,TV-PG,Comedies,Teens
 s7591,TV-PG,International Movies,Teens
 s7592,TV-MA,Comedies,Adults
@@ -16750,19 +16750,19 @@ s7595,TV-Y7,Children & Family Movies,Kids
 s7596,TV-PG,Children & Family Movies,Teens
 s7597,TV-PG,Children & Family Movies,Teens
 s7597,TV-PG,Comedies,Teens
-s7598,NR,British TV Shows,Adults
-s7598,NR,Romantic TV Shows,Adults
-s7598,NR,TV Dramas,Adults
+s7598,NR,British TV Shows,Unrated
+s7598,NR,Romantic TV Shows,Unrated
+s7598,NR,TV Dramas,Unrated
 s7599,TV-14,Documentaries,Teens
-s7600,TV-G,Children & Family Movies,Other
-s7600,TV-G,Documentaries,Other
-s7601,TV-G,Documentaries,Other
+s7600,TV-G,Children & Family Movies,Kids
+s7600,TV-G,Documentaries,Kids
+s7601,TV-G,Documentaries,Kids
 s7602,TV-PG,Documentaries,Teens
 s7603,TV-PG,Documentaries,Teens
 s7604,TV-PG,Documentaries,Teens
-s7605,TV-G,Documentaries,Other
+s7605,TV-G,Documentaries,Kids
 s7606,TV-14,Documentaries,Teens
-s7607,TV-G,Documentaries,Other
+s7607,TV-G,Documentaries,Kids
 s7608,TV-PG,Documentaries,Teens
 s7609,TV-PG,Documentaries,Teens
 s7610,TV-14,Documentaries,Teens
@@ -16770,11 +16770,11 @@ s7611,TV-PG,Documentaries,Teens
 s7612,TV-PG,Documentaries,Teens
 s7613,TV-PG,Documentaries,Teens
 s7614,TV-PG,Documentaries,Teens
-s7615,TV-G,Documentaries,Other
+s7615,TV-G,Documentaries,Kids
 s7616,TV-PG,Documentaries,Teens
 s7617,TV-PG,Documentaries,Teens
 s7618,TV-PG,Documentaries,Teens
-s7619,TV-G,Movies,Other
+s7619,TV-G,Movies,Kids
 s7620,PG-13,Dramas,Adults
 s7620,PG-13,Thrillers,Adults
 s7621,PG-13,Dramas,Adults
@@ -16799,9 +16799,9 @@ s7629,TV-MA,TV Dramas,Adults
 s7630,TV-14,British TV Shows,Teens
 s7630,TV-14,Crime TV Shows,Teens
 s7630,TV-14,Docuseries,Teens
-s7631,NR,Dramas,Adults
-s7631,NR,Independent Movies,Adults
-s7631,NR,International Movies,Adults
+s7631,NR,Dramas,Unrated
+s7631,NR,Independent Movies,Unrated
+s7631,NR,International Movies,Unrated
 s7632,TV-MA,Dramas,Adults
 s7632,TV-MA,Independent Movies,Adults
 s7632,TV-MA,International Movies,Adults
@@ -16840,9 +16840,9 @@ s7645,TV-MA,International Movies,Adults
 s7646,TV-MA,Comedies,Adults
 s7646,TV-MA,Horror Movies,Adults
 s7646,TV-MA,International Movies,Adults
-s7647,TV-Y7-FV,Kids' TV,Other
-s7647,TV-Y7-FV,TV Action & Adventure,Other
-s7647,TV-Y7-FV,TV Sci-Fi & Fantasy,Other
+s7647,TV-Y7-FV,Kids' TV,Kids
+s7647,TV-Y7-FV,TV Action & Adventure,Kids
+s7647,TV-Y7-FV,TV Sci-Fi & Fantasy,Kids
 s7648,TV-14,Documentaries,Teens
 s7649,TV-PG,Docuseries,Teens
 s7650,TV-Y,Kids' TV,Kids
@@ -16873,9 +16873,9 @@ s7661,TV-PG,International Movies,Teens
 s7661,TV-PG,Romantic Movies,Teens
 s7662,PG,Documentaries,Teens
 s7662,PG,Music & Musicals,Teens
-s7663,TV-G,Documentaries,Other
-s7663,TV-G,International Movies,Other
-s7663,TV-G,Music & Musicals,Other
+s7663,TV-G,Documentaries,Kids
+s7663,TV-G,International Movies,Kids
+s7663,TV-G,Music & Musicals,Kids
 s7664,TV-MA,Dramas,Adults
 s7665,TV-MA,Documentaries,Adults
 s7666,TV-MA,Dramas,Adults
@@ -16890,9 +16890,9 @@ s7669,TV-MA,Documentaries,Adults
 s7669,TV-MA,International Movies,Adults
 s7670,PG,Children & Family Movies,Teens
 s7670,PG,Comedies,Teens
-s7671,NR,Action & Adventure,Adults
-s7671,NR,Dramas,Adults
-s7671,NR,International Movies,Adults
+s7671,NR,Action & Adventure,Unrated
+s7671,NR,Dramas,Unrated
+s7671,NR,International Movies,Unrated
 s7672,TV-14,British TV Shows,Teens
 s7672,TV-14,Reality TV,Teens
 s7673,TV-MA,Action & Adventure,Adults
@@ -16939,8 +16939,8 @@ s7691,PG-13,Dramas,Adults
 s7691,PG-13,Romantic Movies,Adults
 s7692,TV-14,Dramas,Teens
 s7692,TV-14,International Movies,Teens
-s7693,NR,Documentaries,Adults
-s7693,NR,International Movies,Adults
+s7693,NR,Documentaries,Unrated
+s7693,NR,International Movies,Unrated
 s7694,TV-14,Crime TV Shows,Teens
 s7694,TV-14,TV Comedies,Teens
 s7695,TV-MA,Action & Adventure,Adults
@@ -17058,9 +17058,9 @@ s7746,TV-MA,International Movies,Adults
 s7747,TV-MA,Dramas,Adults
 s7747,TV-MA,Independent Movies,Adults
 s7747,TV-MA,International Movies,Adults
-s7748,TV-G,British TV Shows,Other
-s7748,TV-G,Docuseries,Other
-s7748,TV-G,Science & Nature TV,Other
+s7748,TV-G,British TV Shows,Kids
+s7748,TV-G,Docuseries,Kids
+s7748,TV-G,Science & Nature TV,Kids
 s7749,TV-PG,British TV Shows,Teens
 s7749,TV-PG,Docuseries,Teens
 s7749,TV-PG,International TV Shows,Teens
@@ -17128,7 +17128,7 @@ s7791,TV-14,Classic Movies,Teens
 s7791,TV-14,Documentaries,Teens
 s7792,TV-14,International Movies,Teens
 s7792,TV-14,Romantic Movies,Teens
-s7793,NR,Documentaries,Adults
+s7793,NR,Documentaries,Unrated
 s7794,R,Dramas,Adults
 s7794,R,Thrillers,Adults
 s7795,TV-14,Comedies,Teens
@@ -17195,7 +17195,7 @@ s7821,R,Dramas,Adults
 s7821,R,Sports Movies,Adults
 s7822,TV-14,Dramas,Teens
 s7822,TV-14,International Movies,Teens
-s7823,NR,Documentaries,Adults
+s7823,NR,Documentaries,Unrated
 s7824,TV-14,Action & Adventure,Teens
 s7824,TV-14,Comedies,Teens
 s7824,TV-14,International Movies,Teens
@@ -17226,7 +17226,7 @@ s7833,TV-MA,Thrillers,Adults
 s7834,TV-14,Dramas,Teens
 s7834,TV-14,International Movies,Teens
 s7834,TV-14,Music & Musicals,Teens
-s7835,NR,Documentaries,Adults
+s7835,NR,Documentaries,Unrated
 s7836,TV-14,International TV Shows,Teens
 s7836,TV-14,Romantic TV Shows,Teens
 s7836,TV-14,TV Dramas,Teens
@@ -17254,9 +17254,9 @@ s7846,TV-14,Dramas,Teens
 s7846,TV-14,International Movies,Teens
 s7847,TV-PG,Documentaries,Teens
 s7847,TV-PG,International Movies,Teens
-s7848,NR,TV Action & Adventure,Adults
-s7848,NR,TV Comedies,Adults
-s7848,NR,TV Sci-Fi & Fantasy,Adults
+s7848,NR,TV Action & Adventure,Unrated
+s7848,NR,TV Comedies,Unrated
+s7848,NR,TV Sci-Fi & Fantasy,Unrated
 s7849,TV-PG,Documentaries,Teens
 s7850,TV-MA,Action & Adventure,Adults
 s7850,TV-MA,Dramas,Adults
@@ -17287,8 +17287,8 @@ s7860,TV-MA,Documentaries,Adults
 s7861,R,Action & Adventure,Adults
 s7861,R,Comedies,Adults
 s7861,R,International Movies,Adults
-s7862,NR,Dramas,Adults
-s7862,NR,International Movies,Adults
+s7862,NR,Dramas,Unrated
+s7862,NR,International Movies,Unrated
 s7863,TV-MA,Crime TV Shows,Adults
 s7863,TV-MA,International TV Shows,Adults
 s7863,TV-MA,TV Dramas,Adults
@@ -17299,9 +17299,9 @@ s7865,TV-PG,British TV Shows,Teens
 s7865,TV-PG,Kids' TV,Teens
 s7866,R,Dramas,Adults
 s7866,R,Romantic Movies,Adults
-s7867,NR,Dramas,Adults
-s7867,NR,Independent Movies,Adults
-s7867,NR,International Movies,Adults
+s7867,NR,Dramas,Unrated
+s7867,NR,Independent Movies,Unrated
+s7867,NR,International Movies,Unrated
 s7868,TV-MA,International TV Shows,Adults
 s7868,TV-MA,Reality TV,Adults
 s7868,TV-MA,Spanish-Language TV Shows,Adults
@@ -17395,9 +17395,9 @@ s7907,TV-14,International TV Shows,Teens
 s7908,PG,Children & Family Movies,Teens
 s7908,PG,Comedies,Teens
 s7908,PG,Sports Movies,Teens
-s7909,NR,Docuseries,Adults
-s7909,NR,Stand-Up Comedy & Talk Shows,Adults
-s7910,NR,Stand-Up Comedy,Adults
+s7909,NR,Docuseries,Unrated
+s7909,NR,Stand-Up Comedy & Talk Shows,Unrated
+s7910,NR,Stand-Up Comedy,Unrated
 s7911,TV-14,Dramas,Teens
 s7911,TV-14,International Movies,Teens
 s7912,TV-MA,Documentaries,Adults
@@ -17454,7 +17454,7 @@ s7933,TV-14,Dramas,Teens
 s7933,TV-14,International Movies,Teens
 s7934,TV-PG,Children & Family Movies,Teens
 s7934,TV-PG,Comedies,Teens
-s7935,TV-G,Children & Family Movies,Other
+s7935,TV-G,Children & Family Movies,Kids
 s7936,PG-13,Dramas,Adults
 s7936,PG-13,International Movies,Adults
 s7937,TV-14,Comedies,Teens
@@ -17487,7 +17487,7 @@ s7947,TV-MA,Independent Movies,Adults
 s7948,TV-MA,Comedies,Adults
 s7948,TV-MA,International Movies,Adults
 s7948,TV-MA,Romantic Movies,Adults
-s7949,TV-G,Reality TV,Other
+s7949,TV-G,Reality TV,Kids
 s7950,PG-13,Comedies,Adults
 s7950,PG-13,Dramas,Adults
 s7951,R,Dramas,Adults
@@ -17566,9 +17566,9 @@ s7987,R,Romantic Movies,Adults
 s7988,R,Comedies,Adults
 s7988,R,Dramas,Adults
 s7988,R,Romantic Movies,Adults
-s7989,UR,Dramas,Other
-s7989,UR,International Movies,Other
-s7989,UR,Romantic Movies,Other
+s7989,UR,Dramas,Unrated
+s7989,UR,International Movies,Unrated
+s7989,UR,Romantic Movies,Unrated
 s7990,R,Comedies,Adults
 s7990,R,Dramas,Adults
 s7990,R,International Movies,Adults
@@ -17624,9 +17624,9 @@ s8015,TV-MA,Dramas,Adults
 s8015,TV-MA,International Movies,Adults
 s8015,TV-MA,Thrillers,Adults
 s8016,TV-Y,Kids' TV,Kids
-s8017,TV-G,Dramas,Other
-s8017,TV-G,Independent Movies,Other
-s8017,TV-G,International Movies,Other
+s8017,TV-G,Dramas,Kids
+s8017,TV-G,Independent Movies,Kids
+s8017,TV-G,International Movies,Kids
 s8018,TV-MA,Action & Adventure,Adults
 s8018,TV-MA,Independent Movies,Adults
 s8019,R,Horror Movies,Adults
@@ -17662,8 +17662,8 @@ s8033,PG-13,Action & Adventure,Adults
 s8033,PG-13,Comedies,Adults
 s8034,TV-MA,Action & Adventure,Adults
 s8034,TV-MA,International Movies,Adults
-s8035,TV-G,Documentaries,Other
-s8035,TV-G,Sports Movies,Other
+s8035,TV-G,Documentaries,Kids
+s8035,TV-G,Sports Movies,Kids
 s8036,PG-13,Action & Adventure,Adults
 s8036,PG-13,Sci-Fi & Fantasy,Adults
 s8037,R,Comedies,Adults
@@ -17695,9 +17695,9 @@ s8048,TV-14,Romantic Movies,Teens
 s8049,TV-MA,Documentaries,Adults
 s8050,TV-MA,Dramas,Adults
 s8050,TV-MA,International Movies,Adults
-s8051,NR,Comedies,Adults
-s8051,NR,Independent Movies,Adults
-s8051,NR,International Movies,Adults
+s8051,NR,Comedies,Unrated
+s8051,NR,Independent Movies,Unrated
+s8051,NR,International Movies,Unrated
 s8052,PG-13,Action & Adventure,Adults
 s8052,PG-13,Children & Family Movies,Adults
 s8052,PG-13,Sci-Fi & Fantasy,Adults
@@ -17714,8 +17714,8 @@ s8056,PG-13,Romantic Movies,Adults
 s8057,R,Action & Adventure,Adults
 s8057,R,Dramas,Adults
 s8057,R,Independent Movies,Adults
-s8058,NR,Documentaries,Adults
-s8058,NR,Sports Movies,Adults
+s8058,NR,Documentaries,Unrated
+s8058,NR,Sports Movies,Unrated
 s8059,TV-MA,International TV Shows,Adults
 s8059,TV-MA,Romantic TV Shows,Adults
 s8059,TV-MA,TV Dramas,Adults
@@ -17724,7 +17724,7 @@ s8060,PG,Faith & Spirituality,Teens
 s8060,PG,Sports Movies,Teens
 s8061,TV-MA,Horror Movies,Adults
 s8061,TV-MA,Independent Movies,Adults
-s8062,NR,Documentaries,Adults
+s8062,NR,Documentaries,Unrated
 s8063,TV-Y,Kids' TV,Kids
 s8064,PG,Dramas,Teens
 s8064,PG,Music & Musicals,Teens
@@ -17791,9 +17791,9 @@ s8095,TV-Y7,Kids' TV,Kids
 s8095,TV-Y7,Korean TV Shows,Kids
 s8096,PG-13,Horror Movies,Adults
 s8096,PG-13,Thrillers,Adults
-s8097,NR,Documentaries,Adults
-s8097,NR,International Movies,Adults
-s8097,NR,Sports Movies,Adults
+s8097,NR,Documentaries,Unrated
+s8097,NR,International Movies,Unrated
+s8097,NR,Sports Movies,Unrated
 s8098,TV-MA,International TV Shows,Adults
 s8098,TV-MA,Reality TV,Adults
 s8099,TV-PG,Comedies,Teens
@@ -17821,18 +17821,18 @@ s8107,R,Dramas,Adults
 s8108,TV-14,Crime TV Shows,Teens
 s8108,TV-14,International TV Shows,Teens
 s8108,TV-14,Korean TV Shows,Teens
-s8109,NR,Action & Adventure,Adults
-s8109,NR,Dramas,Adults
-s8109,NR,International Movies,Adults
+s8109,NR,Action & Adventure,Unrated
+s8109,NR,Dramas,Unrated
+s8109,NR,International Movies,Unrated
 s8110,TV-PG,Docuseries,Teens
 s8110,TV-PG,International TV Shows,Teens
 s8111,PG,Children & Family Movies,Teens
 s8111,PG,Comedies,Teens
 s8112,TV-MA,Action & Adventure,Adults
 s8112,TV-MA,Dramas,Adults
-s8113,NR,Dramas,Adults
-s8113,NR,International Movies,Adults
-s8113,NR,Thrillers,Adults
+s8113,NR,Dramas,Unrated
+s8113,NR,International Movies,Unrated
+s8113,NR,Thrillers,Unrated
 s8114,TV-MA,Comedies,Adults
 s8114,TV-MA,International Movies,Adults
 s8114,TV-MA,Music & Musicals,Adults
@@ -17885,7 +17885,7 @@ s8133,TV-MA,Docuseries,Adults
 s8134,TV-MA,Documentaries,Adults
 s8135,TV-MA,Documentaries,Adults
 s8135,TV-MA,LGBTQ Movies,Adults
-s8136,TV-G,Documentaries,Other
+s8136,TV-G,Documentaries,Kids
 s8137,TV-PG,Dramas,Teens
 s8137,TV-PG,Independent Movies,Teens
 s8137,TV-PG,International Movies,Teens
@@ -17998,8 +17998,8 @@ s8188,PG-13,Comedies,Adults
 s8188,PG-13,Dramas,Adults
 s8188,PG-13,Romantic Movies,Adults
 s8189,R,Horror Movies,Adults
-s8190,TV-G,Classic & Cult TV,Other
-s8190,TV-G,TV Comedies,Other
+s8190,TV-G,Classic & Cult TV,Kids
+s8190,TV-G,TV Comedies,Kids
 s8191,PG,Children & Family Movies,Teens
 s8191,PG,Comedies,Teens
 s8192,TV-MA,Documentaries,Adults
@@ -18047,9 +18047,9 @@ s8213,R,Independent Movies,Adults
 s8213,R,Thrillers,Adults
 s8214,R,Dramas,Adults
 s8214,R,Sports Movies,Adults
-s8215,TV-G,British TV Shows,Other
-s8215,TV-G,Docuseries,Other
-s8215,TV-G,International TV Shows,Other
+s8215,TV-G,British TV Shows,Kids
+s8215,TV-G,Docuseries,Kids
+s8215,TV-G,International TV Shows,Kids
 s8216,TV-14,Documentaries,Teens
 s8217,TV-MA,British TV Shows,Adults
 s8217,TV-MA,Docuseries,Adults
@@ -18285,8 +18285,8 @@ s8320,TV-MA,Independent Movies,Adults
 s8320,TV-MA,Thrillers,Adults
 s8321,R,Dramas,Adults
 s8321,R,Thrillers,Adults
-s8322,TV-G,Docuseries,Other
-s8322,TV-G,International TV Shows,Other
+s8322,TV-G,Docuseries,Kids
+s8322,TV-G,International TV Shows,Kids
 s8323,TV-MA,Horror Movies,Adults
 s8323,TV-MA,Independent Movies,Adults
 s8323,TV-MA,International Movies,Adults
@@ -18315,9 +18315,9 @@ s8333,TV-14,Classic Movies,Teens
 s8333,TV-14,Cult Movies,Teens
 s8334,R,Action & Adventure,Adults
 s8334,R,Dramas,Adults
-s8335,NR,British TV Shows,Adults
-s8335,NR,Crime TV Shows,Adults
-s8335,NR,International TV Shows,Adults
+s8335,NR,British TV Shows,Unrated
+s8335,NR,Crime TV Shows,Unrated
+s8335,NR,International TV Shows,Unrated
 s8336,PG-13,Action & Adventure,Adults
 s8336,PG-13,Comedies,Adults
 s8337,TV-MA,TV Comedies,Adults
@@ -18364,7 +18364,7 @@ s8358,TV-MA,TV Comedies,Adults
 s8359,TV-MA,International Movies,Adults
 s8359,TV-MA,Sci-Fi & Fantasy,Adults
 s8359,TV-MA,Thrillers,Adults
-s8360,TV-G,Children & Family Movies,Other
+s8360,TV-G,Children & Family Movies,Kids
 s8361,PG,Children & Family Movies,Teens
 s8361,PG,Comedies,Teens
 s8362,PG,Children & Family Movies,Teens
@@ -18498,8 +18498,8 @@ s8422,TV-14,TV Dramas,Teens
 s8422,TV-14,TV Mysteries,Teens
 s8422,TV-14,TV Sci-Fi & Fantasy,Teens
 s8423,TV-PG,Docuseries,Teens
-s8424,TV-G,Kids' TV,Other
-s8424,TV-G,TV Comedies,Other
+s8424,TV-G,Kids' TV,Kids
+s8424,TV-G,TV Comedies,Kids
 s8425,TV-MA,International TV Shows,Adults
 s8425,TV-MA,Spanish-Language TV Shows,Adults
 s8425,TV-MA,TV Action & Adventure,Adults
@@ -18548,9 +18548,9 @@ s8446,PG-13,Action & Adventure,Adults
 s8446,PG-13,Comedies,Adults
 s8447,R,Action & Adventure,Adults
 s8447,R,Comedies,Adults
-s8448,NR,Dramas,Adults
-s8448,NR,Independent Movies,Adults
-s8448,NR,LGBTQ Movies,Adults
+s8448,NR,Dramas,Unrated
+s8448,NR,Independent Movies,Unrated
+s8448,NR,LGBTQ Movies,Unrated
 s8449,R,Action & Adventure,Adults
 s8450,PG-13,Dramas,Adults
 s8450,PG-13,Thrillers,Adults
@@ -18633,8 +18633,8 @@ s8487,PG-13,Horror Movies,Adults
 s8487,PG-13,Thrillers,Adults
 s8488,R,Dramas,Adults
 s8488,R,International Movies,Adults
-s8489,NR,Dramas,Adults
-s8489,NR,Independent Movies,Adults
+s8489,NR,Dramas,Unrated
+s8489,NR,Independent Movies,Unrated
 s8490,PG-13,Action & Adventure,Adults
 s8491,TV-14,International TV Shows,Teens
 s8491,TV-14,TV Dramas,Teens
@@ -18657,7 +18657,7 @@ s8498,PG-13,Independent Movies,Adults
 s8499,R,Dramas,Adults
 s8499,R,Thrillers,Adults
 s8500,PG-13,Dramas,Adults
-s8501,TV-G,Documentaries,Other
+s8501,TV-G,Documentaries,Kids
 s8502,PG,Children & Family Movies,Teens
 s8502,PG,Comedies,Teens
 s8503,R,Documentaries,Adults
@@ -18671,9 +18671,9 @@ s8507,TV-14,Comedies,Teens
 s8507,TV-14,Independent Movies,Teens
 s8508,PG-13,Sci-Fi & Fantasy,Adults
 s8508,PG-13,Thrillers,Adults
-s8509,NR,Horror Movies,Adults
-s8509,NR,Independent Movies,Adults
-s8509,NR,International Movies,Adults
+s8509,NR,Horror Movies,Unrated
+s8509,NR,Independent Movies,Unrated
+s8509,NR,International Movies,Unrated
 s8510,TV-14,Dramas,Teens
 s8510,TV-14,International Movies,Teens
 s8510,TV-14,Romantic Movies,Teens
@@ -18717,7 +18717,7 @@ s8529,TV-14,International Movies,Teens
 s8530,TV-14,Comedies,Teens
 s8530,TV-14,Dramas,Teens
 s8530,TV-14,Independent Movies,Teens
-s8531,TV-G,Documentaries,Other
+s8531,TV-G,Documentaries,Kids
 s8532,PG-13,Action & Adventure,Adults
 s8532,PG-13,Sci-Fi & Fantasy,Adults
 s8533,PG-13,Dramas,Adults
@@ -18809,9 +18809,9 @@ s8576,TV-14,Romantic TV Shows,Teens
 s8577,TV-PG,Comedies,Teens
 s8577,TV-PG,International Movies,Teens
 s8577,TV-PG,Romantic Movies,Teens
-s8578,NR,Documentaries,Adults
-s8578,NR,International Movies,Adults
-s8578,NR,Music & Musicals,Adults
+s8578,NR,Documentaries,Unrated
+s8578,NR,International Movies,Unrated
+s8578,NR,Music & Musicals,Unrated
 s8579,TV-MA,Dramas,Adults
 s8579,TV-MA,Independent Movies,Adults
 s8579,TV-MA,International Movies,Adults
@@ -18822,10 +18822,10 @@ s8581,PG-13,Action & Adventure,Adults
 s8581,PG-13,Comedies,Adults
 s8581,PG-13,Sci-Fi & Fantasy,Adults
 s8582,TV-Y7,Children & Family Movies,Kids
-s8583,NR,Dramas,Adults
-s8583,NR,International Movies,Adults
-s8584,NR,Dramas,Adults
-s8584,NR,International Movies,Adults
+s8583,NR,Dramas,Unrated
+s8583,NR,International Movies,Unrated
+s8584,NR,Dramas,Unrated
+s8584,NR,International Movies,Unrated
 s8585,TV-MA,Action & Adventure,Adults
 s8585,TV-MA,International Movies,Adults
 s8586,TV-14,Comedies,Teens
@@ -18881,7 +18881,7 @@ s8607,TV-14,International Movies,Teens
 s8608,PG-13,Comedies,Adults
 s8608,PG-13,Dramas,Adults
 s8608,PG-13,Romantic Movies,Adults
-s8609,NR,Comedies,Adults
+s8609,NR,Comedies,Unrated
 s8610,TV-MA,International TV Shows,Adults
 s8610,TV-MA,Reality TV,Adults
 s8611,PG-13,Action & Adventure,Adults
@@ -18906,9 +18906,9 @@ s8618,R,Thrillers,Adults
 s8619,R,Comedies,Adults
 s8619,R,Dramas,Adults
 s8619,R,Independent Movies,Adults
-s8620,TV-G,Documentaries,Other
-s8620,TV-G,Dramas,Other
-s8620,TV-G,International Movies,Other
+s8620,TV-G,Documentaries,Kids
+s8620,TV-G,Dramas,Kids
+s8620,TV-G,International Movies,Kids
 s8621,TV-PG,Documentaries,Teens
 s8622,PG-13,Comedies,Adults
 s8622,PG-13,Cult Movies,Adults
@@ -18980,9 +18980,9 @@ s8651,TV-14,Documentaries,Teens
 s8651,TV-14,International Movies,Teens
 s8652,R,Documentaries,Adults
 s8652,R,Sports Movies,Adults
-s8653,NR,Dramas,Adults
-s8653,NR,International Movies,Adults
-s8653,NR,Thrillers,Adults
+s8653,NR,Dramas,Unrated
+s8653,NR,International Movies,Unrated
+s8653,NR,Thrillers,Unrated
 s8654,TV-14,International TV Shows,Teens
 s8654,TV-14,Romantic TV Shows,Teens
 s8654,TV-14,TV Dramas,Teens
@@ -19023,7 +19023,7 @@ s8668,R,Action & Adventure,Adults
 s8669,R,Action & Adventure,Adults
 s8669,R,Dramas,Adults
 s8669,R,Sci-Fi & Fantasy,Adults
-s8670,TV-G,Kids' TV,Other
+s8670,TV-G,Kids' TV,Kids
 s8671,PG-13,Action & Adventure,Adults
 s8672,TV-14,Action & Adventure,Teens
 s8672,TV-14,Dramas,Teens
@@ -19032,7 +19032,7 @@ s8673,TV-14,Comedies,Teens
 s8673,TV-14,Dramas,Teens
 s8673,TV-14,International Movies,Teens
 s8674,TV-14,Documentaries,Teens
-s8675,NR,Dramas,Adults
+s8675,NR,Dramas,Unrated
 s8676,PG-13,Dramas,Adults
 s8677,R,Action & Adventure,Adults
 s8677,R,Sci-Fi & Fantasy,Adults
@@ -19044,9 +19044,9 @@ s8681,TV-14,Dramas,Teens
 s8681,TV-14,International Movies,Teens
 s8682,TV-14,Dramas,Teens
 s8682,TV-14,International Movies,Teens
-s8683,NR,Comedies,Adults
-s8683,NR,Dramas,Adults
-s8683,NR,International Movies,Adults
+s8683,NR,Comedies,Unrated
+s8683,NR,Dramas,Unrated
+s8683,NR,International Movies,Unrated
 s8684,TV-14,Dramas,Teens
 s8684,TV-14,International Movies,Teens
 s8684,TV-14,Thrillers,Teens
@@ -19085,7 +19085,7 @@ s8700,TV-14,International Movies,Teens
 s8701,TV-MA,Docuseries,Adults
 s8701,TV-MA,International TV Shows,Adults
 s8702,PG,Documentaries,Teens
-s8703,TV-G,Documentaries,Other
+s8703,TV-G,Documentaries,Kids
 s8704,R,Dramas,Adults
 s8704,R,Independent Movies,Adults
 s8704,R,Music & Musicals,Adults
@@ -19141,8 +19141,8 @@ s8726,R,Dramas,Adults
 s8726,R,International Movies,Adults
 s8726,R,Romantic Movies,Adults
 s8727,TV-PG,TV Dramas,Teens
-s8728,NR,Documentaries,Adults
-s8728,NR,International Movies,Adults
+s8728,NR,Documentaries,Unrated
+s8728,NR,International Movies,Unrated
 s8729,TV-14,Documentaries,Teens
 s8729,TV-14,International Movies,Teens
 s8730,PG-13,Action & Adventure,Adults
@@ -19188,9 +19188,9 @@ s8746,G,Classic Movies,Kids
 s8746,G,Comedies,Kids
 s8747,TV-14,Documentaries,Teens
 s8747,TV-14,International Movies,Teens
-s8748,TV-G,Reality TV,Other
-s8749,NR,Classic Movies,Adults
-s8749,NR,Dramas,Adults
+s8748,TV-G,Reality TV,Kids
+s8749,NR,Classic Movies,Unrated
+s8749,NR,Dramas,Unrated
 s8750,TV-MA,International TV Shows,Adults
 s8750,TV-MA,TV Dramas,Adults
 s8750,TV-MA,TV Thrillers,Adults
@@ -19273,7 +19273,7 @@ s8783,PG-13,Independent Movies,Adults
 s8784,TV-Y,Kids' TV,Kids
 s8785,TV-Y,Children & Family Movies,Kids
 s8786,TV-Y7,Kids' TV,Kids
-s8787,TV-G,Children & Family Movies,Other
+s8787,TV-G,Children & Family Movies,Kids
 s8788,TV-PG,Comedies,Teens
 s8788,TV-PG,Romantic Movies,Teens
 s8789,TV-MA,Dramas,Adults
@@ -19281,13 +19281,13 @@ s8789,TV-MA,International Movies,Adults
 s8790,TV-PG,Comedies,Teens
 s8790,TV-PG,Dramas,Teens
 s8790,TV-PG,International Movies,Teens
-s8791,UR,Action & Adventure,Other
-s8791,UR,Comedies,Other
+s8791,UR,Action & Adventure,Unrated
+s8791,UR,Comedies,Unrated
 s8792,R,Comedies,Adults
 s8792,R,Dramas,Adults
 s8792,R,Independent Movies,Adults
-s8793,NR,Action & Adventure,Adults
-s8793,NR,International Movies,Adults
+s8793,NR,Action & Adventure,Unrated
+s8793,NR,International Movies,Unrated
 s8794,PG,Children & Family Movies,Teens
 s8794,PG,Comedies,Teens
 s8795,TV-14,Dramas,Teens

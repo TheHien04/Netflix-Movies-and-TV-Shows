@@ -324,7 +324,7 @@ Filling `director` / `cast` / `country` with a display string is acceptable **fo
 
 ## 4. Evidence: Tableau library + publication figures
 
-Every chart exported from the course workbook is below. The left (or first) image is the **Tableau prototype**. The second is the **Python publication figure**: same question, corrected grain, sentence title, missingness handled, source line.
+Every chart exported from the course workbook is below. The left (or first) image is the **Tableau prototype**. The second is the **Python publication figure**: same question, corrected grain, sentence title, missingness handled, source line. Python uses the workbook palette sampled from those exports — cream canvas `#EFEBE8`, Movie `#E15658`, TV Show `#F28B25` — so the two columns read as one study.
 
 Grammar: [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md). Voices on every view:
 
@@ -333,7 +333,7 @@ Grammar: [`docs/VIZ_SPECS.md`](./docs/VIZ_SPECS.md). Voices on every view:
 3. **Non-claim** — what a reader is not allowed to conclude  
 
 <p align="center">
-  <img src="./figures/pub_08_briefing_board.png" alt="Four-panel catalog supply briefing board" width="920"/>
+  <img src="./figures/viz_08_briefing_board.png" alt="Four-panel catalog supply briefing board" width="920"/>
 </p>
 
 <p align="center"><sub>Publication briefing board (Python). Tableau’s integrated dashboard is next to it so the two prototypes can be compared.</sub></p>
@@ -357,14 +357,14 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Content by years (release_year)</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_09_library_by_release_year.png" alt="Publication: library by release year, Movie vs TV Show"/><br/>
+<img src="./figures/viz_09_library_by_release_year.png" alt="Publication: library by release year, Movie vs TV Show"/><br/>
 <sub>Publication · same question, Movie / TV Show stack</sub>
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="./figures/pub_01_catalog_additions.png" alt="Titles added by year of date_added, 2021 right-censored" width="900"/>
+  <img src="./figures/viz_01_catalog_additions.png" alt="Titles added by year of date_added, 2021 right-censored" width="900"/>
 </p>
 
 <p align="center"><sub>Publication · date_added (the commissioning clock Tableau did not isolate as a sentence title).</sub></p>
@@ -389,7 +389,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 ### 4.2 Missingness is structured — keep NULL
 
 <p align="center">
-  <img src="./figures/pub_02_missingness_by_type.png" alt="Percent missing director, country, and cast by Movie vs TV Show" width="900"/>
+  <img src="./figures/viz_02_missingness_by_type.png" alt="Percent missing director, country, and cast by Movie vs TV Show" width="900"/>
 </p>
 
 **Observation.** Director is missing for **91.4% of TV Shows** vs **3.1% of Movies**. Country and cast missingness is higher on series but still in the low teens.
@@ -409,7 +409,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Top 10 producing countries</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_04_producing_countries.png" alt="Publication: production credits, Unknown excluded"/><br/>
+<img src="./figures/viz_04_producing_countries.png" alt="Publication: production credits, Unknown excluded"/><br/>
 <sub>Publication · Unknown excluded (831 titles / 9.4%)</sub>
 </td>
 </tr>
@@ -438,14 +438,14 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Trend in publishing genres (spaghetti)</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_10_genre_trends.png" alt="Publication: top five genre tags highlighted, long tail muted"/><br/>
+<img src="./figures/viz_10_genre_trends.png" alt="Publication: top five genre tags highlighted, long tail muted"/><br/>
 <sub>Publication · top five in color, long tail muted</sub>
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="./figures/pub_05_genre_incidence.png" alt="Top 15 genre tag incidences" width="900"/>
+  <img src="./figures/viz_05_genre_incidence.png" alt="Top 15 genre tag incidences" width="900"/>
 </p>
 
 **Observation.** International Movies 2,752 · Dramas 2,427 · Comedies 1,674. Mean tags per title = **2.19**. A few tags carry the 2016–2019 expansion; the rest are a long tail.
@@ -465,7 +465,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Number of content by rating</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_03_maturity_mix.png" alt="Publication: maturity mix with band colors"/><br/>
+<img src="./figures/viz_03_maturity_mix.png" alt="Publication: maturity mix with band colors"/><br/>
 <sub>Publication · recoded ratings, maturity bands</sub>
 </td>
 </tr>
@@ -478,14 +478,14 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Ratings over release years</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_11_rating_over_release_year.png" alt="Publication: maturity band stack over release year"/><br/>
+<img src="./figures/viz_11_rating_over_release_year.png" alt="Publication: maturity band stack over release year"/><br/>
 <sub>Publication · maturity bands, 2000–2021</sub>
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="./figures/pub_07_maturity_over_add_year.png" alt="Stacked maturity bands by year added" width="900"/>
+  <img src="./figures/viz_07_maturity_over_add_year.png" alt="Stacked maturity bands by year added" width="900"/>
 </p>
 
 <p align="center"><sub>Publication · the same mix on the add-year clock (2015–2021).</sub></p>
@@ -507,7 +507,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Age-rating category “correlations”</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_06_rating_genre_crosstab.png" alt="Publication: rating by genre crosstab"/><br/>
+<img src="./figures/viz_06_rating_genre_crosstab.png" alt="Publication: rating by genre crosstab"/><br/>
 <sub>Publication · named as a cross-tab, not a correlation</sub>
 </td>
 </tr>
@@ -530,7 +530,7 @@ Tableau exported **Content by years** on `release_year`. The policy clock is `da
 <sub>Tableau · Cast × listed in</sub>
 </td>
 <td align="center" width="50%">
-<img src="./figures/pub_12_cast_by_genre.png" alt="Publication: cast name-tokens by genre"/><br/>
+<img src="./figures/viz_12_cast_by_genre.png" alt="Publication: cast name-tokens by genre"/><br/>
 <sub>Publication · name-tokens, missing cast excluded</sub>
 </td>
 </tr>
@@ -618,7 +618,7 @@ A 10/10 data study is defined as much by **refused inferences** as by charts.
 ├── data/dictionaries/                       # field + maturity codebooks
 ├── netflix_catalog/                        # clean → quality → viz
 ├── tests/test_clean.py                     # 10 wrangling invariants
-├── figures/                                # 12 publication PNGs (Tableau-harmonious cream)
+├── figures/                                # 12 publication PNGs (viz_*.png, Tableau cream/red/orange)
 ├── docs/                                   # dictionary, quality, viz specs
 ├── Tableau/Netflix & TV Show.twbx          # interactive prototype
 └── Report/Report Project.pdf                # course report (HCMUS)
